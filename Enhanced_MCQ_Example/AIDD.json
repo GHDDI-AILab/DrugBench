@@ -1,0 +1,835 @@
+[
+  {
+    "question": "Which AI-based workflow most effectively combines rapid exploration of antimicrobial peptide sequences with early screening for metabolic instability and toxicity?",
+    "options": [
+      "A) Pattern mining using motifs followed by toxicity prediction with a support vector machine",
+      "B) Large language model generation paired with graph neural network structural screening inside a reinforcement-learning cycle",
+      "C) Random combinatorial peptide synthesis without any computational pre-filtering",
+      "D) Molecular docking against bacterial ribosomes followed by peptide cyclization for stabilization",
+      "E) Convolutional neural network classification performed only after wet-lab MIC testing",
+      "F) Variational autoencoder generation with manual curation based on physicochemical criteria"
+    ],
+    "answer": "B",
+    "explanation": {
+      "core_concept": "Hybrid generative–structure-aware pipeline",
+      "significance": "Coupling sequence creativity with immediate liability assessment prevents late-stage attrition and shortens discovery cycles.",
+      "abstract_support": "PMID 37676607 notes that generative models accelerate discovery but struggle with metabolism and safety. PMID 40459283 highlights the risk of unrealistic sequences and the need for toxicity filtering. PMID 39754551 introduces LLMs and GNNs plus structure-guided design as the next methodological step to address those deficits.",
+      "distractor_analysis": "A lacks 3-D liability checks described in 39754551. C ignores any in silico triage contradicting all three papers’ emphasis on AI filtering. D concerns small molecules, not the peptide-centric workflows described. E delays AI evaluation until after wet-lab work, counter to the cost-saving rationale. F relies on manual rules, not the structure-guided deep-learning solutions advocated in 39754551."
+    },
+    "domain": "AI pipeline design for AMP discovery",
+    "PMID": [
+      "37676607",
+      "40459283",
+      "39754551"
+    ]
+  },
+  {
+    "question": "What challenge most directly limits the effectiveness of Natural Language Processing in automated curation of herb–drug interaction evidence?",
+    "options": [
+      "A) Limited availability of well-annotated HDI datasets using standardized medical identifiers despite high demand for reliable evidence",
+      "B) Excessive uniformity in HDI records that complicates algorithmic interpretation",
+      "C) Regulatory restrictions on employing machine learning for biomedical literature mining",
+      "D) Widespread use of standardized HDI risk scores that reduces data variability for NLP analysis",
+      "E) Uniform agreement among pharmacists on HDI severity thresholds masking necessary data nuances",
+      "F) Dependence on the BABINE scoring method as a substitute for annotated datasets in automated extraction"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Data annotation bottleneck in AI-driven HDI extraction",
+      "significance": "Identifying this obstacle pinpoints the primary technical limitation impeding automated curation and decision support.",
+      "abstract_support": "PMID:34697080 explicitly mentions the ‘scarcity of these HDI data and the lack of well-established annotated datasets’ for NLP tasks. PMID:39537428 demonstrates pharmacists’ ‘information needs’ and difficulty navigating conflicting sources, underscoring demand for better data. PMID:39695590 shows that even with BABINE, expert iteration was required, indicating insufficient automated extraction.",
+      "distractor_analysis": "B contradicted by 34697080; databases are incomplete, not redundant. C, D, and E are unsupported across abstracts. F overstates BABINE’s capabilities; 39695590 still required expert review.",
+      "evolutionary_reasoning": "Database gaps noted (34697080) → end-user pressure for clarity (39537428) → manual expert dependence in BABINE development (39695590) together reveal annotated dataset scarcity, validating option A."
+    },
+    "domain": "AI/NLP for HDI",
+    "PMID": [
+      "34697080",
+      "39537428",
+      "39695590"
+    ]
+  },
+  {
+    "question": "Which converging technology best mitigates both the low expression and unintended liver targeting issues seen with IVT mRNA vaccines?",
+    "options": [
+      "A) Deep-learning-guided mRNA secondary-structure redesign coupled with receptor-targeted lipid nanoparticles",
+      "B) Passive diffusion delivery enhanced by increased injection volumes",
+      "C) Codon randomization paired with cholesterol-free lipid nanoparticle formulations",
+      "D) Integration of siRNA blockers aimed at reducing off-target protein synthesis",
+      "E) High-pressure microinjection directly into lymph nodes",
+      "F) Incorporation of bacterial CpG motifs within mRNA open-reading frames"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Simultaneous enhancement of potency and precision through AI and targeted delivery",
+      "significance": "Overcoming expression and biodistribution hurdles broadens therapeutic applicability.",
+      "abstract_support": "PMID:39601789 describes deep-learning tools for optimizing secondary structure to boost expression and delivery system design for organ selectivity. PMID:38263456 links nonspecific tropism to toxicity concerns. PMID:34433919 notes the need to improve mRNA delivery beyond liver bias.",
+      "distractor_analysis": "B fails to solve molecular tropism. C lacks evidence for expression gain. D introduces complexity without support. E is invasive and not referenced. F increases immunogenicity.",
+      "evolutionary_reasoning": "Recognition of challenges (34433919) and toxicity (38263456) leads to AI-enabled dual innovations (39601789)."
+    },
+    "domain": "AI-enabled delivery",
+    "PMID": [
+      "39601789",
+      "38263456",
+      "34433919"
+    ]
+  },
+  {
+    "question": "Which experimentally derived dataset is most beneficial for guiding AI-driven molecular generation aimed at improving blood-brain barrier penetration for CNS drugs?",
+    "options": [
+      "A) Nonequilibrium work values from lipid membrane pulling simulations quantifying membrane transit energetics",
+      "B) High-throughput cytotoxicity screens on peripheral cell lines",
+      "C) Minimum inhibitory concentration data from bacterial assays",
+      "D) Solubility profiles determined under highly acidic (pH 2) conditions",
+      "E) Chromatographic retention factors obtained using hydrophilic stationary phases",
+      "F) Rodent taste-aversion scores from behavioral preference studies"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Data selection for AI-driven BBB-permeant drug design",
+      "significance": "Energetic metrics linked to BBB passage refine generative models toward CNS-compatible chemotypes.",
+      "abstract_support": "PMID 38145409 highlights AI strategies requiring permeation-relevant descriptors. PMID 32469527 establishes nonequilibrium work as a quantitative correlate of logBB/logPS. PMID 35300371 emphasises complementary in-silico parameters enriching predictive models.",
+      "distractor_analysis": "B and C lack BBB relevance. D narrow pH solubility is peripheral. E hydrophilic retention omits membrane partitioning. F taste aversion unrelated to CNS permeability.",
+      "evolutionary_reasoning": "AI need (38145409) → mechanistic data source (32469527) → descriptor synergy (35300371)."
+    },
+    "domain": "AI in CNS drug discovery",
+    "PMID": [
+      "38145409",
+      "32469527",
+      "35300371"
+    ]
+  },
+  {
+    "question": "Which compound is a benzene-scaffold LEDGF/p75-site allosteric inhibitor with single-digit nanomolar potency that advanced to a Phase I trial and retained activity against HIV strains resistant to strand-transfer inhibitors?",
+    "options": [
+      "A) GSK3739936, a pyridine-based integrase allosteric inhibitor",
+      "B) Compound 1{4}, a novel integrase inhibitor with an alternative scaffold",
+      "C) BDM-2",
+      "D) Pyrazolopyrimidine 29, an integrase inhibitor from a distinct chemical series",
+      "E) Bictegravir, a catalytic-site integrase strand-transfer inhibitor",
+      "F) DHICA derivative 5, a dual-target integrase inhibitor with a different binding profile"
+    ],
+    "answer": "C",
+    "explanation": {
+      "core_concept": "Clinical translation of next-generation integrase-LEDGF allosteric inhibitors",
+      "significance": "Late-stage INLAIs offer options against INSTI-resistant HIV without antagonism to existing ARVs.",
+      "abstract_support": "PMID:37310224 reports BDM-2’s nanomolar potency, resistance profile, absence of antagonism with 16 ARVs, and Phase I status.  PMID:35235334 discusses GSK3739936 with toxicity-related discontinuation, and PMID:39332384 surveys emerging INLAIs, contrasting successful versus discontinued candidates.",
+      "distractor_analysis": "GSK3739936 (A) stopped pre-clinically.  Compound 1{4} (B) and pyrazolopyrimidine 29 (D) belong to different series with no Phase I data.  Bictegravir (E) is a catalytic-site INSTI, and DHICA 5 (F) is dual but not LEDGF-site AllINI.",
+      "evolutionary_reasoning": "After pyridine-based INLAIs faced toxicology hurdles (35235334), benzene scaffolds (37310224) progressed clinically, reflecting iterative scaffold refinement highlighted in reviews (39332384)."
+    },
+    "domain": "Clinical advancement of INLAIs",
+    "PMID": [
+      "37310224",
+      "35235334",
+      "39332384"
+    ]
+  },
+  {
+    "question": "In a hybrid pipeline combining generative AI with NISQ quantum processors for lead optimization, which quantum computation is best suited to achieve chemical accuracy without exceeding current resource limits?",
+    "options": [
+      "A) Fragment-level ground-state energy estimation via a variational quantum eigensolver",
+      "B) Fragment-level energy approximation using quantum annealing",
+      "C) Long-timescale molecular dynamics simulation of protein conformational shifts",
+      "D) Full ligand binding free-energy calculation using coupled-cluster methods",
+      "E) Prediction of patient-specific pharmacogenomic responses using quantum models",
+      "F) Virtual screening of extensive compound libraries through quantum phase estimation"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Hybrid quantum–AI lead-optimization strategy",
+      "significance": "Targeting fragment energies leverages quantum advantage without exceeding qubit budgets, closing an accuracy gap in early optimization.",
+      "abstract_support": "37331692 proposes quantum chemistry as an early practical application feeding generative AI; 39732935 demonstrates NISQ feasibility for ground-state energy estimation (OH+ test case); 38914031 emphasizes scaling fragment-level QM data via ML to larger chemical spaces.",
+      "distractor_analysis": "B and D require more qubits and longer coherence times than NISQ allows (40054764, 38914031). C and F are not documented as validated use cases in any abstract. E is a clinical genomics task outside the scope of the discussed quantum chemistry focus.",
+      "evolutionary_reasoning": "37331692 (conceptual integration) → 39732935 (technical validation on NISQ) → 38914031 (scaling fragment QM data with ML) collectively converge on fragment-energy calculations as the quantum step."
+    },
+    "domain": "Hybrid QC–AI workflows",
+    "PMID": [
+      "37331692",
+      "39732935",
+      "38914031"
+    ]
+  },
+  {
+    "question": "In a drug discovery workflow targeting selective covalent inhibitors of viral cysteine proteases while leveraging AI-driven compound enumeration, which step most effectively minimizes docking score inflation caused by mispositioned electrophilic warheads?",
+    "options": [
+      "A) Routing each generative batch through a reaction-aware covalent docking protocol followed by expert visual triage of the resulting poses",
+      "B) Implementing reverse docking across the human proteome using standard non-covalent scoring metrics",
+      "C) Conducting rigid-body, non-covalent docking against a single fixed protease conformation",
+      "D) Excluding electrophilic warheads during molecule generation to prevent covalent scoring artifacts",
+      "E) Ranking generated molecules solely by non-covalent scoring functions without subsequent visual validation",
+      "F) Filtering compounds based exclusively on calculated cLogP values before any structural evaluation"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Combining covalent docking with expert visual inspection inside a generative loop",
+      "significance": "Prevents false-positive ranking from mispositioned warheads while preserving the expansive search space of AI generation.",
+      "abstract_support": "Generative enumeration benefits from docking feedback (PMID:36372330). Covalent docking uniquely models bond formation and reaction-site geometry (PMID:33155894). Persistent docking inaccuracies necessitate visual inspection for pose validation (PMID:33617246).",
+      "distractor_analysis": "B lacks covalent scoring and does not address pose accuracy. C ignores receptor flexibility and covalent bonding. D forfeits the covalent mechanism sought. E omits both covalent scoring and human validation. F addresses lipophilicity, not covalent pose reliability.",
+      "evolutionary_reasoning": "36372330 proposes generative-docking synergy → 33155894 reveals need for covalent-specific scoring → 33617246 demonstrates visual inspection as a corrective step, together supporting the integrated procedure in option A."
+    },
+    "domain": "AI-augmented covalent inhibitor design",
+    "PMID": [
+      "36372330",
+      "33155894",
+      "33617246"
+    ]
+  },
+  {
+    "question": "Which methodological feature explains why the multimodal biochemical language model (PMID: 38778425) recovers potent ligands in a zero-shot setting better than both the hybrid PI3Kγ model (PMID: 36611029) and the unconditional analogue-series transformer (PMID: 39546801)?",
+    "options": [
+      "A) Direct conditioning on target-protein sequence embeddings during compound generation",
+      "B) Use of a multisite structure–activity relationship matrix for guiding analogue expansion",
+      "C) Pre-training on an extensive patent dataset to enhance scaffold-hopping capabilities",
+      "D) Application of reinforcement learning with an explicit pIC50 reward signal",
+      "E) Incorporation of a multitask named-entity recognition module for target annotation",
+      "F) Independent generation of substituent fragments without linking to core structures"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Sequence-conditioned de-novo design",
+      "significance": "Linking protein information directly to chemical generation enables activity prediction for data-poor targets.",
+      "abstract_support": "PMID 38778425 describes a dual-component model translating protein embeddings and desired potency into structures; PMID 36611029 pairs generation with a classifier but still requires known ligands; PMID 39546801 uses an unconditional CLM, lacking any protein context.",
+      "distractor_analysis": "B reflects the SAR-matrix strategy (39546801) rather than zero-shot activity. C pertains to the patent-pretrained classifier in 36611029 but does not confer sequence awareness. D is absent from the cited abstracts. E is characteristic of text-mining workflows (40298230) yet irrelevant to generation. F contradicts the core-substituent integration needed for potency in 39546801.",
+      "evolutionary_reasoning": "Earlier unconditional CLMs (39546801) lacked biological context. Hybrid models (36611029) introduced post-generation filtering but remained ligand-dependent. The newer multimodal approach (38778425) advanced the field by embedding protein information directly, enabling zero-shot potency capture."
+    },
+    "domain": "AI-driven molecular generation",
+    "PMID": [
+      "38778425",
+      "36611029",
+      "39546801"
+    ]
+  },
+  {
+    "question": "Which new dataset in PharmacoDB 2.0 illustrates its scalability by incorporating high-throughput screening of compound mixtures, a method not used in conventional population-specific pharmacogenomic approaches?",
+    "options": [
+      "A) Profiling Relative Inhibition Simultaneously in Mixtures (PRISM)",
+      "B) Updated Genentech Cell Line Screening Initiative (gCSI)",
+      "C) Reprocessed NCI-60 growth inhibition curves",
+      "D) Targeted resequencing panel for CYP2D6/CYP2C19 variants",
+      "E) Whole-genome pharmacogenomic survey from a national biobank",
+      "F) HLA allele frequency database for CPIC guideline integration"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Expansion of high-throughput screening datasets within FAIR pipelines",
+      "significance": "Inclusion of mixture-based screens widens pharmacogenomic coverage of polypharmacy contexts.",
+      "abstract_support": {
+        "34850112": "PharmacoDB 2.0 newly integrates the PRISM dataset and stresses FAIR data pipelines via ORCESTRA and PharmacoDI.",
+        "33820459": "Notes that clinical PGx pipelines focus on individual germline variants rather than cell-line mixture screens.",
+        "33892143": "Emphasizes challenges in translating population variant data, underscoring the contrast with cell-line-centric resources."
+      },
+      "distractor_analysis": "B and C are traditional single-agent datasets already present; D and E belong to germline PGx workflows, not PharmacoDB; F relates to HLA, absent from PharmacoDB 2.0.",
+      "evolutionary_reasoning": "33892143 and 33820459 delineate germline variant pipelines → 34850112 broadens scope with PRISM mixtures, highlighting option A’s scalability aspect."
+    },
+    "domain": "FAIR data pipelines in pharmacogenomics",
+    "PMID": [
+      "34850112",
+      "33820459",
+      "33892143"
+    ]
+  },
+  {
+    "question": "Which workflow best achieves the dual aims of quantifying chemical-space novelty and providing a mechanistic explanation of property optimization by integrating latent-space organization, reinforcement learning, and network interpretability?",
+    "options": [
+      "A) Coupling a DrugEx multi-objective reinforcement-learning generator to a pretrained, property-aligned variational autoencoder for novelty scoring, followed by layer-wise relevance propagation of the encoder.",
+      "B) Employing DESMILES exclusively, ranking generated molecules solely by docking scores against one target.",
+      "C) Using a fragment-based library enumeration method combined with filtering based on Bemis–Murcko scaffold counts.",
+      "D) Implementing DrugEx with random SMILES augmentation while omitting latent-space projection and interpretability analysis.",
+      "E) Leveraging DESMILES latent vectors clustered via k-means to estimate diversity without employing reinforcement learning.",
+      "F) Developing a new variational autoencoder and selecting molecules primarily by Tanimoto similarity to reference ligands."
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Integration of reinforcement learning, property-aware latent spaces, and interpretability for rigorous novelty assessment.",
+      "significance": "Combining these three elements directly addresses widely cited deficits in evaluating generative models while retaining mechanistic transparency for medicinal chemists.",
+      "abstract_support": "PMID:34918594 highlights the need for novelty metrics and notes that VAE latent neighborhoods encode property similarity. PMID:37272707 details how DrugEx employs multi-objective reinforcement learning to produce new molecules. PMID:32697578 demonstrates that internal layer visualization can elucidate how a deep model optimizes molecular properties.",
+      "distractor_analysis": "B lacks reinforcement learning and novelty quantification. C is fragment-based and not mentioned in any abstract. D omits interpretability and latent novelty metrics. E removes RL and the review’s recommended property alignment. F ignores RL and interpretability, measuring novelty only by structural similarity, not latent property space.",
+      "evolutionary_reasoning": "Review-identified shortcomings (34918594) motivate augmenting DrugEx generation (37272707) with a property-aligned VAE, while DESMILES interpretability methods (32697578) supply the explanatory component."
+    },
+    "domain": "AI-driven chemical-space exploration",
+    "PMID": [
+      "34918594",
+      "37272707",
+      "32697578"
+    ]
+  },
+  {
+    "question": "Which computational approach was pivotal in significantly boosting hit identification efficiency for P2 purinoceptor antagonists in recent drug discovery studies?",
+    "options": [
+      "A) Developing a 3D pharmacophore model based on three established antagonists",
+      "B) Implementation of deep-learning sequence analysis (HoTS) to predict novel ligand-binding regions",
+      "C) Applying a consensus of four docking scoring functions to rank candidate compounds",
+      "D) Using the Membrane Potential Red assay as an early experimental filter before synthesis",
+      "E) Constructing a homology model of the human receptor trimer based on rodent templates",
+      "F) Employing retrosynthetic pathway enumeration during virtual screening"
+    ],
+    "answer": "B",
+    "explanation": {
+      "core_concept": "AI-driven binding-site prediction for enhanced virtual screening",
+      "significance": "Pinpointing new interaction cavities with deep learning offers a strategic leap over conventional pharmacophore-centric workflows, markedly improving hit rates.",
+      "abstract_support": "Traditional ligand/structure-based screens (pharmacophore + docking) identified six initial P2X7 hits (PMID:40566963). The HoTS model applied to P2X3 predicted a novel pocket and yielded sixteen unique low-µM antagonists with a ten-fold higher hit rate (PMID:35849939). Structural design reviews emphasize the need for innovative computational avenues owing to past attrition (PMID:36893624).",
+      "distractor_analysis": "A) Reflects earlier, less efficient methodology. C) Consensus docking alone did not boost hit rate by an order of magnitude. D) The assay is experimental, not computational. E) Homology models pre-dated the AI improvement. F) Retrosynthetic planning is not addressed in the abstracts.",
+      "evolutionary_reasoning": "PMID:36893624 (historical context) → PMID:40566963 (conventional VS productivity) → PMID:35849939 (AI step change in screening efficiency)."
+    },
+    "domain": "Computational drug discovery – AI vs traditional screening",
+    "PMID": [
+      "36893624",
+      "40566963",
+      "35849939"
+    ]
+  },
+  {
+    "question": "Which statement best summarizes the balance between AlphaFold-derived models and experimental cryo-EM data for enhancing ML-based ligand predictions in GLP-1R drug discovery?",
+    "options": [
+      "A) AlphaFold models accurately resolve binding-pocket side chains, making additional experimental structural data unnecessary for docking studies.",
+      "B) Rapid whole-protein prediction by AlphaFold does not guarantee side-chain precision, so curated cryo-EM data are still required to annotate binding modes and improve ML Q² values for GLP-1R ligands.",
+      "C) Experimental NMR data offer superior backbone details compared to AlphaFold models, thereby challenging their use in docking analyses for class-B GPCRs.",
+      "D) Docking studies based solely on AlphaFold models consistently outperform ML algorithms in predicting ligand interactions for GLP-1R.",
+      "E) AlphaFold predictions fully capture essential binding site features, eliminating the need to maintain and annotate ligand datasets in class-B GPCR drug discovery.",
+      "F) Despite reliably predicting overall folds, AlphaFold models require significant integration with experimental data due to inherent side-chain inaccuracies."
+    ],
+    "answer": "B",
+    "explanation": {
+      "core_concept": "Limits of purely computational structures in ligand docking and the continued need for experimental guidance",
+      "significance": "Recognising where AlphaFold excels and where it falls short ensures realistic deployment of structure-based AI pipelines.",
+      "abstract_support": "PMID:40149959 notes that AlphaFold predicts overall folds well but side-chain accuracy is insufficient for reliable docking; PMID:33920024 demonstrates that cryo-EM-guided binding-site annotation significantly increases ML predictive power (Q² >0.63 for GLP-1R). PMID:37161878 underscores that successful AI applications often integrate multiple data types rather than relying on a single tool.",
+      "distractor_analysis": "A contradicts 40149959. C overstates AlphaFold limitations relative to NMR. D lacks support; 38755312 used sequence-based ML, not docking, for potency gains. E conflicts with 33920024’s annotation requirement. F is not reported in any abstract.",
+      "evolutionary_reasoning": "Early enthusiasm for AlphaFold structural predictions (40149959) → realisation that side-chain inaccuracies limit direct docking utility → integration of experimental cryo-EM data to annotate ligand binding sites, boosting ML accuracy (33920024)."
+    },
+    "domain": "Structure-based AI strategies for GPCRs",
+    "PMID": [
+      "40149959",
+      "33920024",
+      "37161878"
+    ]
+  },
+  {
+    "question": "AlphaFold-Multimer benchmarking on chemokine-receptor complexes revealed that residue-level confidence metrics effectively pinpoint accurately modeled regions. Which predictive capability showed this correlation?",
+    "options": [
+      "A) Predicting intramembrane lipid interactions",
+      "B) Determining the orientation of β-arrestin relative to the receptor",
+      "C) Positioning of receptor N-terminal residues",
+      "D) Predicting the rotation of TM6 during G-protein engagement",
+      "E) Assessing the conformation of the extracellular ECL3 loop",
+      "F) Evaluating the protonation state of the conserved DRY motif"
+    ],
+    "answer": "C",
+    "explanation": {
+      "core_concept": "Confidence-guided accuracy in N-terminal modeling",
+      "significance": "Reliable placement of N-terminal residues is critical for mapping chemokine binding epitopes, directly informing ligand design strategies.",
+      "abstract_support": "PMID:38809680 emphasizes that confidence scores correlate with correct N-terminal residue positioning. PMID:37212620 underscores the functional importance of N-terminal interactions in receptor activation. PMID:32145914 points out the regulatory significance of these extracellular segments within the receptor’s dynamic landscape.",
+      "distractor_analysis": "A, D, and F involve internal or intracellular features not linked to the reported confidence metric correlation. B and E pertain to downstream signaling or less documented loop behavior, absent from the AlphaFold benchmarking discussion.",
+      "evolutionary_reasoning": "Experimental structural expansion (37212620) defined critical N-terminal roles. System complexity (32145914) underscored the need for accurate extracellular modeling. Benchmarking outcomes (38809680) then connected model confidence with successful N-terminus placement, enhancing predictive reliability."
+    },
+    "domain": "Predictive accuracy metrics in AI-based modeling",
+    "PMID": [
+      "37212620",
+      "38809680",
+      "32145914"
+    ]
+  },
+  {
+    "question": "Which method decomposes molecular graphs into variable-size substructures, propagates their features through multilayer networks, and applies both drug–cell line and substructure-pair attention mechanisms?",
+    "options": [
+      "A) PermuteDDS with permutable drug and cell line feature fusion",
+      "B) DFFNDDS employing dual-level (bit-wise and vector-wise) feature fusion",
+      "C) SDDSynergy combining multilayer substructure information-passing with drug–cell line and substructure-pair attention mechanisms",
+      "D) CFSSynergy integrating transformer-based drug embeddings with global similarity features",
+      "E) PermuteDDS enhanced with substructure permutation in its feature fusion module",
+      "F) DFFNDDS augmented with Node2Vec-based similarity integration before feature fusion"
+    ],
+    "answer": "C",
+    "explanation": {
+      "core_concept": "Substructure-centric interpretability in synergy prediction",
+      "significance": "Pinpoints the sole framework offering granular mechanistic insights via attention across both drug–cell and inter-drug substructure interactions.",
+      "abstract_support": "SDDSynergy extracts substructures of differing sizes directly from molecular graphs, passes information through multilayer networks, and applies drug–cell and substructure-pair attention (PMID:38687366). PermuteDDS (38622663) and DFFNDDS (36927504) focus on high-level fusion without graph decomposition. CFSSynergy (38514966) emphasizes similarity integration.",
+      "distractor_analysis": "A & E mistakenly assign substructure decomposition to PermuteDDS. B describes only dual fusion. D lacks any substructure processing. F fabricates Node2Vec drug similarity for DFFNDDS.",
+      "evolutionary_reasoning": "Following fusion-heavy advances (38622663 → 36927504), SDDSynergy (38687366) pivots toward interpretability by embedding substructure-specific reasoning within the predictive pipeline."
+    },
+    "domain": "Explainable AI in drug synergy",
+    "PMID": [
+      "38687366",
+      "38622663",
+      "36927504"
+    ]
+  },
+  {
+    "question": "Across the three abstracts, which AI-enabled task is consistently mentioned as bridging pre-clinical drug discovery with clinical implementation?",
+    "options": [
+      "A) Predictive toxicology modeling",
+      "B) Remote patient monitoring",
+      "C) Clinical trial design and real-time analytics",
+      "D) Nanotechnology-guided imaging",
+      "E) Patient adherence tracking systems",
+      "F) Ethical decision-support algorithms"
+    ],
+    "answer": "C",
+    "explanation": {
+      "core_concept": "End-to-end utilisation of AI in clinical trial operations",
+      "significance": "Positioning AI within both discovery and clinical phases maximises translational efficiency and regulatory preparedness.",
+      "abstract_support": "PMID:36220360—AI assists in “clinical trial design, execution and real-time analysis.”  PMCID:34513616—AI is being implemented in “clinical trials.”  PMID:38443632—AI applications extend to “clinical studies,” implying trial environments within a regulatory context.",
+      "distractor_analysis": "A) Toxicology appears only in 36220360.  B) Remote monitoring is limited to 34513616.  D) Nanotechnology is discussed only by 34513616.  E) Adherence tracking surfaces in 36220360 alone.  F) Ethical algorithmic aids are highlighted mainly in 38443632.",
+      "evolutionary_reasoning": "Initial feasibility of AI-driven trial analytics (36220360) gains broader sector endorsement (34513616) and ultimately demands governance within global regulatory frameworks (38443632)."
+    },
+    "domain": "AI-mediated clinical development",
+    "PMID": [
+      "36220360",
+      "34513616",
+      "38443632"
+    ]
+  },
+  {
+    "question": "Which phase in the drug development process, highlighted for its AI contributions, is notably absent from regulatory use-case discussions, potentially indicating a gap in oversight?",
+    "options": [
+      "A) Utilizing deep learning for therapeutic target identification",
+      "B) Employing AI for biomarker discovery",
+      "C) Predicting toxicity of chemical entities",
+      "D) Designing drug delivery systems with AI support",
+      "E) Applying AI for remote patient monitoring",
+      "F) Automating nanoparticle synthesis through AI"
+    ],
+    "answer": "C",
+    "explanation": {
+      "core_concept": "Early in-silico toxicology for risk mitigation",
+      "significance": "Failing to align toxicity-prediction tools with regulatory attention risks late-stage attrition despite technical maturity.",
+      "abstract_support": "PMID:36220360—lists AI for “predicting toxicity and picking up leads.”  PMID:34513616—covers drug discovery broadly but not toxicity prediction.  PMID:38443632—catalogues AI uses yet does not mention toxicity modelling, underlining regulatory silence on this capability.",
+      "distractor_analysis": "A & B appear in multiple abstracts.  D lacks mention in 34513616 and 38443632.  E and F do not appear in 36220360, making them implausible gaps.",
+      "evolutionary_reasoning": "Technical progress (36220360) precedes sector-wide adoption (34513616) but awaits explicit regulatory mapping (38443632), revealing an actionable oversight."
+    },
+    "domain": "Regulatory gaps in AI toxicology",
+    "PMID": [
+      "36220360",
+      "34513616",
+      "38443632"
+    ]
+  },
+  {
+    "question": "Which AI-driven healthcare function is highlighted as central to disease management in technology-focused studies and also integrated within ethical and regulatory frameworks in policy analyses?",
+    "options": [
+      "A) Diagnostic decision support",
+      "B) Automated molecular synthesis",
+      "C) Pharmaceutical supply-chain analytics",
+      "D) Nanotechnology-based imaging analysis",
+      "E) Algorithm-driven lead identification",
+      "F) Quantum computing for molecular screening"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "AI-assisted diagnostics at the intersection of clinical utility and oversight",
+      "significance": "Diagnostic AI directly affects patient outcomes, necessitating ethical scrutiny and regulatory supervision.",
+      "abstract_support": "PMID:36220360—AI contributes to “diagnosis.”  PMID:34513616—AI is used for “diagnosis of diseases.”  PMID:38443632—diagnostic applications appear under broader healthcare uses subject to regulatory frameworks and ethical implications.",
+      "distractor_analysis": "B & E focus on chemistry, not disease management.  C and D are not explicitly mentioned across all three abstracts.  F is absent from the abstracts entirely.",
+      "evolutionary_reasoning": "Operational deployments (36220360 → 34513616) prompt governance discourses (38443632), illustrating how clinical stakes elevate the need for regulation."
+    },
+    "domain": "Diagnostic AI governance",
+    "PMID": [
+      "36220360",
+      "34513616",
+      "38443632"
+    ]
+  },
+  {
+    "question": "Which AI capability enhances patient safety through continuous monitoring and has attracted regulatory focus due to its role in remote patient monitoring?",
+    "options": [
+      "A) Real-time pharmacovigilance surveillance",
+      "B) Structure-based virtual screening",
+      "C) In-silico metabolic stability prediction",
+      "D) Quantum chemical property estimation",
+      "E) Automated warehousing logistics",
+      "F) Genomic data compression"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Continuous safety monitoring through AI",
+      "significance": "Real-time pharmacovigilance synergises patient monitoring with rapid detection of adverse events, crucial for post-marketing safety.",
+      "abstract_support": "PMID:36220360—notes AI enables “better monitoring of safety.”  PMID:34513616—highlights “remote patient monitoring,” an essential data stream for safety analytics.  PMID:38443632—emphasises regulatory challenges to ensure AI technologies are adopted “safely and effectively.”",
+      "distractor_analysis": "B and C pertain to pre-clinical modelling.  D, E, and F lack mention in any abstract for safety applications, making them unsupported.",
+      "evolutionary_reasoning": "Technological safety monitoring (36220360) gains clinical data channels (34513616) and consequently demands regulatory structures (38443632)."
+    },
+    "domain": "AI-enabled pharmacovigilance",
+    "PMID": [
+      "36220360",
+      "34513616",
+      "38443632"
+    ]
+  },
+  {
+    "question": "When designing a training dataset for CNS-targeted generative AI to identify GluCl activators, which combination of molecular attributes and experimental metadata is most critical?",
+    "options": [
+      "A) Documented BBB permeability, verified GluCl agonism, and pharmacodynamic readouts from neural network assays",
+      "B) Demonstrated in vitro safety profile with hERG channel data, high aqueous solubility, and rodent plasma protein binding",
+      "C) Presence of tertiary amine groups, reliable photostability metrics, and characterized renal clearance rates",
+      "D) Molecular weight above 700 Da, low LogP values, and established gastrointestinal absorption profiles",
+      "E) Limited aromatic ring content, fixed ester linkages, and available topical formulation data",
+      "F) Measured volatile organic properties, dermal LD50 values, and quantified octanol-air partition coefficients"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Data features driving AI prediction accuracy for CNS ligand discovery",
+      "significance": "Ensures the generative model internalizes both permeability and target-engagement constraints critical for GluCl-centric therapeutics.",
+      "abstract_support": "40080541 defines CNS drug-like properties including BBB penetration; 32776366 identifies the need for GluCl-specific agonism; 33342585 recommends integrating functional assay data such as network electrophysiology into AI pipelines.",
+      "distractor_analysis": "B hERG focus tangential and lacks target data; C structural rules too restrictive and unlinked to BBB; D high molecular weight and negative LogP counter BBB requirements; E absence of aromatics conflicts with many CNS scaffolds; F vapor pressure and dermal toxicity irrelevant to CNS penetration.",
+      "evolutionary_reasoning": "Target requirement (32776366) sets agonism criterion → CNS property definition (40080541) adds BBB permeability → Translational assay emphasis (33342585) incorporates functional pharmacodynamic metadata."
+    },
+    "domain": "Dataset design for generative AI",
+    "PMID": [
+      "40080541",
+      "32776366",
+      "33342585"
+    ]
+  },
+  {
+    "question": "Across the provided abstracts, which limitation of retinal organoids has prompted the adoption of AI-driven high-content imaging analytics?",
+    "options": [
+      "A) Limited electrophysiological maturity in inner retinal layers",
+      "B) High morphological variability and complex multilayered architecture complicating manual phenotypic readouts",
+      "C) Absence of endogenous microglial cells leading to inconsistent cytokine profiles",
+      "D) Off-target effects during CRISPR-Cas-mediated organoid generation",
+      "E) Photoreceptor subtype mis-specification linked to vitamin A metabolism disruptions",
+      "F) Elevated costs associated with recombinant growth factor use in differentiation"
+    ],
+    "answer": "B",
+    "explanation": {
+      "core_concept": "Morphological variance necessitating automated phenotypic quantification",
+      "significance": "Pinpoints the technical driver for integrating AI analytics, guiding resource prioritization.",
+      "abstract_support": "PMID:38079086 envisions AI to optimize screening; PMID:37608005 lists AI among new tools aimed at overcoming current organoid shortcomings; PMID:31059378 highlights throughput constraints exacerbated by complex physiological responses.",
+      "distractor_analysis": "A, C, D, E, and F are either not universally emphasized or not directly tied to the AI solution within the abstracts.",
+      "evolutionary_reasoning": "31059378 identifies the manual analysis bottleneck → 38079086 proposes AI-enabled imaging → 37608005 reiterates AI as part of the solution set aimed at variability and data-rich outputs."
+    },
+    "domain": "Analytical bottlenecks and AI remedies",
+    "PMID": [
+      "31059378",
+      "38079086",
+      "37608005"
+    ]
+  },
+  {
+    "question": "Which analytical method provides atomic-level visualization of cytochrome P450-catalyzed transformations, effectively linking prodrug activation mechanisms with the safety assessment of reactive metabolites?",
+    "options": [
+      "A) High-resolution LC-MS profiling without detailed structural modeling",
+      "B) Quantum-chemical calculations combined with molecular docking",
+      "C) Population pharmacokinetic modeling of drug concentration–time profiles",
+      "D) Whole-genome CRISPR screening in hepatic cellular models",
+      "E) Radioscintigraphic imaging of radiolabeled metabolites in vivo",
+      "F) Screening using cDNA expression libraries in bacterial systems"
+    ],
+    "answer": "B",
+    "explanation": {
+      "core_concept": "Computational elucidation of P450 reaction mechanisms at atomic resolution.",
+      "significance": "Provides a predictive platform for both beneficial prodrug conversion and potentially toxic metabolite formation.",
+      "abstract_support": "• 37041085: Mentions proactive targeting of metabolizing enzymes for prodrug activation.\n• 32645272: Details quantum-chemical methods and molecular docking that deliver 3-D atomic-level insights into P450 mechanisms.\n• 39054072: Underscores persistent challenges in predicting drug–drug interactions and reactive metabolites, highlighting need for mechanistic clarity.",
+      "distractor_analysis": "A) LC-MS profiles metabolites but lacks intrinsic structural mechanistic detail.\nC) Population PK modeling describes concentration–time trends, not atomistic reactions.\nD) CRISPR screens uncover gene effects, not catalytic mechanisms.\nE) Radioscintigraphy offers spatial distribution, not electronic-level reactions.\nF) Bacterial expression libraries facilitate screening but not atom-level visualization.",
+      "evolutionary_reasoning": "37041085 → frames desire to harness/understand metabolic activation; 32645272 → supplies the requisite atomistic tools; 39054072 → points to the unmet need these tools address, confirming option B."
+    },
+    "domain": "Mechanistic computational toxicology",
+    "PMID": [
+      "37041085",
+      "32645272",
+      "39054072"
+    ]
+  },
+  {
+    "question": "Which data-integration approach best combines aldehyde oxidase isoform diversity, machine-learning substrate prediction, and structure–activity relationship analysis for chemotype prioritization in lead optimization?",
+    "options": [
+      "A) Develop a quantitative structure–activity model using only AOX1 turnover rates from humanized mice.",
+      "B) Apply atom-level and molecule-level descriptors with an improved ML AO substrate predictor, validate predicted metabolic sites using SAR rules from in silico reviews, and interpret outputs considering isoform variations (e.g., AOX3 and AOX4).",
+      "C) Rely on microsomal clearance data correlated with AOX isoform expression in rats for in silico ranking.",
+      "D) Calibrate a linear free-energy relationship using physicochemical parameters (pKa and logP) from in vitro measurements.",
+      "E) Utilize docking scores against xanthine oxidase to approximate aldehyde oxidase substrate liability.",
+      "F) Estimate substrate turnover by calculating the thermodynamic stability of the molybdenum cofactor."
+    ],
+    "answer": "B",
+    "explanation": {
+      "core_concept": "Multifactorial in silico triage incorporating isoform biology and SAR rules",
+      "significance": "Integrating mechanistic diversity and predictive analytics enables early identification of high-risk chemotypes, conserving resources.",
+      "abstract_support": "The improved ML predictor using atom- and molecule-level features is described in PMID:32191458. Isoform heterogeneity across species, including AOX3 and AOX4, is stressed in PMID:36369949. Comprehensive SAR and in silico modulation strategies are reviewed in PMID:34119831.",
+      "distractor_analysis": "A) Ignores isoforms beyond AOX1 and omits SAR layers. C) Rat microsomal data poorly translate due to isoform mismatch (36369949). D) Simple physicochemical correlations lack validated predictive power (34119831). E) Xanthine oxidase differs structurally and functionally from AO. F) Cofactor stability alone does not account for substrate specificity.",
+      "evolutionary_reasoning": "A shift from single-parameter models toward multivariate ML (32191458) is reinforced by the recognition of isoform complexity (36369949) and enriched with SAR frameworks (34119831), collectively supporting option B."
+    },
+    "domain": "Early-stage computational triage for AO liability",
+    "PMID": [
+      "32191458",
+      "36369949",
+      "34119831"
+    ]
+  },
+  {
+    "question": "Why is it crucial to combine limited in vitro experiments with computational ADMET workflows in early drug discovery?",
+    "options": [
+      "A) Laboratory-specific conditions can markedly influence endpoints such as HLM clearance, necessitating periodic model recalibration.",
+      "B) In silico methods generally provide robust lipophilicity predictions, reducing the need for additional laboratory measurements.",
+      "C) Many open-access platforms incorporate reliable P-gp substrate prediction tools, lessening dependence on in vitro assays.",
+      "D) Integrated approaches are primarily aimed at reducing rather than completely eliminating animal studies in later stages.",
+      "E) Commercial global models exhibit variable performance in metabolic stability predictions rather than universally underpredicting for all chemical classes.",
+      "F) Neural-network models are typically refined using extensive in vitro data and do not require in vivo pharmacokinetic parameters to achieve convergence."
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Assay context dependence in ADME modelling",
+      "significance": "Recognises that experimental heterogeneity impacts model validity, guiding resource allocation toward iterative validation.",
+      "abstract_support": "PMID:34750195 attributes improved predictions to matching laboratory conditions; PMID:34225615 calls for combined in silico/in vitro strategies; PMID:32735147 recommends comparing tools and validating with data.",
+      "distractor_analysis": "B conflicts with 34750195 showing good LogD R²; C contradicted by 34750195 which evaluates a P-gp module; D overstated and not supported by any abstract; E overgeneralises beyond Medivir dataset; F no requirement for in vivo data is stated.",
+      "evolutionary_reasoning": "Specific lab-condition effect observed (34750195) → general principle articulated (34225615) → methodological guideline (32735147) solidifies answer.",
+      "abstract_support_PMIDs": [
+        "34750195",
+        "34225615",
+        "32735147"
+      ]
+    },
+    "domain": "Experimental–computational integration",
+    "PMID": [
+      "34750195",
+      "34225615",
+      "32735147"
+    ]
+  },
+  {
+    "question": "Which statement best reflects the observed variability of outputs generated by large language models in pharmacometric tasks?",
+    "options": [
+      "A) ChatGPT 4.0-produced NONMEM control stream codes were highly reproducible regardless of temperature variations.",
+      "B) Claude 3.5 Sonnet exhibited modest variability in generating model structure diagrams across replicate prompts.",
+      "C) Gemini Ultra 1.0 consistently generated error-free simulations for complex PK/PD models.",
+      "D) Claude 3.5 Sonnet’s parameter table outputs varied considerably across different NONMEM outputs.",
+      "E) ChatGPT 4.0 simulation outputs demonstrated minimal limitations when handling complex PK/PD models.",
+      "F) Gemini Ultra 1.0 produced reproducible code ready for execution without needing manual edits."
+    ],
+    "answer": "B",
+    "explanation": {
+      "core_concept": "Output reproducibility and variability among LLMs",
+      "significance": "Understanding variability is essential for standard operating procedures in pharmacometrics, where reproducibility underpins regulatory credibility.",
+      "abstract_support": "Claude showed modest variability in structure-diagram outputs (PMID:40464844). ChatGPT and Gemini produced non-reproducible code with persistent errors (PMID:38656706), prompting further concern (PMID:38795226).",
+      "distractor_analysis": "A & F) Contradicted by reported non-reproducibility and errors (38656706). C) No evidence of uniformly successful Gemini simulations. D) Parameter tables from Claude were consistently accurate (40464844). E) ChatGPT had limitations with complex models (40464844).",
+      "evolutionary_reasoning": "Initial benchmarking (38656706) exposed reproducibility issues; commentary (38795226) underscored these weaknesses, and later experimentation (40464844) provided nuanced insight—high fidelity in tables but modest variability in diagrams for Claude."
+    },
+    "domain": "Reproducibility in computational pharmacometrics",
+    "PMID": [
+      "40464844",
+      "38656706",
+      "38795226"
+    ]
+  },
+  {
+    "question": "Which key aspect of the Cov_FB3D protocol most effectively accelerates the identification of covalent inhibitors compared to traditional electrophile-first phenotypic screening?",
+    "options": [
+      "A) Relying on pre-enriched macrocyclic libraries with built-in warheads",
+      "B) Simultaneous MM/QM scoring that evaluates both non-covalent interactions and covalent bond formation during fragment assembly",
+      "C) Using in-cell chemoproteomic profiling prior to computational ranking of fragments",
+      "D) Employing splice-switching peptide vectors for targeted delivery of reactive fragments",
+      "E) Emphasizing pro-drug masking strategies to moderate electrophile reactivity",
+      "F) Incorporating automatic photoreactive cross-linker insertion for time-resolved binding analysis"
+    ],
+    "answer": "B",
+    "explanation": {
+      "core_concept": "Hybrid MM/QM evaluation within in-silico fragment assembly for covalent design",
+      "significance": "Allows accurate ranking of candidate molecules without extensive experimental screening",
+      "abstract_support": "Cov_FB3D protocol describes BA-SAMP strategy combining non-covalent X-Score (MM) with PM7 covalent candidate score (QM) (PMID:32233478). Review of covalent drug advances contrasts rational design tools with earlier electrophile-first screens exemplified by KRAS(G12C) discovery (PMID:36008483). Computational/biophysical method article underscores importance of accurate chemistry modeling for covalent inhibitors (PMID:37609777).",
+      "distractor_analysis": "A macrocyclic libraries not central. C chemoproteomics is subsequent validation, not core feature. D, E, F are unrelated to Cov_FB3D workflow.",
+      "evolutionary_reasoning": "Initial electrophile screens (36008483) lacked bond-formation modeling; Cov_FB3D’s MM/QM fusion (32233478) addresses this, aligning with computational chemistry trends (37609777)."
+    },
+    "domain": "Covalent design computational tools",
+    "PMID": [
+      "32233478",
+      "36008483",
+      "37609777"
+    ]
+  },
+  {
+    "question": "In a structure-based virtual screening workflow for a 1.7 billion compound library, which procedure best addresses limitations by combining machine-learning with iterative experimental validation?",
+    "options": [
+      "A) Rescore all docking poses using ML, then publish the top 20 hits without further assays",
+      "B) Train an ML model on existing bioactivity data, rescore docking poses, select about 300 candidates, validate them biochemically, and iteratively retrain the model",
+      "C) Manually inspect the top 50 docking poses without integrating ML rescoring",
+      "D) Prioritize compounds solely based on ML-predicted ADME properties before docking and skip experimental validation",
+      "E) Cluster compounds using Tanimoto similarity and select one representative per cluster without additional testing",
+      "F) Randomly sample 30 compounds regardless of docking or ML scores for testing"
+    ],
+    "answer": "B",
+    "explanation": {
+      "core_concept": "Iterative ML-enhanced virtual screening with proportional wet-lab feedback",
+      "significance": "Combines computational efficiency with sufficient experimental breadth to reduce false positives.",
+      "abstract_support": "PMID:39862145 emphasised integrating biological data with ML for higher success. PMID:39753705 indicated that testing several hundred compounds was necessary for hit-rate convergence. PMID:32011879 warned that opportunities and limitations of VS are often misunderstood, advocating for iterative improvement.",
+      "distractor_analysis": "A overlooks the experimental validation gap (39862145). C and E ignore ML integration despite its documented value (39862145). D misorders workflow importance. F fails to leverage scoring or ML, risking low hit-rate (39753705).",
+      "evolutionary_reasoning": "Large-scale docking benefits (39753705) are refined through ML feedback loops (39862145), addressing earlier misapplications (32011879)."
+    },
+    "domain": "Hybrid computational-experimental workflows",
+    "PMID": [
+      "39862145",
+      "39753705",
+      "32011879"
+    ]
+  },
+  {
+    "question": "Based on recent structural biology advances, which statement best explains the contrasting computational approaches used in discovering D3 versus D4 dopamine receptor ligands?",
+    "options": [
+      "A) Availability of high-resolution D4R crystal structures now permits targeted conformational locking strategies, whereas comparable structural data for D3R remain limited",
+      "B) Both receptors lack sufficient high-resolution crystallographic data, leading researchers to rely on homology models for ligand discovery",
+      "C) D3R benefits from several agonist-bound crystal structures, unlike D4R, which is predominantly represented by inactive-state models",
+      "D) Structural insights for D4R mainly derive from NMR studies, while D3R research has largely depended on crystallographic data",
+      "E) Virtual screening outcomes appear largely independent of receptor structure quality, thereby minimizing differences between D3R and D4R",
+      "F) Computational design is more challenging for D4R due to difficulties modeling its intracellular loops, a problem not encountered with D3R"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Structural data availability as a driver of computeraided drug design feasibility",
+      "significance": "Knowing which receptor has resolved structures dictates where computational accuracy can more effectively guide medicinal chemistry.",
+      "abstract_support": "PMID:33422983 detailed crystal structures of D4R with nemonapride and L-745,870, offering templates for ligand design. PMID:35235753 noted that limited knowledge of D3R structure hampers computational support, anticipating improvement as structures emerge. PMID:32342685, despite potent D3R agonist discovery, did not report use of receptor crystal structures, consistent with their absence during that period.",
+      "distractor_analysis": "B & D) Contradict D4R structural availability. C & F) Reverse the actual situation described. E) Minimises documented impact of structural information on drug-design success.",
+      "evolutionary_reasoning": "Emergence of D4R structures (33422983) signals a shift toward structure-based tactics, whereas D3R campaigns (35235753, 32342685) still depend on functional screening until analogous data become available."
+    },
+    "domain": "Structural biology & computational design",
+    "PMID": [
+      "33422983",
+      "35235753",
+      "32342685"
+    ]
+  },
+  {
+    "question": "Which computational method achieved medium or high-quality models for 12 out of 14 PROTAC-mediated ternary complexes after refinement, outperforming both PRosettaC and the method by Drummond et al.?",
+    "options": [
+      "A) Temperature-accelerated MD scoring with MM/GBSA pre-ranking",
+      "B) FRODOCK-based generation followed by RosettaDock refinement (PROTAC-Model)",
+      "C) Alternating sampling of protein-protein interactions and PROTAC conformations (PRosettaC)",
+      "D) Ensemble-based Rosetta docking integrating structural ensemble analysis",
+      "E) Static docking rescored with classic MM/GBSA without additional refinement",
+      "F) Coarse-grained MD simulation with back-mapping to all-atom resolution"
+    ],
+    "answer": "B",
+    "explanation": {
+      "core_concept": "Benchmark performance of integrative docking pipelines",
+      "significance": "Quantitative success rates guide method selection for rational PROTAC design.",
+      "abstract_support": "PMID:34709816 states refinement raises success to 12/14. PMID:32976709 reports near-native predictions but does not quote 12/14. PMID:35412837 focuses on MD scoring, not the 14-case benchmark.",
+      "distractor_analysis": "A and F are absent from benchmark statistics. C references PRosettaC (32976709) whose success rate is not 12/14. D describes insights from 33625214 without the benchmark. E is a generic workflow not supported by the abstracts.",
+      "evolutionary_reasoning": "Initial PRosettaC success (32976709) prompted comparative pipelines; PROTAC-Model (34709816) demonstrated measurable improvement before later MD-centric work (35412837) tackled different limitations."
+    },
+    "domain": "Benchmarking of computational methods",
+    "PMID": [
+      "34709816",
+      "32976709",
+      "35412837"
+    ]
+  },
+  {
+    "question": "Which workflow best leverages fragment-based structural data to advance from crystallographic fragment hits to validated covalent inhibitors while minimizing the need for additional crystal structures?",
+    "options": [
+      "A) Rank fragment hits using a BindingNet-trained ML model, immediately forward top candidates for biochemical testing, then retrospectively model covalent interactions with Cov_DOX.",
+      "B) Merge fragment coordinates with Fragmenstein while installing an electrophilic warhead, triage the resulting non-covalent poses with a BindingNet-derived scoring function, and subsequently predict covalent poses with Cov_DOX.",
+      "C) Screen electrophilic libraries using Cov_DOX, refine binding modes by integrating Fragmenstein, and finally apply BindingNet scoring as a filtering step.",
+      "D) Generate non-covalent poses via Cov_DOX, optimize geometries using BindingNet-based templates, and subsequently append electrophilic warheads with Fragmenstein.",
+      "E) Construct covalent complexes de novo with BindingNet comparative modeling, validate geometries with Cov_DOX, while disregarding fragment-derived coordinates.",
+      "F) Rely exclusively on serial crystallography for each fragment merger, reserving computational methods solely for retrospective analysis."
+    ],
+    "answer": "B",
+    "explanation": {
+      "core_concept": "Synergistic integration of fragment stitching, unbiased ML scoring, and high-accuracy covalent docking",
+      "significance": "Combining complementary strengths short-circuits the traditional dependence on labor-intensive co-crystallography during hit-to-lead evolution.",
+      "abstract_support": "Fragmenstein conserves fragment binding while producing larger molecules (PMID:39806443). BindingNet supplies ~70 k modeled complexes that mitigate buried-SASA bias in ML scoring (PMID:38181418). Cov_DOX delivers 81 % Top-1 accuracy for covalent poses (PMID:35353519).",
+      "distractor_analysis": "A skips covalent geometry prediction, leaving warhead placement untested. C reverses the logical order, because Cov_DOX requires a pre-specified ligand. D treats Cov_DOX as a non-covalent tool, contradicting its covalent focus. E ignores the fragment coordinates that underpin reliable placement. F forfeits the computational accelerants explicitly highlighted across the abstracts.",
+      "evolutionary_reasoning": "Fragment coordinates (39806443) provide an experimental anchor → BindingNet-trained ML scoring (38181418) filters chemically feasible proposals → Cov_DOX (35353519) finalizes the covalent bond with near-crystallographic precision."
+    },
+    "domain": "Covalent hit-to-lead computational strategy",
+    "PMID": [
+      "39806443",
+      "38181418",
+      "35353519"
+    ]
+  },
+  {
+    "question": "Which option accurately associates the computational tools Cov_DOX, Fragmenstein, and BindingNet with their reported performance metrics or data scales in drug discovery?",
+    "options": [
+      "A) Cov_DOX achieved an 81% Top-1 pose success rate (RMSD < 2 Å) on 405 covalent complexes; Fragmenstein produced a sub‐micromolar merger in a single optimization round; BindingNet comprises 69,816 modeled complexes with experimental binding affinities.",
+      "B) Cov_DOX reported a 40–60% Top-1 pose success rate; Fragmenstein attained an 81% Top-1 success rate; BindingNet includes 30,000 modeled complexes with affinities.",
+      "C) Cov_DOX has an 81% success rate overall; Fragmenstein focused exclusively on virtual screening of ten million molecules; BindingNet involves 405 modeled complexes with experimental data.",
+      "D) Cov_DOX claims RMSD < 1 Å for its top poses; Fragmenstein provided 69,816 fragment mergers; BindingNet shows a 40–60% success metric.",
+      "E) Cov_DOX achieved an 81% success rate; Fragmenstein is based on 405 fragment-derived complexes; BindingNet is characterized by a sub-micromolar inhibitor outcome.",
+      "F) Cov_DOX processed a dataset of 69,816 complexes; Fragmenstein reached an 81% Top-1 pose success rate; BindingNet evaluated 405 covalent complexes."
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Quantitative benchmarking across complementary computational tools",
+      "significance": "Accurate recall of key metrics informs rational selection of resources for drug-design pipelines.",
+      "abstract_support": "Cov_DOX reached 81 % Top-1 RMSD < 2 Å on 405 covalent complexes (PMID:35353519). Fragmenstein yielded a sub-micromolar merger in hit-to-lead optimization (PMID:39806443). BindingNet contains 69,816 modeled complexes tied to experimental affinities (PMID:38181418).",
+      "distractor_analysis": "B swaps success rates. C fabricates large-scale screening claims. D invents universal sub-Å accuracy for Cov_DOX and misassigns dataset sizes. E misattributes Cov_DOX’s dataset to Fragmenstein. F confuses dataset sizes across tools.",
+      "evolutionary_reasoning": "Early quantitative limitations in fragment mergers (39806443) are complemented by larger modeled datasets (38181418) and high-accuracy covalent docking (35353519), illustrating scale and precision improvements."
+    },
+    "domain": "Benchmark metrics in computational chemistry",
+    "PMID": [
+      "35353519",
+      "39806443",
+      "38181418"
+    ]
+  },
+  {
+    "question": "Which option best differentiates the feature fusion strategies in PermuteDDS and DFFNDDS from the substructure-level interpretability approach in SDDSynergy?",
+    "options": [
+      "A) PermuteDDS and DFFNDDS primarily use protein similarity matrices, while SDDSynergy emphasizes bit-wise fusion for enhanced interpretability.",
+      "B) PermuteDDS and DFFNDDS employ permuted substructure graphs, whereas SDDSynergy applies transformer-based models for cell line encoding.",
+      "C) PermuteDDS and DFFNDDS integrate multiple drug and cell line representations via dedicated fusion layers (permutable or dual), while SDDSynergy leverages substructure-attention mechanisms to reveal functional groups driving synergy.",
+      "D) PermuteDDS and DFFNDDS utilize substructure-pair attention mechanisms, in contrast to SDDSynergy, which fuses features at the vector level.",
+      "E) PermuteDDS and DFFNDDS compute global drug–cell similarities, unlike SDDSynergy's feature-based method that avoids using attention mechanisms.",
+      "F) PermuteDDS and DFFNDDS assess interpretability through literature validation, whereas SDDSynergy does not include external validation."
+    ],
+    "answer": "C",
+    "explanation": {
+      "core_concept": "Architectural trade-off between predictive power and mechanistic transparency",
+      "significance": "Clarifies how recent models balance performance-oriented fusion strategies with the need for explainable substructure insights.",
+      "abstract_support": "PermuteDDS introduces a permutable fusion mechanism combining multi-modal drug and cell-line features (PMID:38622663). DFFNDDS augments feature fusion using bit-wise and vector-wise operations (PMID:36927504). SDDSynergy splits prediction into substructure-specific effects and employs drug–cell and substructure-pair attention to expose functional groups (PMID:38687366).",
+      "distractor_analysis": "A & E mischaracterize PermuteDDS/DFFNDDS as similarity-based when both are feature-fusion. B conflates substructure graphs with PermuteDDS/DFFNDDS, which never decompose molecules into substructures. D reverses attention usage. F inaccurately assigns interpretability validation to PermuteDDS/DFFNDDS, which do not claim such analysis.",
+      "evolutionary_reasoning": "PMID:38622663 → 36927504 shows progression from single to dual fusion. PMID:38687366 adds interpretability via substructure attention, complementing rather than duplicating earlier fusion-centric frameworks."
+    },
+    "domain": "Drug-drug synergy computational modeling",
+    "PMID": [
+      "38622663",
+      "36927504",
+      "38687366"
+    ]
+  },
+  {
+    "question": "Which observation, emerging from SAXS-based ensemble decomposition and force-field benchmarking, highlights a persistent challenge in simulating intrinsically disordered proteins?",
+    "options": [
+      "A) Multiple force fields reproduce global radius of gyration values yet disagree on secondary-structure propensities across Rg-segmented sub-ensembles.",
+      "B) Force fields tailored for IDPs consistently predict similar β-sheet content irrespective of peptide length.",
+      "C) Force fields incorporating polarization effects show reduced consistency with experimental Rg values relative to non-polarizable versions.",
+      "D) SAXS results contradict the existence of compact conformers as predicted by current force fields.",
+      "E) Benchmarking studies indicate an over-stabilization of π-helical structures in unfolded protein ensembles.",
+      "F) SAXS-driven decomposition fails to establish any link between radius of gyration and secondary-structure content in simulations."
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Disparity between global and local structural agreement",
+      "significance": "Highlighting such limitations directs future parameter optimization toward local motifs rather than bulk metrics.",
+      "abstract_support": "PMID 39056166: SAXS decomposition of histatin-5 revealed Rg-dependent differences in secondary structure. PMID 32816485: Force-field comparison showed varying secondary-structure contents despite reasonable Rg reproduction. PMID 33591749: Review emphasizes that no single force field matches all observables consistently.",
+      "distractor_analysis": "B) Secondary-structure agreement varies. C) Drude2019IDP shows improved conformer sampling. D) Compact basins exist in ELViM analyses. E) π-helix over-stabilization not reported. F) Histatin-5 SAXS shows correlation between Rg and secondary structure.",
+      "evolutionary_reasoning": "Global agreement on Rg (32816485) masks local discrepancies captured by SAXS-based sub-ensemble analysis (39056166), emphasizing continuing challenges (33591749)."
+    },
+    "domain": "Experimental-computational validation",
+    "PMID": [
+      "39056166",
+      "32816485",
+      "33591749"
+    ]
+  },
+  {
+    "question": "Which computational metric was utilized in both the epitope screening and antibody-escape studies but was not a primary measure in the GA-driven design of mimetic antibodies?",
+    "options": [
+      "A) MM-PBSA binding free energy calculation",
+      "B) Fitness scoring based on antigenic surface complementarity",
+      "C) RMSD analysis to assess structural convergence",
+      "D) Steered MD for rupture-force profiling",
+      "E) Coarse-grained Martini simulation of spike dynamics",
+      "F) Markov state model analysis of antibody conformations"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Comparative use of free-energy metrics across distinct computational pipelines",
+      "significance": "MM-PBSA provides quantitative binding insight, whereas GA optimisation relies on heuristic fitness functions, underscoring technique selection based on research goals.",
+      "abstract_support": "PMID 33586620 applies MM-PBSA in evaluating epitope–HLA complexes. PMID 34553217 employs binding-free-energy decomposition (a form of MM-PBSA) to dissect antibody–RBD interactions for E484K. PMID 40096593 centres on GA iterations; free-energy decomposition is not the core metric.",
+      "distractor_analysis": "B) GA fitness pertains uniquely to PMID 40096593. C) RMSD is ubiquitous in MD but was not highlighted in the escape study abstract. D, E, F) None of the three abstracts mention these specialised techniques.",
+      "evolutionary_reasoning": "After early reliance on MM-PBSA for binding assessment (PMIDs 33586620 & 34553217), the field expanded to algorithmic exploration (PMID 40096593), moving beyond explicit free-energy calculations."
+    },
+    "domain": "Methodological comparison in computational immunology",
+    "PMID": [
+      "33586620",
+      "34553217",
+      "40096593"
+    ]
+  }
+]

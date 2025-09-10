@@ -1,0 +1,1268 @@
+[
+  {
+    "question": "For a drug whose intrinsic hepatic clearance involves both CYP-mediated oxidation and P-gp–mediated canalicular efflux acting simultaneously in the hepatocyte, which mathematical representation most accurately expresses the total intrinsic hepatic clearance (CL_int,total) when applying Kirchhoff’s principles, and why would inverse summation be inappropriate in this context?",
+    "options": [
+      "A) CL_int,total = CL_int,CYP + CL_int,PGP",
+      "B) CL_int,total = (CL_int,CYP × CL_int,PGP) / (CL_int,CYP + CL_int,PGP)",
+      "C) CL_int,total = 1 / [(1/CL_int,CYP) + (1/CL_int,PGP)]",
+      "D) CL_int,total = the greater of CL_int,CYP or CL_int,PGP",
+      "E) CL_int,total = hepatic blood-flow (Q_h) × systemic extraction ratio",
+      "F) CL_int,total is undefined because reversible transport precludes simple addition"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Parallel versus series summation of intrinsic clearance terms under Kirchhoff’s laws",
+      "significance": "Accurate summation of parallel elimination pathways is essential for predicting hepatic extraction and guiding structural or formulation optimization in high-clearance compounds.",
+      "abstract_support": "PMID:37038013 establishes that for rate-defining processes in parallel, Kirchhoff dictates direct addition of clearances. PMID:40603610 applies this rule to hepatic and renal derivations, showing straight summation when metabolic and transport routes act concurrently. PMID:38114869 emphasizes that inverse summation applies only to processes in sequence; misapplication to parallel, possibly reversible routes yields incorrect estimates.",
+      "distractor_analysis": "B and C use inverse (series) or harmonic means contradicting the parallel rule (37038013, 40603610). D ignores quantitative contribution of both pathways. E confuses intrinsic clearance with flow-limited systemic clearance. F conflicts with 38114869, which notes reversibility complicates, but does not negate, parallel addition when net fluxes are defined.",
+      "evolutionary_reasoning": "Initial articulation of series-versus-parallel mathematics (37038013) is functionally extended to practical hepatic examples (40603610), while 38114869 warns against mis-combining parameters, reinforcing the rationale for selecting option A."
+    },
+    "domain": "Pharmacokinetic modelling—hepatic clearance",
+    "PMID": [
+      "37038013",
+      "40603610",
+      "38114869"
+    ]
+  },
+  {
+    "question": "An extended-release tablet of a high first-pass drug produces an observed systemic bioavailability (F) of 1.3 compared with 0.4 for the immediate-release capsule at the same dose. Which mechanistic sequence best explains this disparity when the dosing-site clearance term is incorporated into the Kirchhoff-derived mass balance?",
+    "options": [
+      "A) Slower input diminishes pre-systemic clearance, partially saturates hepatic extraction, and consequently increases AUC relative to the immediate-release form",
+      "B) Delayed gastric emptying increases intraluminal pH, enhancing solubility and absorption without affecting hepatic extraction",
+      "C) Enterohepatic recirculation is prolonged, leading to repeated systemic peaks and inflated AUC calculations",
+      "D) Reduced plasma-protein binding following slower absorption elevates free fraction and measured bioavailability",
+      "E) Intestinal CYP3A induction across the dosing interval elevates net absorption and apparent bioavailability",
+      "F) Renal tubular secretion exceeds transporter capacity, artificially inflating systemic AUC measurements"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Input-rate modulation of first-pass extraction and its impact on systemic bioavailability",
+      "significance": "Understanding how formulation-driven input kinetics alter first-pass metabolism guides rational design of controlled-release products to maximize therapeutic exposure.",
+      "abstract_support": "PMID:40603610 shows that adding the delivery-site clearance term clarifies why slow delivery yields enhanced pharmacodynamic outcomes and F >1. PMID:40120204 re-analyses human data, demonstrating that Kirchhoff’s in-series framework predicts F values exceeding unity when absorption limits saturation of first-pass pathways. PMID:38114869 links nonlinear (capacity-limited) hepatic clearance to anomalous bioavailability, reinforcing the saturation element of the explanation.",
+      "distractor_analysis": "B lacks evidence that pH effects alone account for F>1 in the cited papers. C is not discussed in any abstract. D and F involve renal or binding factors not implicated by the Kirchhoff reasoning in 40603610 or 40120204. E contradicts the requirement for reduced—not increased—metabolic capacity to explain higher F.",
+      "evolutionary_reasoning": "Early theoretical prediction of slow-input benefits (40603610) is empirically validated through re-examination of clinical data (40120204), with 38114869 providing mechanistic clarity on nonlinear saturation, sequentially building the case for option A."
+    },
+    "domain": "Formulation pharmacokinetics—bioavailability optimisation",
+    "PMID": [
+      "40603610",
+      "40120204",
+      "38114869"
+    ]
+  },
+  {
+    "question": "Kirchhoff-based pharmacokinetics predicts a direct influence of drug input rate on renal clearance. Which scenario correctly illustrates this prediction for a drug eliminated by glomerular filtration and saturable active secretion?",
+    "options": [
+      "A) A slow zero-order absorption profile lowers instantaneous plasma concentration, reducing filtered load and secretory saturation, thereby decreasing net renal clearance",
+      "B) A rapid intravenous bolus transiently decreases glomerular filtration rate, leading to lower renal clearance despite higher plasma concentrations",
+      "C) Enteric-coated delivery raises intestinal pH, precipitating drug and paradoxically increasing renal clearance via crystalluria",
+      "D) Sustained-release dosing increases active tubular reabsorption, offsetting filtration and elevating renal clearance",
+      "E) Continuous infusion negates any influence of protein binding on renal clearance because steady-state is maintained",
+      "F) Delayed-release modifies hepatic extraction exclusively, leaving renal clearance unchanged"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Series coupling of input-site kinetics with downstream renal elimination pathways",
+      "significance": "Recognising input-rate effects on renal clearance informs dose-rate selection for drugs with narrow safety margins or renal toxicity concerns.",
+      "abstract_support": "PMID:37038013 establishes that processes in series obey inverse summation, tying upstream rates to downstream clearances. PMID:40603610 documents empirical observations of renal clearance changes as a function of drug delivery rate. PMID:40120204 corroborates that renal clearance is modulated by input processes, reconciling previous anomalies via Kirchhoff analysis.",
+      "distractor_analysis": "B lacks literature evidence for acute GFR reduction post-bolus. C and D introduce mechanisms absent from all abstracts. E misstates protein binding independence; none of the papers make this claim. F conflicts with 40603610 and 40120204, which explicitly connect input rate to renal elimination.",
+      "evolutionary_reasoning": "Conceptual framework for series dependency (37038013) is applied to real renal data (40603610), and later validated across multiple human studies (40120204), logically culminating in option A."
+    },
+    "domain": "Renal pharmacokinetics—input-rate interactions",
+    "PMID": [
+      "37038013",
+      "40603610",
+      "40120204"
+    ]
+  },
+  {
+    "question": "Which distinct advantage of employing Kirchhoff’s law-based clearance derivations over traditional compartmental modelling directly facilitates rational dosage-form development for orally delivered drugs?",
+    "options": [
+      "A) Direct incorporation of clearance from the drug-delivery site into systemic pharmacokinetic equations",
+      "B) Quantitative estimation of individual tissue volumes through partition coefficients",
+      "C) Reduction in the number of plasma samples required for non-compartmental AUC estimation",
+      "D) Prediction of receptor occupancy time-courses without pharmacodynamic data",
+      "E) Elimination of organ blood-flow measurements from all clearance calculations",
+      "F) Definitive resolution of all contradictory liver transporter data reported in vitro"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Integration of absorption-site clearance into systemic mass balance",
+      "significance": "Embedding delivery-site kinetics into clearance equations enables formulators to manipulate input profiles to optimise systemic exposure and therapeutic response.",
+      "abstract_support": "PMID:40603610 highlights the key advantage of incorporating delivery-site clearance, explaining improved outcomes for slow-release designs. PMID:37038013 argues that clearance, not volume, governs pharmacokinetic behaviour, paving the way for such integration. PMID:40120204 demonstrates practical success in explaining anomalous data once delivery-site terms are included, reinforcing developmental utility.",
+      "distractor_analysis": "B contradicts 37038013, which notes biological volumes are difficult to determine. C, D, and E are not substantiated by any abstract. F is refuted by 38114869, which states Kirchhoff laws cannot resolve every transporter contradiction.",
+      "evolutionary_reasoning": "Foundational emphasis on clearance over volume (37038013) is operationalised into formulation insights (40603610), with subsequent validation across datasets (40120204), collectively underscoring option A."
+    },
+    "domain": "Dosage-form design and pharmacokinetic modelling",
+    "PMID": [
+      "40603610",
+      "37038013",
+      "40120204"
+    ]
+  },
+  {
+    "question": "When Kirchhoff’s framework is extended to drugs exhibiting capacity-limited elimination, how are apparent anomalies in systemic bioavailability quantitatively reconciled?",
+    "options": [
+      "A) The saturable pathway is treated as a velocity-dependent parallel branch; as saturation is approached its effective clearance diminishes, increasing systemic exposure and accounting for bioavailability exceeding unity",
+      "B) Bioavailability anomalies are attributed to analytical error and excluded from pharmacokinetic interpretation",
+      "C) Saturable processes are accommodated by doubling the inverse summation terms of their linear counterparts to maintain constant total clearance",
+      "D) Saturation shifts pathways from series to parallel, thereby stabilising total clearance at the presaturation value",
+      "E) Kirchhoff’s laws are inapplicable to nonlinear kinetics, necessitating exclusive use of differential equation modelling",
+      "F) Saturation predominantly increases delivery-site clearance, leading to a decrease in bioavailability"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Modelling capacity-limited elimination within a Kirchhoff parallel-branch framework",
+      "significance": "Accurate handling of nonlinear clearance is vital for dose escalation, safety assessment, and formulation strategies for drugs approaching saturation in clinical use.",
+      "abstract_support": "PMID:37038013 states that Kirchhoff’s rules can be translated to derive relationships even in nonlinear contexts. PMID:38114869 provides a conceptual link between nonlinear clearance and anomalous bioavailability. PMID:40120204 explicitly extends the Kirchhoff methodology to saturable kinetics, explaining increased pharmacodynamic response for extended-release formulations.",
+      "distractor_analysis": "B ignores mechanistic explanations provided in 38114869 and 40120204. C and D introduce mathematical manipulations not supported by any abstract. E contradicts 40120204 which demonstrates nonlinear application. F runs counter to observations of increased, not decreased, bioavailability upon saturation.",
+      "evolutionary_reasoning": "Initial assertion of applicability beyond linear systems (37038013) is mechanistically framed (38114869) and empirically validated with human data (40120204), forming a sequential rationale for selecting option A."
+    },
+    "domain": "Nonlinear pharmacokinetics—Kirchhoff applications",
+    "PMID": [
+      "37038013",
+      "38114869",
+      "40120204"
+    ]
+  },
+  {
+    "question": "Which methodological step most directly enables an adult-verified PBPK compound model to prospectively demonstrate bioequivalence between reference and generic immediate-release carbamazepine tablets in children without conducting a clinical trial?",
+    "options": [
+      "A) Recalibrating adult hepatic clearance parameters using in vitro microsomal data",
+      "B) Incorporating 200 mL pediatric fasted-state simulated gastric and intestinal dissolution profiles into the absorption module",
+      "C) Applying allometric scaling of renal clearance alone across age groups",
+      "D) Reducing particle size assumptions in the compound file to enhance dissolution rate",
+      "E) Using a preterm neonatal physiology model for all pediatric age brackets",
+      "F) Eliminating bile-salt parameters to reflect reduced pediatric micelle formation"
+    ],
+    "answer": "B",
+    "explanation": {
+      "core_concept": "Biorelevant dissolution integration for pediatric bioequivalence prediction",
+      "significance": "Capturing age-specific luminal conditions is essential for mechanistic absorption modeling of poorly soluble drugs and allows virtual bioequivalence assessment without pediatric clinical trials",
+      "abstract_support": "PMID:37386339 showed that 200 mL Ped-FaSSGF/FaSSIF dissolution data enabled accurate pediatric PK and virtual BE for carbamazepine; PMID:36369327 demonstrated that adult-verified compound files can be reused once pediatric physiology is supplied; PMID:40140126 emphasized the regulatory need to integrate drug, formulation, and pediatric physiology data when supporting BE",
+      "distractor_analysis": "A) Alters metabolism, not absorption; studies focused on dissolution-limited absorption. C) Renal clearance was not the limiting factor for carbamazepine. D) Particle size was not identified as the key driver of prediction accuracy. E) Applying a preterm model to all ages ignores developmental differences and was not endorsed. F) Removing bile salts contradicts evidence that extreme bile-salt reduction affected dissolution (PMID:37386339)."
+    },
+    "domain": "Pediatric PBPK bioequivalence",
+    "PMID": [
+      "37386339",
+      "36369327",
+      "40140126"
+    ]
+  },
+  {
+    "question": "For solubility-limited oral drugs, which additional dataset would most plausibly improve PBPK prediction accuracy in (pre)term neonates, given the observed decline in performance of pragmatic scaling approaches?",
+    "options": [
+      "A) Developmental changes in gastric pH-dependent enzymatic degradation rates",
+      "B) Age-specific intestinal fluid volumes and bile-salt concentrations for preterm neonates",
+      "C) Polymorphism frequencies of CYP3A4 in neonates",
+      "D) In vitro protein binding data collected at adult albumin concentrations",
+      "E) Tissue-to-plasma partition coefficients derived from healthy adults",
+      "F) Standard adult dissolution profiles conducted in 900 mL FaSSIF"
+    ],
+    "answer": "B",
+    "explanation": {
+      "core_concept": "Physiological fluid parameters as limiting factors in neonatal PBPK",
+      "significance": "Accurate luminal fluid characterization is critical for predicting dissolution-limited absorption in the most immature population where pragmatic models underperform",
+      "abstract_support": "PMID:36369327 reported decreased predictive performance in (pre)term neonates; PMID:37386339 highlighted dissolution sensitivity to bile-salt concentration and fluid volume; PMID:40140126 called for integrating physiology and formulation data to bridge pediatric gaps",
+      "distractor_analysis": "A) Enzymatic degradation was not shown to limit carbamazepine or the seven pragmatic-model drugs. C) CYP3A4 polymorphisms influence metabolism, not dissolution-limited absorption. D) Adult protein binding does not correct absorption inaccuracies. E) Adult tissue partition data do not address neonatal luminal conditions. F) Adult 900 mL FaSSIF misses neonatal physiology and was less predictive even for adults."
+    },
+    "domain": "Neonatal PBPK refinement",
+    "PMID": [
+      "36369327",
+      "37386339",
+      "40140126"
+    ]
+  },
+  {
+    "question": "A regulatory reviewer assessing a virtual bioequivalence study for a new pediatric formulation seeks evidence of the \"totality of data.\" Which combined evidence set aligns most closely with FDA workshop recommendations and the demonstrated carbamazepine case outcome?",
+    "options": [
+      "A) Adult clinical pharmacokinetic data plus adult dissolution tests in water",
+      "B) Pediatric physiology model, pediatric biorelevant dissolution data, and an adult-validated compound file",
+      "C) Population pharmacodynamic response data from adult seizure trials",
+      "D) In silico predicted LogP values coupled with adult fasting-state pH profiles",
+      "E) Rodent intestinal permeability data integrated into a perfusion model",
+      "F) NMR-based solubility estimates at room temperature"
+    ],
+    "answer": "B",
+    "explanation": {
+      "core_concept": "Regulatory-grade evidence integration for pediatric bioequivalence",
+      "significance": "Combining age-appropriate physiology, formulation-specific dissolution, and an established compound model satisfies mechanistic and regulatory rigor without pediatric trials",
+      "abstract_support": "PMID:40140126 stated PBPK can support pediatric BA/BE when drug, formulation, and physiology data are integrated; PMID:37386339 successfully used pediatric dissolution plus PBPK to show virtual BE; PMID:36369327 confirmed adult compound model reuse with pediatric physiology as feasible",
+      "distractor_analysis": "A) Omits pediatric physiology and biorelevant dissolution. C) Pharmacodynamics do not substitute for mechanistic absorption modeling. D) LogP and pH alone lack dissolution and physiology specifics. E) Rodent permeability data are non-clinical and non-mechanistic for humans. F) Solubility at room temperature ignores GI conditions."
+    },
+    "domain": "Regulatory PBPK strategy",
+    "PMID": [
+      "40140126",
+      "37386339",
+      "36369327"
+    ]
+  },
+  {
+    "question": "When selecting in vitro dissolution volumes for validating PBPK absorption models of immediate-release products across age groups, which pairing most accurately reflected in vivo exposure for adults and children in the referenced studies?",
+    "options": [
+      "A) 50 mL for adults and 50 mL for children",
+      "B) 500 mL for adults and 200 mL for children",
+      "C) 900 mL for adults and 900 mL for children",
+      "D) 200 mL for adults and 500 mL for children",
+      "E) 500 mL for both adults and children",
+      "F) 800 mL for adults and 100 mL for children"
+    ],
+    "answer": "B",
+    "explanation": {
+      "core_concept": "Volume-specific biorelevant dissolution matching physiological fluid capacities",
+      "significance": "Selecting physiologically congruent volumes is critical to align in vitro dissolution with systemic exposure predictions in PBPK models",
+      "abstract_support": "PMID:37386339 determined 500 mL Ad-FaSSGF/FaSSIF best predicted adult PK, while 200 mL Ped-FaSSGF/FaSSIF best predicted pediatric PK; PMID:36369327 showed that once proper physiological scaling is applied, exposure predictions are reliable across ages; PMID:40140126 underlined the necessity to incorporate realistic fluid volumes in PBPK for BA/BE support",
+      "distractor_analysis": "A, C, D, E, F) Volumes either mismatched physiologic capacities or were not reported as predictive in the carbamazepine study; no evidence from the pragmatic or FDA workshop abstracts supports these pairings."
+    },
+    "domain": "Biorelevant dissolution design",
+    "PMID": [
+      "37386339",
+      "36369327",
+      "40140126"
+    ]
+  },
+  {
+    "question": "Based on comparative insights from the dissolution-PBPK integration for carbamazepine and the multi-drug pragmatic modeling exercise, which drug property most dictates whether additional biorelevant dissolution experiments are required before pediatric exposure can be reliably simulated?",
+    "options": [
+      "A) Protein binding fraction",
+      "B) Biopharmaceutics Classification System solubility class",
+      "C) Number of rotatable bonds",
+      "D) Plasma elimination half-life",
+      "E) LogD at pH 1.5",
+      "F) Therapeutic index narrowness"
+    ],
+    "answer": "B",
+    "explanation": {
+      "core_concept": "Drug solubility class as determinant of dissolution data necessity",
+      "significance": "Low-solubility (BCS II/IV) drugs require detailed dissolution characterization to capture absorption limits, whereas high-solubility drugs may be predicted with physiology scaling alone",
+      "abstract_support": "PMID:37386339 focused on poorly soluble carbamazepine where dissolution inputs were critical; PMID:36369327 successfully scaled several drugs of various PK profiles, implying that solubility plays a role in deciding data needs; PMID:40140126 advocated integrating drug characteristics, specifically those influencing absorption, when modeling pediatric BA/BE",
+      "distractor_analysis": "A) Protein binding affects distribution, not dissolution. C) Rotatable bonds influence permeability but were not identified as critical. D) Half-life is elimination-related. E) LogD at acidic pH is insufficient to characterize luminal dissolution needs. F) Therapeutic index impacts safety margins, not directly dissolution data requirements."
+    },
+    "domain": "Drug property prioritization",
+    "PMID": [
+      "37386339",
+      "36369327",
+      "40140126"
+    ]
+  },
+  {
+    "question": "Switching from the reference elagolix tablet to the fixed-dose AM/PM capsule is projected to preserve systemic exposure in most subgroups; which physiological condition is predicted to produce exposure changes large enough to challenge the standard 0.80–1.25 bioequivalence window?",
+    "options": [
+      "A) Early adolescence (14–18 years)",
+      "B) Moderate renal impairment (eGFR 30–59 mL/min/1.73 m²)",
+      "C) Class-2 obesity (BMI ≥ 35 kg/m² and < 40 kg/m²)",
+      "D) East Asian ethnicity",
+      "E) Fed conditions following a high-fat meal",
+      "F) Concomitant low-dose estrogen–progestin add-back therapy"
+    ],
+    "answer": "C",
+    "explanation": {
+      "core_concept": "Physiological covariates that modulate systemic exposure in PBPK-guided bioequivalence projections",
+      "significance": "Correct identification of high-risk subgroups prevents under- or over-exposure when a new formulation is introduced",
+      "abstract_support": "PMID 39060899 reports \"notable variations\" in exposure in class-2 obesity, whereas adolescents, overweight subjects, post-prandial state, and ethnicity showed no clinically meaningful differences. PMID 36949256 demonstrates capsule-tablet bioequivalence in adults, establishing the exposure reference. PMID 31713224 indicates that transporter/enzyme interplay, rather than add-back therapy, drives exposure, implying limited impact of the hormonal co-formulation.",
+      "distractor_analysis": "A) Adolescents were predicted to have exposures comparable to adults (39060899). B) Moderate renal impairment was modeled without clinically significant PK shifts (39060899). D) No ethnicity-related differences were observed between Chinese and US populations (39060899). E) Fed conditions were explicitly verified and found not to meaningfully alter elagolix PK (39060899). F) Add-back therapy tablets were already part of the validated adult bioequivalence dataset (36949256), with no independent effect on elagolix exposure.",
+      "evolutionary_reasoning": "Adult bioequivalence confirmation (36949256) → population scaling (39060899) → mechanistic confirmation of limited formulation–hormone interaction (31713224) collectively highlight class-2 obesity as the remaining exposure outlier."
+    },
+    "domain": "PBPK-based population extrapolation",
+    "PMID": [
+      "39060899",
+      "36949256",
+      "31713224"
+    ]
+  },
+  {
+    "question": "Achieving a mechanistically accurate 56 % reduction in midazolam AUC during co-administration with elagolix 200 mg twice daily requires incorporation of which pharmacological process not accounted for in a dissolution-focused bioequivalence model?",
+    "options": [
+      "A) Gastric emptying rate modulation",
+      "B) Time-dependent induction of CYP3A4 in liver and intestine",
+      "C) Altered enterohepatic circulation of midazolam",
+      "D) Competitive inhibition of OATP1B1 by midazolam",
+      "E) pH-dependent solubility changes of elagolix",
+      "F) P-gp–mediated efflux of midazolam in renal tubules"
+    ],
+    "answer": "B",
+    "explanation": {
+      "core_concept": "Enzyme induction as a critical mechanism in PBPK-based drug–drug interaction prediction",
+      "significance": "Capturing time-dependent CYP3A4 induction is essential for forecasting exposure decreases of victim drugs when co-administered with enzyme inducers",
+      "abstract_support": "PMID 31713224 quantified elagolix as a moderate inducer of CYP3A4 causing ≈56 % reduction in midazolam AUC. PMID 36949256 focused on dissolution-driven bioequivalence without incorporating perpetrator mechanisms. PMID 39060899 provides population parameters but does not address enzyme induction.",
+      "distractor_analysis": "A) Gastric emptying affects absorption rate, not the metabolic clearance needed to generate a 56 % AUC drop. C) Midazolam lacks significant enterohepatic recycling. D) Midazolam is not an OATP1B1 substrate. E) Solubility changes were pivotal for formulation BE (36949256) but irrelevant to CYP3A4 induction. F) Midazolam’s renal elimination is minimal; P-gp renal efflux would not drive the observed systemic decrease.",
+      "evolutionary_reasoning": "Dissolution-validated exposure model (36949256) → need for metabolic interaction layer → integration of CYP3A4 induction kinetics (31713224) to recapitulate observed midazolam PK changes."
+    },
+    "domain": "PBPK DDI modeling",
+    "PMID": [
+      "31713224",
+      "36949256",
+      "39060899"
+    ]
+  },
+  {
+    "question": "Which pair of validation inputs formed the regulatory cornerstone for granting a bioequivalence waiver for commercial elagolix capsules?",
+    "options": [
+      "A) Clinical pharmacokinetics in adolescents and in vitro permeability data",
+      "B) Cross-over adult bioequivalence study data and comparative tablet/capsule dissolution profiles",
+      "C) Renal impairment pharmacokinetics and in silico transporter phenotyping",
+      "D) Fed-state pharmacokinetics and OATP1B1 inhibition constants",
+      "E) Population PK from obese individuals and CYP3A4 induction parameters",
+      "F) Digoxin interaction trial data and capsule disintegration times"
+    ],
+    "answer": "B",
+    "explanation": {
+      "core_concept": "Regulatory validation strategy for virtual bioequivalence",
+      "significance": "Proper selection of empirical anchors ensures confidence in PBPK-based waiver requests, reducing the need for additional human exposure",
+      "abstract_support": "PMID 36949256 explicitly cites integration of in vitro dissolution profiles with externally validated cross-over adult BE data to meet the 0.80–1.25 criteria, leading to acceptance of a bioequivalence waiver. PMIDs 39060899 and 31713224 provide ancillary population and DDI data but were not the primary regulatory anchors.",
+      "distractor_analysis": "A) Adolescent data were predictive, not validated, and unrelated to the waiver decision (39060899). C) Renal impairment simulations did not underpin the waiver (39060899). D) Fed-state PK affected model robustness but was not the core evidence. E) Obesity and CYP3A4 induction inform labeling, not BE wavier. F) Digoxin interaction pertains to DDI, not formulation equivalence.",
+      "evolutionary_reasoning": "Initial PBPK platform (36949256) → dissolution integration → external adult crossover data provide real-world anchoring, enabling regulatory confidence without additional studies."
+    },
+    "domain": "Regulatory PBPK strategy",
+    "PMID": [
+      "36949256",
+      "39060899",
+      "31713224"
+    ]
+  },
+  {
+    "question": "Despite measurable hepatic uptake of elagolix by OATP1B1, systemic exposure was predicted to remain comparable between Chinese and US women; which explanation aligns with the integrated PBPK evidence?",
+    "options": [
+      "A) OATP1B1 expression is identical across these ethnicities, nullifying transporter impact",
+      "B) Clearance of elagolix is dominated by CYP3A4 metabolism, making moderate variability in OATP1B1 inconsequential for exposure",
+      "C) Capsule formulation bypasses hepatic uptake pathways, eliminating ethnic differences",
+      "D) Elevated P-gp activity in Chinese women counterbalances reduced OATP1B1 function",
+      "E) Increased renal excretion of elagolix in Chinese women offsets transporter variability",
+      "F) Bioavailability of elagolix is saturation-limited at therapeutic doses, masking ethnic differences"
+    ],
+    "answer": "B",
+    "explanation": {
+      "core_concept": "Relative contribution of metabolic versus transporter pathways to systemic exposure across ethnic groups",
+      "significance": "Understanding dominant clearance mechanisms guides extrapolation of PK across populations",
+      "abstract_support": "PMID 31713224 quantified the interplay between OATP1B1 and CYP3A4, concluding that metabolic clearance predominates. PMID 39060899 confirmed no ethnicity-based PK differences between Chinese and US subjects. Capsule versus tablet differences were already neutralized by dissolution-matched exposure (36949256), indicating formulation-independent clearance.",
+      "distractor_analysis": "A) Ethnic variability in OATP1B1 expression was not explicitly ruled out; dominance of CYP3A4, not identical expression, explains similarity. C) Both formulations still rely on hepatic uptake; there is no bypass. D) No evidence of differential P-gp activity was presented. E) Renal excretion is minor for elagolix (31713224). F) Absorption is dose-proportional, not saturation-limited at therapeutic doses.",
+      "evolutionary_reasoning": "Transporter-metabolism quantification (31713224) → cross-ethnic PK confirmation (39060899) → formulation BE assurance (36949256) collectively attribute exposure parity to metabolic dominance."
+    },
+    "domain": "Enzyme-transporter interplay across ethnicities",
+    "PMID": [
+      "31713224",
+      "39060899",
+      "36949256"
+    ]
+  },
+  {
+    "question": "When simulating elagolix-mediated P-gp inhibition of digoxin in class-2 obese women receiving the new capsule formulation, which statement best reflects the expected drug–drug interaction magnitude relative to normal-weight adults?",
+    "options": [
+      "A) Cmax increase will exceed 150 % because elevated adipose partitioning prolongs gut luminal residence of elagolix",
+      "B) Cmax and AUC changes will approximate those in normal-weight adults because obesity primarily affects distribution rather than intestinal concentrations driving P-gp inhibition",
+      "C) Digoxin exposure will decrease due to enhanced renal clearance in obesity",
+      "D) AUC increase will be attenuated because obesity up-regulates intestinal P-gp expression",
+      "E) Both Cmax and AUC will be negligible because capsule dissolution is slower in obese individuals",
+      "F) DDI magnitude cannot be modeled due to lack of transporter parameters in current PBPK frameworks"
+    ],
+    "answer": "B",
+    "explanation": {
+      "core_concept": "Impact of obesity on transporter-mediated drug–drug interactions within PBPK frameworks",
+      "significance": "Accurate DDI prediction in obese populations is essential for safe polypharmacy",
+      "abstract_support": "PMID 39060899 notes that class-2 obesity alters distribution but does not profoundly change absorption kinetics. PMID 31713224 shows that P-gp inhibition is governed by gut luminal concentrations of elagolix, leading to ≈68 % Cmax increase in normal adults. Dissolution-based bioequivalence confirmed similar input profiles for capsules and tablets (36949256), limiting formulation-driven changes.",
+      "distractor_analysis": "A) No evidence links adipose partitioning to prolonged intestinal residence; inhibition is concentration-, not time-, dependent (31713224). C) Obesity may reduce, not enhance, renal clearance, and digoxin renal handling is independent of elagolix. D) Up-regulation of intestinal P-gp in obesity is speculative and unsubstantiated. E) Dissolution profiles matched BE criteria (36949256); obesity does not inherently slow capsule dissolution. F) Transporter parameters for P-gp were explicitly included and verified (31713224).",
+      "evolutionary_reasoning": "Formulation equivalence (36949256) → obesity distribution effects (39060899) → transporter-based DDI mechanism (31713224) collectively support similar digoxin interaction magnitude across weight strata."
+    },
+    "domain": "Obesity-informed DDI prediction",
+    "PMID": [
+      "39060899",
+      "31713224",
+      "36949256"
+    ]
+  },
+  {
+    "question": "For an intravenously administered 100 kDa antibody fragment intended for brain parenchyma targeting, which molecular engineering strategy is predicted to most effectively increase the interstitial-fluid-to-plasma AUC ratio without compromising BBB permeability?",
+    "options": [
+      "A) Enhancing FcRn binding to prolong systemic half-life",
+      "B) Introducing a moderate (micromolar) affinity albumin-binding motif",
+      "C) Reducing the fragment to a 27 kDa single-chain variable fragment",
+      "D) Pegylating the fragment to raise its hydrodynamic radius to ~150 kDa",
+      "E) Engineering high-affinity (nanomolar) binding to alpha-1-acid glycoprotein",
+      "F) Conjugating cationic peptides to increase electrostatic interaction with the BBB glycocalyx"
+    ],
+    "answer": "B",
+    "explanation": {
+      "core_concept": "Synergistic enhancement of brain exposure through size optimization and plasma-protein–mediated uptake",
+      "significance": "Combining the intrinsic permeability peak near 100 kDa with controlled albumin interaction exploits two distinct mechanisms to elevate parenchymal exposure of biologics after systemic dosing.",
+      "abstract_support": "PMID:35501500 reports a bell-shaped size–permeability relationship with maximal ISF/plasma AUC at 100 kDa. PMID:36829100 demonstrates that reversible albumin binding drives plasma-protein–mediated uptake (PMU) at the BBB, markedly increasing brain free drug levels. PMID:40524468 emphasizes that intravenous PBPK frameworks can incorporate such mechanistic parameters more robustly than current intranasal models.",
+      "distractor_analysis": "A) FcRn binding is irrelevant here because the 35501500 constructs lack Fc domains, and FcRn recycling primarily affects systemic half-life, not BBB PMU.\nC) A 27 kDa scFv falls on the descending limb of the bell curve in 35501500, lowering parenchymal exposure.\nD) Increasing size to 150 kDa places the molecule on the low-permeability side of the bell curve.\nE) Nanomolar AGP binding risks overly tight association, reducing dissociation at the endothelial surface, contrary to the kinetic requirements highlighted in 36829100.\nF) Cationic conjugation is not investigated in any abstract and its impact on permeability remains speculative.",
+      "core_concept_significance": "Employing albumin-binding motifs provides a tunable handle to leverage PMU without exceeding the optimal hydrodynamic radius observed experimentally.",
+      "evolutionary_reasoning": "35501500 → defines size optimum; 36829100 → reveals PMU benefits; 40524468 → underscores modeling frameworks capable of integrating both phenomena."
+    },
+    "domain": "CNS biologic pharmacokinetics",
+    "PMID": [
+      "35501500",
+      "36829100",
+      "40524468"
+    ]
+  },
+  {
+    "question": "When calibrating a physiologically based pharmacokinetic model for a 50 kDa therapeutic protein delivered intravenously, which parameter set requires the most urgent refinement to avoid under-prediction of free drug concentrations in brain tissue?",
+    "options": [
+      "A) Enzymatic degradation rates within cerebrospinal fluid compartments",
+      "B) Association and dissociation kinetics with serum albumin and alpha-1-acid glycoprotein",
+      "C) Nasal mucociliary clearance half-time",
+      "D) Binding capacity to intracellular brain tissue proteins",
+      "E) Trigeminal nerve axonal transport velocity",
+      "F) Lymphatic drainage rate from subarachnoid space"
+    ],
+    "answer": "B",
+    "explanation": {
+      "core_concept": "Impact of plasma protein binding kinetics on brain free drug predictions",
+      "significance": "Accurate kinetic parameters for albumin/AGP interactions are indispensable for PBPK models that aim to capture plasma-protein–mediated uptake across the BBB.",
+      "abstract_support": "PMID:36829100 shows that failure to include albumin/AGP kinetics leads to 2- to 31-fold underestimation of brain free concentrations. PMID:35501500 identifies 50 kDa as close to the peak of the brain-homogenate/plasma AUC curve, making kinetic accuracy especially influential. PMID:40524468 notes that PBPK platforms excel when they integrate detailed physiological and binding data, emphasizing the need for precise plasma protein parameters.",
+      "distractor_analysis": "A) CSF enzymatic degradation pertains to CSF exposure, not parenchymal free drug, and is not highlighted as limiting in any abstract.\nC & E) Nasal mucociliary and trigeminal transport are specific to intranasal delivery (40524468), irrelevant for intravenous dosing.\nD) PMID:36829100 explicitly states brain free concentration is independent of tissue protein binding.\nF) Lymphatic drainage is not implicated as a major determinant in the provided studies.",
+      "evolutionary_reasoning": "35501500 → underscores size-dependent permeability; 36829100 → quantifies the role of albumin/AGP kinetics; 40524468 → stresses comprehensive physiological integration in PBPK models."
+    },
+    "domain": "PBPK model parameterization",
+    "PMID": [
+      "35501500",
+      "36829100",
+      "40524468"
+    ]
+  },
+  {
+    "question": "Which experimental–computational pairing best enables quantitative comparison of regional brain exposure for antibody fragments spanning 27 kDa to 150 kDa after systemic administration?",
+    "options": [
+      "A) Microdialysis in cisterna magna combined with in vitro unbound fraction measurements",
+      "B) Olfactory deposition simulation coupled with in vivo nasal lavage assays",
+      "C) Large-pore microdialysis in striatum supplemented with a PBPK model incorporating plasma-protein–mediated uptake",
+      "D) Hippocampal microdialysis paired with permeability-surface area calculations derived solely from molecular weight",
+      "E) Whole-brain autoradiography combined with mucociliary transport modeling",
+      "F) Intranasal drip administration followed by lumbar CSF sampling"
+    ],
+    "answer": "C",
+    "explanation": {
+      "core_concept": "Integrated measurement-modeling strategy for size-dependent brain disposition",
+      "significance": "Combining direct parenchymal concentration measurements with mechanistic modeling captures both empirical permeability and plasma-binding influences.",
+      "abstract_support": "PMID:35501500 employs large-pore microdialysis in striatum to obtain ISF concentrations across multiple fragment sizes. PMID:36829100 provides a PBPK framework that incorporates albumin/AGP-mediated uptake, essential for translating plasma data into brain exposure. PMID:40524468 discusses the broader role of sophisticated PBPK models in integrating anatomical and physiological complexities, validating the pairing.",
+      "distractor_analysis": "A) Cisterna magna sampling reflects CSF, not parenchyma, and lacks PMU modeling.\nB & F) These focus on intranasal pathways absent from systemic administration paradigms.\nD) Sole reliance on molecular weight ignores PMU and yields poor predictive power, as per 36829100.\nE) Autoradiography gives spatial distribution but not kinetic ISF data and fails to integrate plasma protein binding models.",
+      "evolutionary_reasoning": "35501500 → provides high-resolution ISF data; 36829100 → adds mechanistic PBPK insights; 40524468 → frames the necessity for integrated modeling workflows."
+    },
+    "domain": "Experimental design for CNS biologics",
+    "PMID": [
+      "35501500",
+      "36829100",
+      "40524468"
+    ]
+  },
+  {
+    "question": "During human translation of intranasal PBPK models for a 50 kDa biologic, which system parameter currently represents a critical knowledge gap that must be experimentally resolved?",
+    "options": [
+      "A) Surface expression density of the neonatal Fc receptor on brain microvascular endothelium",
+      "B) Biological composition of olfactory and trigeminal nerves within the nasal cavity",
+      "C) Albumin dissociation rate constants in brain capillary plasma",
+      "D) Plasma binding capacity of alpha-1-acid glycoprotein",
+      "E) Enzymatic cleavage rate of the biologic in lumbar CSF",
+      "F) Cortical microvascular blood-flow velocity"
+    ],
+    "answer": "B",
+    "explanation": {
+      "core_concept": "Unresolved anatomical variables limiting intranasal PBPK predictability",
+      "significance": "Accurate representation of neuronal pathways is essential for modeling direct nose-to-brain transport, especially for mid-sized proteins.",
+      "abstract_support": "PMID:40524468 explicitly cites incomplete knowledge of the olfactory and trigeminal nerve composition as a major obstacle to predictive intranasal models. PMID:35501500 and 36829100 provide systemic data, highlighting the contrast between well-characterized intravenous parameters and poorly defined intranasal variables.",
+      "distractor_analysis": "A & C) FcRn and albumin kinetics pertain to systemic routes; their parameters are relatively well understood compared with nasal neuronal anatomy.\nD) AGP binding data exist and influence systemic PMU, not nose-to-brain transport.\nE) CSF enzymatic rates affect drug stability post-delivery but do not rectify the primary structural uncertainties.\nF) Brain blood flow parameters are established and already incorporated into existing systemic PBPK models.",
+      "evolutionary_reasoning": "40524468 → identifies the anatomical gap; 35501500 & 36829100 → serve as comparators showing robust parameterization in systemic contexts."
+    },
+    "domain": "Intranasal CNS delivery modeling",
+    "PMID": [
+      "40524468",
+      "35501500",
+      "36829100"
+    ]
+  },
+  {
+    "question": "When constructing a unified simulation to compare intravenous and intranasal delivery of a 27 kDa single-chain variable fragment, which combination of mechanistic pathways must be incorporated to prevent significant underestimation of brain free concentrations for both routes?",
+    "options": [
+      "A) FcRn recycling and astrocytic uptake",
+      "B) Albumin- and AGP-mediated uptake at the BBB plus mucociliary clearance kinetics",
+      "C) Trigeminal nerve axonal transport and erythrocyte partitioning",
+      "D) P-glycoprotein efflux and cerebrospinal fluid bulk flow",
+      "E) Passive diffusion across arachnoid villi and neuronal endocytosis",
+      "F) Transferrin-receptor–mediated transcytosis and meningeal lymphatic drainage"
+    ],
+    "answer": "B",
+    "explanation": {
+      "core_concept": "Dual-route modeling requires inclusion of both systemic plasma-binding effects and nasal clearance dynamics",
+      "significance": "Incorporating the dominant route-specific barriers ensures reliable prediction of brain exposure across delivery modalities.",
+      "abstract_support": "PMID:36829100 demonstrates that albumin/AGP-mediated uptake critically influences intravenous brain delivery. PMID:40524468 highlights mucociliary clearance as a pivotal determinant of intranasal absorption. PMID:35501500 provides empirical permeability data for a 27 kDa fragment, underscoring the need to integrate both mechanisms for accurate simulation.",
+      "distractor_analysis": "A) FcRn recycling is irrelevant for Fc-free fragments and astrocytic uptake is secondary for systemic delivery.\nC) Erythrocyte partitioning has minimal influence on CNS exposure, while trigeminal transport alone cannot rectify plasma under-prediction.\nD) Efflux and CSF flow are important but less impactful than the primary uptake and clearance pathways identified.\nE & F) These pathways either lack direct evidence in the abstracts or exert lesser quantitative influence on exposure relative to the highlighted mechanisms.",
+      "evolutionary_reasoning": "36829100 → quantifies PMU importance; 40524468 → illuminates nasal clearance; 35501500 → supplies size-specific permeability data integrated by the unified model."
+    },
+    "domain": "Integrated delivery route modeling",
+    "PMID": [
+      "36829100",
+      "40524468",
+      "35501500"
+    ]
+  },
+  {
+    "question": "Predicting hepatic clearance for acidic OATP substrates without empirical scaling factors is best accomplished through which pairing of experimental input and liver disposition framework?",
+    "options": [
+      "A) Uptake clearance from albumin-free suspended hepatocytes combined with a well-stirred liver model",
+      "B) Unbound initial uptake clearance measured in 4 % bovine serum albumin–supplemented hepatocytes coupled to a parallel-tube liver model",
+      "C) Microsomal intrinsic metabolic clearance integrated into a one-compartment whole-body PBPK model",
+      "D) Unbound initial uptake clearance in 4 % bovine serum albumin interpreted with a dispersion model plus a reduced interstitial binding scalar",
+      "E) Isolated perfused rat liver data obtained with 10 % whole blood analysed by a well-stirred model",
+      "F) Uptake rates from α1-acid-glycoprotein–supplemented hepatocytes evaluated by a five-compartment series model"
+    ],
+    "answer": "B",
+    "explanation": {
+      "core_concept": "Albumin-mediated uptake data matched to a physiologically realistic liver architecture remove the need for empirical scaling in IVIVE.",
+      "significance": "Using physiologic protein conditions during uptake measurements captures facilitated dissociation, while the parallel-tube model better represents hepatic concentration gradients, jointly improving human clearance prediction.",
+      "abstract_support": "4 % BSA enhances PSu,inf and allows unbiased human clearance extrapolation (PMID:33196949). The parallel-tube model outperformed the well-stirred and dispersion models without additional scalars when appropriate uptake parameters are supplied (PMID:39084881). Review of albumin-mediated hepatic uptake emphasises that physiologic albumin corrects IVIVE bias for highly bound anions (PMID:34171335).",
+      "distractor_analysis": "A) Lacks albumin, underestimates uptake (33196949). C) Ignores transporter contribution (33196949, 39084881). D) Still needs an added scalar, contradicting requirement of no empirical factors (39084881). E) Perfusate data require model translation and not transporter-specific (40086408). F) α1-acid-glycoprotein supplementation alone has not been validated for OATP-mediated uptake (37580106)."
+    },
+    "domain": "Hepatic clearance IVIVE",
+    "PMID": [
+      "33196949",
+      "39084881",
+      "34171335"
+    ]
+  },
+  {
+    "question": "Aligning perfused-liver and hepatocyte experiments to obtain in vivo-relevant unbound clearance for transporter substrates requires which perfusate composition in the isolated rat liver?",
+    "options": [
+      "A) 0 % protein with Krebs–Henseleit buffer alone",
+      "B) 1 % bovine serum albumin without α1-acid glycoprotein",
+      "C) 3 % bovine serum albumin plus 0.01 % bovine α1-acid glycoprotein and 10 % blood",
+      "D) 5 % human serum albumin supplemented with 20 % blood",
+      "E) 3 % α1-acid glycoprotein without serum albumin",
+      "F) 10 % rat plasma dialysate lacking cellular components"
+    ],
+    "answer": "C",
+    "explanation": {
+      "core_concept": "Matching physiologic protein levels across in vitro and ex vivo systems enhances IVIVE accuracy for highly bound drugs.",
+      "significance": "The specified protein mixture reproduces albumin-mediated shuttling in perfused livers, complementing 4 % BSA-supplemented hepatocyte assays and improving translational clearance estimates.",
+      "abstract_support": "An isolated perfused rat liver containing 3 % BSA, 0.01 % AGP, and 10 % blood achieved in vivo-like unbound clearance (PMID:40086408). Hepatocyte uptake assays with 4 % BSA improved CL prediction for OATP substrates (PMID:32759366). Albumin-mediated uptake theory explains why matched albumin levels are crucial (PMID:34171335).",
+      "distractor_analysis": "A, B) Sub-physiologic albumin fails to reproduce facilitated dissociation (32759366, 40086408). D) Protein content exceeds validated conditions and risks viability issues (40086408). E) Lack of albumin omits primary shuttle protein (34171335). F) Dialysate lacks intact proteins necessary for facilitation (40086408)."
+    },
+    "domain": "Experimental optimisation of clearance models",
+    "PMID": [
+      "40086408",
+      "32759366",
+      "34171335"
+    ]
+  },
+  {
+    "question": "Reconciling under-prediction of systemic clearance for low-turnover compounds measured in micropatterned co-cultures can be achieved by implementing which modelling refinement?",
+    "options": [
+      "A) Retaining a single-compartment well-stirred model with extended incubation data",
+      "B) Applying a three-subcompartment series-compartment model that incorporates hepatic zonation",
+      "C) Converting intrinsic clearance to rate constants without altering liver architecture",
+      "D) Scaling microsomal Vmax and Km by fivefold empirical factors",
+      "E) Using a dispersion model with zero permeability limitation",
+      "F) Replacing hepatocyte data with renal clearance estimates"
+    ],
+    "answer": "B",
+    "explanation": {
+      "core_concept": "Spatial liver models accommodate intra-hepatic gradients that become critical for slow-clearance drugs.",
+      "significance": "Series-compartment frameworks reduce apparent CLint and adjust Kp in line with sustained low turnover observed in long-term cultures, removing systematic bias.",
+      "abstract_support": "Micropatterned co-cultures measure low CLint yet under-predict clearance (PMID:38604730). Series-compartment models mimic dispersion and allow zonation, with CLint decreasing as compartments increase (PMID:37460222). Simulation of hepatic elimination via SCM demonstrates fit improvement over single-compartment models (PMID:36732075).",
+      "distractor_analysis": "A) Single-compartment structure fails to resolve gradients (38604730). C) Merely altering parameterisation without structural change retains under-prediction (31907706). D) Empirical scaling lacks mechanistic basis (39013583). E) Zero permeability contradicts need to model diffusion limitations (37460222). F) Renal data unrelated to hepatic transporter/metabolic processes (38604730)."
+    },
+    "domain": "PBPK structural optimisation",
+    "PMID": [
+      "38604730",
+      "37460222",
+      "36732075"
+    ]
+  },
+  {
+    "question": "Addressing the debate between clearance-based and rate-constant parameterisation during model fitting is aided by which specific application of the parallel-tube model?",
+    "options": [
+      "A) Replacing all intrinsic clearances with apparent first-order rate constants in well-stirred models",
+      "B) Demonstrating that a linear combination of well-stirred and parallel-tube blood concentrations approximates dispersion profiles",
+      "C) Eliminating transporter kinetics to simplify hepatic clearance equations",
+      "D) Applying a time-invariant systemic clearance to compounds with peripheral elimination",
+      "E) Using average body weight scaling factors to convert between rate constants and clearance",
+      "F) Constraining hepatic blood flow to match central volume of distribution"
+    ],
+    "answer": "B",
+    "explanation": {
+      "core_concept": "Model equivalence demonstrates that clearance-centric and rate-constant frameworks can converge when physiologic structure is considered.",
+      "significance": "The finding bridges theoretical disagreements by showing mathematical continuity between models, validating clearance parameterisation in practical contexts.",
+      "abstract_support": "Expert discussion highlights the controversy over parameter choices (PMID:31907706). Parallel-tube and dispersion relationships reveal that a linear combination of WSM and PTM blood concentrations replicates dispersion outputs (PMID:39084881). Mini-PTM offers manageable mathematics while reflecting dispersion behaviour, supporting clearance parameters (PMID:39013583).",
+      "distractor_analysis": "A) Retains structural limitations of WSM (39013583). C) Neglects transporter influence contrary to extended clearance concept (37407092). D) Peripheral elimination alters time-variant clearance (36623886). E, F) Weight and flow constraints do not specifically resolve rate constant vs clearance representation (31907706)."
+    },
+    "domain": "Pharmacokinetic model theory",
+    "PMID": [
+      "31907706",
+      "39084881",
+      "39013583"
+    ]
+  },
+  {
+    "question": "For highly bound anionic drugs undergoing OATP-mediated uptake, what key adjustment within an IVIVE workflow most directly mitigates the under-prediction described by the extended clearance concept?",
+    "options": [
+      "A) Measuring microsomal metabolic stability in protein-free buffer",
+      "B) Incorporating physiologic albumin concentrations during hepatocyte uptake assays",
+      "C) Doubling hepatic blood flow values in the well-stirred model equations",
+      "D) Estimating efflux clearance exclusively from vesicular transport studies",
+      "E) Using single-species allometric scaling from rodents",
+      "F) Applying volume of distribution correction factors to intrinsic clearance"
+    ],
+    "answer": "B",
+    "explanation": {
+      "core_concept": "Albumin-mediated facilitation must be captured experimentally to align in vitro uptake with in vivo efficiency.",
+      "significance": "Including albumin corrects the free-drug assumption limitation, making uptake parameters compatible with extended clearance modelling without empirical factors.",
+      "abstract_support": "Albumin-mediated uptake identified as reason for poor IVIVE; physiologic albumin in vitro improves predictions (PMID:37407092). 4 % BSA in hepatocytes enhanced PSu,inf and abolished scaling requirements (PMID:33196949). Guidance emphasises evaluating albumin-mediated uptake to bound the true clearance (PMID:33857483).",
+      "distractor_analysis": "A) Protein-free conditions exacerbate under-prediction (33196949). C) Changing flow cannot correct uptake underestimation (39084881). D) Efflux assessment alone ignores facilitated influx (37407092). E) Species scaling fails to address mechanism deficit (35257289). F) Volume corrections pertain to distribution, not uptake (36623886)."
+    },
+    "domain": "Transporter-mediated clearance optimisation",
+    "PMID": [
+      "37407092",
+      "33196949",
+      "33857483"
+    ]
+  },
+  {
+    "question": "When selecting an in vitro platform for human clearance prediction of low-turnover compounds, which system-property pairing yields the most consistent measurable intrinsic clearance values before model correction?",
+    "options": [
+      "A) Conventional hepatocyte suspension with 1-hour incubation",
+      "B) HepaRG sandwich culture with 8-hour incubation",
+      "C) Micropatterned co-cultures with multi-day incubation",
+      "D) HµREL co-culture in albumin-free medium",
+      "E) Cryopreserved hepatocyte spheroids with 30-minute incubation",
+      "F) Microsomal turnover assays supplemented with NADPH-regenerating system"
+    ],
+    "answer": "C",
+    "explanation": {
+      "core_concept": "Sustained viability and enzyme competence are required to quantify low intrinsic turnover.",
+      "significance": "Micropatterned co-cultures maintain metabolic activity for days, enabling measurable depletion where other formats report below-limit turnover.",
+      "abstract_support": "MPCCs delivered the most accurate low-clearance predictions among tested long-term systems (PMID:38604730). HµREL assays occasionally failed for high-binding drugs and needed mechanistic modelling (PMID:37580106). Albumin-supplemented hepatocyte suspensions mainly suit OATP substrates, not universal low turn-over (PMID:32759366).",
+      "distractor_analysis": "A, B, D) Shorter viability or protein issues limit detection (38604730, 37580106). E) 30-minute spheroid incubation insufficient despite 3-D structure (38604730). F) Microsomes omit cellular uptake and long phase-II processes (35257289)."
+    },
+    "domain": "In vitro platform selection",
+    "PMID": [
+      "38604730",
+      "37580106",
+      "32759366"
+    ]
+  },
+  {
+    "question": "When translating clearance data across species, which observation supports preferential use of parallel-tube over well-stirred models during IVIVE?",
+    "options": [
+      "A) Parallel-tube predictions show lower variability and smaller scaling factors for metabolic substrates across mouse, rat, dog, and monkey",
+      "B) Well-stirred model inherently captures hepatic zonation without empirical adjustment",
+      "C) Microsomal intrinsic clearance correlates exclusively with dispersion models in primates",
+      "D) Clearance class 1B compounds require no scaling factor in well-stirred frameworks",
+      "E) Protein binding corrections negate any model-specific variability",
+      "F) Parallel-tube architecture systematically over-predicts clearance for passive compounds"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Model structure influences magnitude of inter-species scaling factors during IVIVE.",
+      "significance": "Lower and less variable scaling factors indicate the model more faithfully mirrors physiology across taxa, reducing uncertainty in human prediction.",
+      "abstract_support": "Parallel-tube provided lower variability in predicted CL compared with well-stirred across four species (PMID:35257289). PTM superiority over WSM also reported in comparative modelling analyses (PMID:39084881). The mini-PTM similarly corrected extraction ratio biases noted in WSM (PMID:39013583).",
+      "distractor_analysis": "B) WSM lacks zonation representation (39013583). C) Microsomal CL aligned with both PTM and WSM, not exclusive (35257289). D) Class 1B needed larger factors due to transporter roles (35257289). E) Binding corrections alone did not eliminate model distinctions (39084881). F) PTM produced better, not worse, predictions (35257289)."
+    },
+    "domain": "Inter-species pharmacokinetic modelling",
+    "PMID": [
+      "35257289",
+      "39084881",
+      "39013583"
+    ]
+  },
+  {
+    "question": "Mouse plasma clearance IVIVE success correlates most strongly with which molecular property combination identified across >2000 compounds?",
+    "options": [
+      "A) Molecular weight >700 Da and high hydrogen-bond donors (≥4)",
+      "B) Log D >3 with total polar surface area <100 Å² and hydrogen-bond donors ≤1",
+      "C) Extensive P-gp efflux ratio with low permeability (Papp <10 nm/s)",
+      "D) Presence of carboxylic acids plus aldehyde oxidase liability",
+      "E) Net negative charge combined with pKa <3",
+      "F) Strong basicity (pKa >9) and high α1-acid glycoprotein binding"
+    ],
+    "answer": "B",
+    "explanation": {
+      "core_concept": "Physicochemical space drives accuracy of hepatocyte-based clearance predictions.",
+      "significance": "CNS-like, lipophilic, low-polar compounds align with assumptions underlying dilution scaling, yielding low error metrics.",
+      "abstract_support": "Smaller, less polar, lipophilic, low HBD compounds showed best CLp prediction (PMID:37235687). ECCS class 2 compounds with high permeability similarly performed well (PMID:35257289). Long-term culture data indicated that high permeability eases measurement of low turnover (PMID:38604730).",
+      "distractor_analysis": "A) Nonclassical chemotypes suffer poor IVIVE (37235687). C) Low permeability and high efflux impair predictions (37235687, 35257289). D) Functional groups listed trend toward weaker IVIVE (37235687). E, F) Extreme acid/base properties complicate binding and transporter interactions, decreasing accuracy (37235687)."
+    },
+    "domain": "Medicinal chemistry-IVIVE interplay",
+    "PMID": [
+      "37235687",
+      "35257289",
+      "38604730"
+    ]
+  },
+  {
+    "question": "Removing the need for empirical hepatocyte-to-plasma scaling during rat hepatic clearance prediction of OATP substrates can be achieved by which analytical adjustment?",
+    "options": [
+      "A) Calculating Kpuu solely via the temperature equilibrium method without protein",
+      "B) Applying homogenate-based Kpuu in 4 % BSA-supplemented hepatocytes",
+      "C) Multiplying intrinsic metabolic clearance by two to match blood flow",
+      "D) Substituting extracellular protein binding parameters with microsomal data",
+      "E) Using passive diffusion coefficients as stand-alone predictors",
+      "F) Implementing single-species allometric scaling from monkey data"
+    ],
+    "answer": "B",
+    "explanation": {
+      "core_concept": "Albumin supplementation combined with homogenate Kpuu determination captures unbound intracellular distribution, eliminating empirical factors.",
+      "significance": "This method directly yields unbound hepatocyte uptake and partitioning, aligning predicted with observed clearance.",
+      "abstract_support": "Homogenisation Kpuu,ss measured in 4 % BSA generated robust correlation with in vivo CL without scaling (PMID:32759366). Albumin-mediated uptake rationale confirms protein necessity (PMID:34171335). Human data showed similar benefit of albumin-supplemented PSu,inf (PMID:33196949).",
+      "distractor_analysis": "A) Temperature method was less dependent on albumin but not superior overall (32759366). C) Arbitrary multiplication lacks mechanistic rationale (39013583). D, E) Ignoring active uptake and intracellular binding errors (37407092). F) Species differences impede direct translation (32690433)."
+    },
+    "domain": "Unbound partitioning methodologies",
+    "PMID": [
+      "32759366",
+      "34171335",
+      "33196949"
+    ]
+  },
+  {
+    "question": "The dispersion-like behaviour of hepatic drug disposition can be approximated in PBPK models by which structural modification that remains computationally tractable?",
+    "options": [
+      "A) Replacing the liver compartment with a single well-stirred compartment using scaled intrinsic clearance",
+      "B) Implementing a three-tank in-series mini-parallel-tube arrangement within the liver module",
+      "C) Doubling systemic blood flow values in the model",
+      "D) Eliminating tissue-to-plasma partition coefficients to focus on perfusion rates",
+      "E) Collapsing the liver into a permeability-limited one-compartment unit",
+      "F) Applying a non-compartmental analysis to the entire PBPK structure"
+    ],
+    "answer": "B",
+    "explanation": {
+      "core_concept": "Series-compartment constructs emulate dispersion while retaining simplicity.",
+      "significance": "Mini-PTM maintains physiologic realism such as concentration gradients and zonation without the heavy computation of full dispersion models.",
+      "abstract_support": "Three-subcompartment tank-in-series model (mini-PTM) mirrored dispersion characteristics and corrected extraction bias (PMID:39013583). Series-compartment approaches showed mathematical similarity to DM yet easier operation (PMID:36732075). PTM outperformed WSM in clearance prediction accuracy (PMID:39084881).",
+      "distractor_analysis": "A) Re-introduces WSM limitations (39013583). C) Blood flow alteration does not replicate dispersion (39084881). D) Partition coefficients are crucial for tissue distribution (36732075). E) Single permeability-limited unit still lacks axial gradients (37460222). F) Non-compartmental analysis cannot substitute mechanistic structures (36623886)."
+    },
+    "domain": "Model structural simplification",
+    "PMID": [
+      "39013583",
+      "36732075",
+      "39084881"
+    ]
+  },
+  {
+    "question": "Analytical difficulty in quantifying highly protein-bound drugs in co-culture systems primarily arises from which factor, despite improved prediction for moderately bound compounds?",
+    "options": [
+      "A) Elevated stromal cell binding reduces measurable free drug concentrations",
+      "B) Excessive cytochrome P450 induction masks transporter kinetics",
+      "C) Rapid depletion due to uncontrolled medium evaporation",
+      "D) Albumin oxidation leading to irreversible drug conjugation",
+      "E) Inhibition of phase-II enzymes by endogenous bilirubin",
+      "F) Overexpression of efflux transporters in fibroblasts causing artefactual clearance"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Non-hepatocyte cellular components create additional nonspecific binding sites that confound unbound fraction determination.",
+      "significance": "Accurate unbound concentration tracking is essential for reliable clearance estimation in complex in vitro systems.",
+      "abstract_support": "Substantial binding to stromal cells required correction factors in HµREL assays, particularly problematic for high-binding drugs (PMID:37580106). Albumin-mediated uptake review highlights quantification challenges due to low unbound fractions (PMID:34171335). Long-term systems showed underprediction when binding not properly corrected (PMID:38604730).",
+      "distractor_analysis": "B) No evidence of excessive CYP induction in the abstracts (37580106). C) Medium evaporation not cited (38604730). D) Albumin oxidation not described (34171335). E) Bilirubin interference unreported (37580106). F) Efflux in fibroblasts was not the primary issue (37580106)."
+    },
+    "domain": "Experimental confounders in co-culture",
+    "PMID": [
+      "37580106",
+      "34171335",
+      "38604730"
+    ]
+  },
+  {
+    "question": "Prediction of human clearance using humanized-liver mice can be improved by which adjustment that accounts for partial donor cell replacement?",
+    "options": [
+      "A) Assuming 100 % human hepatocyte content without correction",
+      "B) Incorporating actual unbound plasma fractions measured at different humanization levels",
+      "C) Applying classical allometric scaling to mouse total clearance values",
+      "D) Neglecting residual mouse hepatocyte intrinsic clearance",
+      "E) Using protein binding data from dog plasma as surrogate",
+      "F) Increasing incubation temperature to 40 °C during microsomal assays"
+    ],
+    "answer": "B",
+    "explanation": {
+      "core_concept": "Accounting for species-specific protein binding calibrates intrinsic clearance to the effective human hepatocyte proportion.",
+      "significance": "Adjusting for variable engraftment levels refines calculation of unbound intrinsic clearance, enhancing translational accuracy.",
+      "abstract_support": "Methods incorporating actual unbound plasma fractions and correcting for residual mouse hepatocytes improved prediction accuracy compared with assuming full humanization (PMID:32690433). Preclinical IVIVE analysis emphasised species differences in binding influencing scaling factors (PMID:35257289). Review on extended clearance concept underscores missing in vitro–in vivo bridging factors such as protein binding (PMID:37407092).",
+      "distractor_analysis": "A) Overestimates human metabolism (32690433). C) Allometry alone performed comparably but did not leverage mechanistic improvements (32690433). D) Ignoring residual mouse contribution yields bias (32690433). E) Dog plasma binding irrelevant to mouse–human differences (35257289). F) Temperature change unrelated to engraftment correction (32690433)."
+    },
+    "domain": "Humanized animal models",
+    "PMID": [
+      "32690433",
+      "35257289",
+      "37407092"
+    ]
+  },
+  {
+    "question": "Validation of a human PBPK model for transporter-mediated clearance during discovery is strengthened by first confirming which aspect in cynomolgus monkeys?",
+    "options": [
+      "A) Nonlinear Michaelis–Menten metabolism parameters of cytochrome P450 3A4",
+      "B) Drug–drug interaction magnitude with known OATP inhibitors reflected in liver concentrations",
+      "C) Time-dependent inhibition of aldehyde oxidase",
+      "D) Enterohepatic recycling kinetics of glucuronide metabolites",
+      "E) Passive diffusion coefficients across Caco-2 monolayers",
+      "F) Renal tubular secretion rates mediated by OCT2"
+    ],
+    "answer": "B",
+    "explanation": {
+      "core_concept": "Cross-species DDI data provide functional verification of transporter parameters before human extrapolation.",
+      "significance": "Matching inhibitor impact on hepatic uptake in monkeys ensures scaling factors applied to human PBPK are mechanistically grounded.",
+      "abstract_support": "Framework advocates validating model and scaling factors using DDI data with known transporter inhibitors in monkeys (PMID:33793347). Extended clearance review discusses integrating OATP-mediated uptake into PBPK to capture nonlinear kinetics (PMID:37407092). Comparative liver model performance indicates PTM representation transferable across species (PMID:39084881).",
+      "distractor_analysis": "A, C) Metabolic processes less relevant to transporter validation (37407092). D) Enterohepatic recycling not primary focus of OATP DDIs (33793347). E) Caco-2 data pertains to absorption, not hepatic uptake (37460222). F) Renal OCT2 unrelated to hepatic uptake model (33793347)."
+    },
+    "domain": "PBPK validation strategy",
+    "PMID": [
+      "33793347",
+      "37407092",
+      "39084881"
+    ]
+  },
+  {
+    "question": "Among methods for determining hepatocyte Kpuu, which combination most directly captures rapid initial sequestration while incorporating albumin-mediated effects?",
+    "options": [
+      "A) Temperature equilibrium method without serum proteins",
+      "B) Homogenate steady-state method with 4 % BSA supplementation",
+      "C) Initial rate method in protein-free buffer followed by correction for binding",
+      "D) Flow cytometry-based single-cell distribution assay in absence of albumin",
+      "E) Oil-adsorption assay measuring lipid partitioning factors",
+      "F) Equilibrium dialysis of microsomal fractions incubated with α1-acid glycoprotein"
+    ],
+    "answer": "B",
+    "explanation": {
+      "core_concept": "Homogenate Kpuu,ss integrates cellular binding and albumin-facilitated uptake, reflecting true unbound intracellular drug levels early in incubation.",
+      "significance": "Accurate Kpuu is pivotal for extended clearance calculations in transporter-dependent compounds.",
+      "abstract_support": "Homogenisation Kpuu,ss in 4 % BSA produced best CL prediction in rat (PMID:32759366). Albumin-mediated uptake improves hepatocyte uptake correlations (PMID:33196949). Guidance advocates considering albumin effects in scaling approaches (PMID:33857483).",
+      "distractor_analysis": "A) Lacks albumin, misses facilitated dissociation (32759366). C) Post-hoc binding correction less accurate (32759366). D) Not described in any abstract. E, F) Methods unrelated to whole-cell Kpuu (32759366)."
+    },
+    "domain": "Intracellular partition coefficient determination",
+    "PMID": [
+      "32759366",
+      "33196949",
+      "33857483"
+    ]
+  },
+  {
+    "question": "Capturing intraorgan drug gradients to better predict hepatotoxicity risk can be enhanced by which modelling approach that also accommodates nonlinear binding?",
+    "options": [
+      "A) Minimal PBPK framework coupled with a series-compartment liver model",
+      "B) Non-compartmental analysis of systemic concentration–time data",
+      "C) Fixed fractional tissue distribution using logP alone",
+      "D) Zero-order absorption input into a single-compartment model",
+      "E) Static partition coefficient scaling without sub-compartmentalisation",
+      "F) Allometric clearance scaling ignoring tissue distribution"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Series-compartment liver structures within minimal PBPK capture spatial concentration profiles and allow nonlinear processes.",
+      "significance": "Internal gradient estimation informs site-specific metabolism and toxicity predictions beyond blood PK.",
+      "abstract_support": "SCM within minimal PBPK handled nonlinear binding and zonation, providing insight into internal gradients (PMID:37460222). Similar SCM approximated dispersion for hepatic elimination (PMID:36732075). Long-term liver models revealed importance of intrahepatic concentrations for slowly metabolised drugs (PMID:38604730).",
+      "distractor_analysis": "B, D) Lack mechanistic liver representation (36732075). C, E) Static distribution fails to reflect nonlinear binding (37460222). F) Ignores tissue drug load entirely (36623886)."
+    },
+    "domain": "Hepatotoxicity risk modelling",
+    "PMID": [
+      "37460222",
+      "36732075",
+      "38604730"
+    ]
+  },
+  {
+    "question": "In the context of passive permeability-limited models, which systematic error persists for acidic drugs and is mitigated by applying a scalar reducing interstitial fluid protein binding?",
+    "options": [
+      "A) Overestimation of extraction ratio due to excessive hepatic blood flow",
+      "B) Underprediction of hepatic clearance owing to elevated cytosolic concentrations",
+      "C) Overprediction of renal clearance via active secretion",
+      "D) Underestimation of volume of distribution in peripheral tissues",
+      "E) Mischaracterisation of oral absorption rate constants",
+      "F) Overestimation of efflux transporter capacity in bile canaliculi"
+    ],
+    "answer": "B",
+    "explanation": {
+      "core_concept": "Inadequate representation of albumin-facilitated uptake in permeability-limited models leads to low predicted hepatic clearance for acids.",
+      "significance": "Applying a protein-binding scalar compensates for this mechanistic gap, improving model performance.",
+      "abstract_support": "Large systematic error for acids in permeability-limited model; reducing ISF protein binding decreased average fold error (PMID:39084881). Albumin-mediated uptake review explains high cytosolic concentrations for acidic, highly bound drugs (PMID:34171335). Albumin supplementation in hepatocyte assays rectified clearance under-prediction (PMID:33196949).",
+      "distractor_analysis": "A) Error stems from binding, not flow (39084881). C, D, E, F) Not identified as systematic issues in cited work (39084881)."
+    },
+    "domain": "Permeability-limited modelling challenges",
+    "PMID": [
+      "39084881",
+      "34171335",
+      "33196949"
+    ]
+  },
+  {
+    "question": "Which modelling strategy best integrates the dual effects of glomerular filtration decline and uremia-mediated CYP3A4 suppression when forecasting exposure of a transporter-substrate drug in chronic kidney disease?",
+    "options": [
+      "A) Coupling QSPKR-predicted renal secretion parameters with residual CYP3A4 activity scalars from an In vivo Mechanistic Static Model and embedding both within a mechanistic kidney PBPK framework.",
+      "B) Estimating renal clearance solely with an In vivo Mechanistic Static Model while assuming unchanged hepatic CYP3A4 activity across all CKD stages.",
+      "C) Relying on non-compartmental analysis and dose normalization to individual glomerular filtration rate without any mechanistic modelling.",
+      "D) Using QSPKR to differentiate secretion from reabsorption and applying a generic two-fold safety factor to hepatic intrinsic clearance.",
+      "E) Implementing a PBPK model that scales glomerular filtration but omits active transport and hepatic metabolism adjustments.",
+      "F) Combining lipophilicity-based empirical rules with dose-reduction tables derived from geriatric pharmacokinetics."
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Integrated PBPK workflow for simultaneous renal and hepatic alterations in CKD",
+      "significance": "Ensures prediction accuracy for drugs subject to both transporter-mediated secretion and CYP3A4 metabolism, which are independently impaired in CKD.",
+      "abstract_support": "Mechanistic kidney PBPK modules capture filtration, transport and pH effects (PMID:40048993) → Quantitative residual CYP3A4 activity vs GFR (0.40 at GFR = 0) derived from IMSM modelling (PMID:36631686) → CKD PBPK reviews recommend embedding disease-specific system changes into whole-body PBPK, usually achieving <2-fold error (PMID:38270999) → Physicochemical-guided QSPKR supplies initial secretion parameters (PMID:31957435).",
+      "distractor_analysis": "B ignores CYP3A4 suppression contradicting PMID:36631686; C lacks mechanistic representation contradicted by PMIDs:40048993,38270999; D applies arbitrary safety factor not evidence-based; E omits transport & metabolic scaling, conflicting with all four PMIDs; F uses geriatric tables unrelated to CKD pathophysiology, no support in any abstract."
+    },
+    "domain": "Renal–hepatic PBPK integration in CKD",
+    "PMID": [
+      "40048993",
+      "36631686",
+      "38270999",
+      "31957435"
+    ],
+    "cluster": "cluster_98"
+  },
+  {
+    "question": "For a compound eliminated predominantly by CYP2C9 with negligible renal clearance, which exposure change is most consistent with cross-study evidence as glomerular filtration rate approaches zero?",
+    "options": [
+      "A) Little to no increase in systemic AUC because CYP2C9 activity remains essentially unchanged even in end-stage CKD and renal elimination is minimal.",
+      "B) Marked AUC elevation due to parallel reductions in glomerular filtration and CYP2C9 catalytic activity.",
+      "C) Unpredictable exposure trends arising from high inter-study variability in quantitative structure–pharmacokinetic relationships.",
+      "D) Reduced systemic exposure driven by enhanced hepatic blood flow in advanced CKD.",
+      "E) Pronounced accumulation caused by generalized up-regulation of renal transporters in CKD.",
+      "F) Large exposure swings necessitating routine post-dialysis supplementation because CYP2C9 is dialyzable."
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Isoform-specific metabolic resilience of CYP2C9 in CKD",
+      "significance": "Guides dose selection for drugs dominantly cleared by CYP2C9, avoiding unnecessary reductions.",
+      "abstract_support": "IMSM regression estimated residual CYP2C9 activity ≈ 1.0 at GFR = 0 (PMID:36631686) → CKD PBPK models generally show <2-fold prediction error when isoform activity is largely conserved (PMID:38270999) → Renal PBPK focus (PMID:40048993) emphasizes that when intrinsic renal elimination is negligible, metabolic changes dominate exposure; for CYP2C9 such changes are minor.",
+      "distractor_analysis": "B contradicts residual activity ≈ 1.0; C misattributes variability to QSPKR despite metabolism dominance; D lacks data indicating increased hepatic blood flow; E conflicts with evidence that transporters are often down-regulated, not broadly up-regulated; F dialysis relevance unsupported because hepatic metabolism, not dialyzability, governs clearance."
+    },
+    "domain": "Isoform-specific metabolic impact of CKD",
+    "PMID": [
+      "36631686",
+      "38270999",
+      "40048993"
+    ],
+    "cluster": "cluster_98"
+  },
+  {
+    "question": "Which combination of physicochemical properties and mechanistic features most strongly predicts that a basic small molecule will undergo net tubular reabsorption and therefore requires explicit pH-gradient modelling in CKD-focused PBPK simulations?",
+    "options": [
+      "A) High logP, predominantly protonated at physiological pH, and incorporation of tubular pH and transporter terms within a mechanistic kidney PBPK module.",
+      "B) Low polar surface area, anionic charge at pH 7.4, and omission of active transport processes.",
+      "C) Moderate lipophilicity, zwitterionic state, and reliance on glomerular filtration scaling alone.",
+      "D) High aqueous solubility, neutral charge, and exclusive use of QSPKR secretory clearance coefficients.",
+      "E) Low logP coupled with exclusive basolateral efflux transport in the distal nephron.",
+      "F) Extreme polarity, cationic charge, and modelling limited to the hepatic compartment."
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Physicochemical drivers of renal tubular reabsorption in PBPK",
+      "significance": "Improves prediction of CKD exposure for lipophilic bases that may accumulate due to pH-dependent reabsorption.",
+      "abstract_support": "Lipophilic compounds trend toward reabsorption and lower CLr (PMID:31957435) → Mechanistic kidney PBPK models integrate tubular pH to capture pH-partitioning of bases (PMID:40048993) → CKD PBPK frameworks recommend adjusting renal module parameters (PMID:38270999), making pH-gradient modelling essential when reabsorption dominates.",
+      "distractor_analysis": "B describes anions which favor secretion; C ignores transport and pH dependence; D secretory focus conflicts with reabsorption prediction; E low logP disfavors passive reabsorption; F models hepatic, not renal, processes, missing core mechanism."
+    },
+    "domain": "Physicochemical determinants of renal reabsorption",
+    "PMID": [
+      "31957435",
+      "40048993",
+      "38270999"
+    ],
+    "cluster": "cluster_98"
+  },
+  {
+    "question": "Which limitation uniquely constrains the In vivo Mechanistic Static Model when predicting clearance changes of narrow-therapeutic-index drugs in CKD compared with physiologically based pharmacokinetic approaches?",
+    "options": [
+      "A) Difficulty in achieving precise estimations because of large variability in published pharmacokinetic data, necessitating drug-specific modelling.",
+      "B) Inability to incorporate cytochrome P450 isoform-specific activity differences across CKD stages.",
+      "C) Lack of any mechanism for adjusting plasma protein binding variations associated with CKD.",
+      "D) Absence of parameters for renal active secretion pathways.",
+      "E) Exclusive reliance on animal data for model calibration.",
+      "F) Requirement of individual patient biomarker inputs for every simulation."
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Model precision limitations for static versus mechanistic frameworks",
+      "significance": "Guides selection of modelling methodology for high-risk drugs in renal impairment.",
+      "abstract_support": "IMSM study reports imprecision due to high inter-study variability, recommending PK modelling for narrow-margin drugs (PMID:36631686) → Kidney PBPK review (PMID:40048993) advocates mechanistic models for such scenarios → CKD PBPK survey shows <2-fold accuracy achievable with PBPK (PMID:38270999).",
+      "distractor_analysis": "B incorrect—IMSM quantified isoform-specific activity; C variabilities can still be incorporated; D IMSM was applied to renal elimination; E uses clinical datasets, not solely animals; F static models do not require biomarker inputs."
+    },
+    "domain": "Methodological constraints of IMSM vs PBPK",
+    "PMID": [
+      "36631686",
+      "40048993",
+      "38270999"
+    ],
+    "cluster": "cluster_98"
+  },
+  {
+    "question": "Across CKD-focused PBPK validation studies, which numerical criterion is most commonly applied to judge an acceptable agreement between simulated and observed systemic exposure metrics such as AUC?",
+    "options": [
+      "A) Predicted-to-observed ratios falling within a two-fold error window.",
+      "B) Absolute concentration deviations below 0.5 µg mL⁻¹.",
+      "C) Root-mean-square error under 15 %.",
+      "D) Prediction intervals overlapping the 95 % confidence band of non-compartmental estimates.",
+      "E) Bayesian information criterion improvement of at least 10 units versus a base model.",
+      "F) Visual predictive checks showing median curves within observed quartiles for ≥90 % of samples."
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Standard error threshold for PBPK model verification",
+      "significance": "Establishes a pragmatic benchmark for regulatory and research assessments of PBPK performance in CKD.",
+      "abstract_support": "CKD PBPK review states most models meet the allowed two-fold error range (PMID:38270999) → Kidney PBPK review underscores robust model validation often using the same threshold (PMID:40048993) → IMSM study compared predictions within 0.5–2 range, aligning with two-fold convention (PMID:36631686).",
+      "distractor_analysis": "B and C thresholds are not cited; D, E, F represent alternative metrics not highlighted in any abstract; only the two-fold criterion is consistently documented across the three sources."
+    },
+    "domain": "Model validation metrics in CKD PBPK",
+    "PMID": [
+      "38270999",
+      "40048993",
+      "36631686"
+    ],
+    "cluster": "cluster_98"
+  },
+  {
+    "question": "When estimating first-in-human skeletal-muscle exposure for a novel phosphorodiamidate morpholino oligomer, which integrative preclinical strategy most coherently combines class-wide metabolic resistance, the muscle/plasma exposure–response link, and the accuracy of cynomolgus monkey allometric scaling?",
+    "options": [
+      "A) Apply rat liver microsomal intrinsic-clearance data to human hepatic models and disregard tissue partitioning",
+      "B) Extrapolate plasma pharmacokinetics from cynomolgus monkeys by body-weight allometry and multiply by the DMD-mouse muscle/plasma concentration ratio to project human muscle exposure",
+      "C) Generate dog pharmacokinetic profiles and fit a physiologically-based model assuming extensive hepatic metabolism",
+      "D) Use in vitro human hepatocyte stability to set clearance and assume a fixed tissue partition coefficient of 1.0 for all muscles",
+      "E) Rely on in silico charge-based distribution algorithms combined with rat allometry to predict both clearance and tissue exposure",
+      "F) Scale non-human-primate glomerular filtration rates directly to children and assume linear pharmacokinetics across all doses"
+    ],
+    "answer": "B",
+    "explanation": {
+      "core_concept": "Integrated translational PK/PD prediction for PMO dose selection",
+      "significance": "Combines the most predictive species for plasma clearance with a validated tissue-distribution metric, enabling non-invasive estimation of therapeutic muscle levels in Duchenne boys",
+      "abstract_support": "PMID 39516029 documents negligible hepatic metabolism for multiple PMOs; PMID 38991781 demonstrates that the muscle/plasma ratio (Kp) in DMD-model mice correlates with exon-skipping efficiency; PMID 37468285 shows that cynomolgus-to-human allometric scaling precisely predicts viltolarsen plasma profiles.",
+      "distractor_analysis": "Option A ignores the demonstrated lack of hepatic metabolism (39516029) and the need for tissue Kp (38991781). Option C assumes hepatic clearance contrary to 39516029 and uses a less validated species for scaling than cynomolgus (37468285). Option D neglects species-validated Kp and contradicts low metabolic turnover. Option E replaces empirical scaling with unvalidated in silico distribution. Option F overlooks the evidence that total clearance, not simple GFR scaling, best predicted plasma PK (37468285).",
+      "evolutionary_reasoning": "39516029 establishes a metabolism-independent clearance paradigm → 38991781 links muscle exposure to efficacy via Kp → 37468285 proves cynomolgus scaling accuracy, together prescribing the integrated approach in Option B."
+    },
+    "domain": "Translational PK/PD modeling for PMOs",
+    "PMID": [
+      "39516029",
+      "38991781",
+      "37468285"
+    ],
+    "cluster": "cluster_99"
+  },
+  {
+    "question": "During cross-species pharmacokinetic extrapolation of viltolarsen, which parameter proved least predictable by standard allometric methods despite accurate clearance estimation, underscoring a limitation for phosphorodiamidate morpholino oligomer volume modeling?",
+    "options": [
+      "A) Total systemic clearance",
+      "B) Plasma elimination half-life",
+      "C) Fraction of dose excreted unchanged in urine",
+      "D) Volume of distribution at steady state",
+      "E) Plasma protein binding fraction",
+      "F) Hepatic intrinsic clearance"
+    ],
+    "answer": "D",
+    "explanation": {
+      "core_concept": "Allometric prediction limits for distribution parameters",
+      "significance": "Highlights the need for refined methodologies when projecting tissue distribution volumes for PMOs, which impacts dosing strategies",
+      "abstract_support": "PMID 37468285 reports that all known prediction methods underestimated human volume of distribution at steady state, although total clearance was well captured. Minimal plasma protein binding and renal elimination consistency are documented in PMID 39516029, while tissue Kp correlations in PMID 38991781 further emphasize distribution complexity.",
+      "distractor_analysis": "Clearance (A) was accurately predicted (37468285). Half-life (B) derives from both clearance and volume; misprediction stemmed primarily from volume errors. Renal excretion fraction (C) and plasma binding (E) are consistently low (39516029), not highlighted as prediction issues. Hepatic intrinsic clearance (F) is negligible for PMOs (39516029), therefore not the problematic parameter.",
+      "evolutionary_reasoning": "39516029 characterizes uniform protein binding and renal elimination → 38991781 illustrates tissue distribution importance → 37468285 identifies volume prediction as the remaining challenge, making Option D correct."
+    },
+    "domain": "Cross-species PK extrapolation challenges",
+    "PMID": [
+      "37468285",
+      "39516029",
+      "38991781"
+    ],
+    "cluster": "cluster_99"
+  },
+  {
+    "question": "Which triad of pharmacokinetic features best supports treating eteplirsen, golodirsen, and casimersen as a cohesive phosphorodiamidate morpholino oligomer class and justifies extending cynomolgus-based clearance scaling to other members such as viltolarsen?",
+    "options": [
+      "A) Extensive cytochrome P450 metabolism, high plasma protein binding, and biliary excretion",
+      "B) Neutral backbone charge, extensive microsomal oxidation, and dose-dependent transporter inhibition",
+      "C) Low plasma protein binding, absence of hepatic metabolism, and predominant renal elimination of unchanged drug",
+      "D) High lipophilicity, saturable renal secretion, and rapid biliary recycling",
+      "E) pH-dependent plasma stability, significant first-pass hepatic extraction, and transporter-mediated hepatic uptake",
+      "F) High tissue lipophilicity, covalent plasma protein attachment, and mixed renal-biliary elimination"
+    ],
+    "answer": "C",
+    "explanation": {
+      "core_concept": "Class-defining pharmacokinetic signature of PMOs",
+      "significance": "Provides the mechanistic rationale for leveraging a platform development approach across chemically similar exon-skipping agents",
+      "abstract_support": "PMID 39516029 documents low (<40 %) plasma protein binding, negligible CYP interaction, and renal elimination for eteplirsen, golodirsen, and casimersen. PMID 37468285 confirms the same clearance pathway for viltolarsen and the effectiveness of cynomolgus-to-human scaling. PMID 38991781 shows that these characteristics enable predictable tissue exposure when combined with Kp metrics.",
+      "distractor_analysis": "Options A, B, D, E, and F introduce hepatic metabolism, high lipophilicity, or significant transporter involvement not reported in any abstract. Such traits contradict both the metabolic resistance (39516029) and empirical PK scaling success (37468285).",
+      "evolutionary_reasoning": "39516029 establishes shared PK features → 38991781 links these features to tissue efficacy measures → 37468285 leverages feature uniformity for interspecies scaling, validating Option C."
+    },
+    "domain": "Pharmacokinetic class characterization",
+    "PMID": [
+      "39516029",
+      "37468285",
+      "38991781"
+    ],
+    "cluster": "cluster_99"
+  },
+  {
+    "question": "Cross-species data demonstrated a linear relationship between a specific pharmacokinetic metric and exon-skipping efficiency for viltolarsen; when paired with cynomolgus allometric plasma predictions and the negligible hepatic metabolism of PMOs, which metric enables non-invasive forecasting of human pharmacodynamics?",
+    "options": [
+      "A) Liver/plasma concentration ratio",
+      "B) Skeletal-muscle/plasma concentration ratio (Kp)",
+      "C) Renal clearance normalized to body surface area",
+      "D) Mean residence time in plasma",
+      "E) Fraction unbound in plasma",
+      "F) Biliary excretion rate constant"
+    ],
+    "answer": "B",
+    "explanation": {
+      "core_concept": "Use of tissue partition coefficients for PD translation",
+      "significance": "Allows prediction of therapeutic exon-skipping efficacy without muscle biopsies, accelerating clinical development",
+      "abstract_support": "PMID 38991781 shows that skeletal muscle concentrations are directly correlated with exon-skipping efficiency and that the muscle/plasma Kp can bridge PK to PD. PMIDs 37468285 and 39516029 provide, respectively, reliable plasma PK scaling and confirmation of metabolism-independent clearance, completing the non-invasive modeling rationale.",
+      "distractor_analysis": "Liver/plasma ratio (A) lacks demonstrated PD relevance. Renal clearance (C) informs elimination but not muscle exposure. Mean residence time (D) and fraction unbound (E) do not directly translate to exon-skipping efficiency. Biliary excretion (F) is negligible for PMOs (39516029).",
+      "evolutionary_reasoning": "39516029 confirms stable systemic exposure framework → 38991781 identifies Kp-linked efficacy → 37468285 supplies accurate plasma PK prediction, collectively validating the skeletal-muscle Kp approach."
+    },
+    "domain": "PK/PD linkage for exon-skipping therapies",
+    "PMID": [
+      "38991781",
+      "37468285",
+      "39516029"
+    ],
+    "cluster": "cluster_99"
+  },
+  {
+    "question": "Which physicochemical attribute most plausibly accounts for the uniformly low plasma protein binding and predominant renal elimination of phosphorodiamidate morpholino oligomers across species, differentiating them from negatively charged antisense chemistries?",
+    "options": [
+      "A) Electrically neutral phosphorodiamidate morpholino backbone lacking negative charge",
+      "B) High octanol-water partition coefficient conferring lipophilicity",
+      "C) Presence of phosphorothioate linkages that enhance serum albumin affinity",
+      "D) Covalent pegylation increasing hydrodynamic radius",
+      "E) Extensive N-acetylgalactosamine conjugation promoting hepatocyte uptake",
+      "F) Strong acidic pKa enabling ion-pair formation with basic proteins"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Backbone charge influence on protein binding and clearance pathways",
+      "significance": "Explains why PMOs exhibit class-specific pharmacokinetics and informs rational design of future oligonucleotide drugs",
+      "abstract_support": "PMID 37468285 notes that PMOs, unlike other antisense oligonucleotides, are not negatively charged, correlating with low protein binding. PMID 39516029 corroborates low (<40 %) binding and renal excretion. The absence of charge-mediated plasma interactions aligns with tissue distribution patterns tied to Kp in PMID 38991781.",
+      "distractor_analysis": "Lipophilicity (B) would increase, not lower, protein binding. Phosphorothioate linkages (C) characterize charged ASOs, not PMOs. Pegylation (D) and GalNAc conjugation (E) are not reported for these agents. Acidic pKa (F) contradicts the neutral backbone explanation.",
+      "evolutionary_reasoning": "37468285 introduces the neutral backbone property → 39516029 links this property to low binding and renal elimination → 38991781 demonstrates downstream implications for tissue distribution, supporting Option A."
+    },
+    "domain": "Physicochemical determinants of oligonucleotide PK",
+    "PMID": [
+      "37468285",
+      "39516029",
+      "38991781"
+    ],
+    "cluster": "cluster_99"
+  },
+  {
+    "question": "Which paired ontogeny profiles were explicitly parameterised in the pre-term physiologically-based pharmacokinetic framework, enabling accurate oral clearance predictions for both caffeine and ibuprofen in virtual neonates?",
+    "options": [
+      "A) CYP1A2 and CYP2C9",
+      "B) CYP3A4 and UGT1A1",
+      "C) P-glycoprotein and CYP2D6",
+      "D) OAT1 and MRP2",
+      "E) CYP2E1 and BCRP",
+      "F) OCT2 and CYP2C19"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Enzyme ontogeny integration for hepatic clearance prediction",
+      "significance": "Identifying quantitatively defined enzyme trajectories clarifies why certain hepatically cleared drugs can be dosed with model-supported confidence in pre-term neonates.",
+      "abstract_support": "Part I collated ontogeny for CYP1A2, CYP2C9 and CYP3A4 (PMID:31583613). Part II demonstrated successful PK prediction for caffeine (CYP1A2 substrate) and ibuprofen (CYP2C9 substrate) after oral dosing (PMID:31587145). The systematic review confirmed that these enzyme pathways are among the better described system components in pre-term PBPK libraries (PMID:35796504).",
+      "distractor_analysis": "B) CYP3A4 is parameterised, yet UGT1A1 ontogeny is not detailed in Part I. C) & D) Transporter pathways (P-gp, OAT1, MRP2) are flagged as poorly quantified (PMID:35796504). E) & F) CYP2E1, BCRP, OCT2, CYP2C19 are not parameterised in the integrated dataset, so they cannot explain the validated predictions.",
+      "evolutionary_reasoning": "PMID:31583613 → supplies enzyme growth curves; PMID:31587145 → applies them to drug prediction; PMID:35796504 → evaluates breadth of enzyme coverage, confirming these two enzymes remain among the most maturely defined."
+    },
+    "domain": "Preterm PBPK modelling",
+    "PMID": [
+      "31583613",
+      "31587145",
+      "35796504"
+    ],
+    "cluster": "cluster_238"
+  },
+  {
+    "question": "Renal maturation adequately forecast vancomycin disposition, yet which physiological element was highlighted as the key unresolved source of prediction uncertainty for drugs cleared via hepatobiliary routes in pre-term PBPK simulations?",
+    "options": [
+      "A) Ontogeny of biliary transporters such as MRP2 and BSEP",
+      "B) Age-dependent glomerular filtration rate trajectories",
+      "C) Plasma α-1-acid glycoprotein binding affinity variations",
+      "D) Body-weight–scaled cardiac output coefficients",
+      "E) Fraction unbound changes in cerebrospinal fluid",
+      "F) Gastrointestinal transit time shortening after birth"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Transporter-mediated hepatobiliary clearance gaps",
+      "significance": "Quantifying biliary transporter development is pivotal for dual-clearance or bile-dependent drugs, currently limiting confident first-dose selection in pre-terms.",
+      "abstract_support": "Accurate renal predictions for gentamicin and vancomycin were achieved by incorporating renal maturation alone (PMID:31587145). Part I acknowledged limited data on tissue composition and transporters (PMID:31583613). The systematic review explicitly lists biliary excretion and transporter ontogeny as major knowledge gaps producing uncertainty (PMID:35796504).",
+      "distractor_analysis": "B) GFR trajectories are already integrated and validated. C) Protein binding is parameterised as age functions in Part I. D) Cardiac output scaling is discussed but not singled out as the largest uncertainty for hepatobiliary drugs. E) & F) CSF binding and transit time influence specialised exposures rather than bile-mediated elimination.",
+      "evolutionary_reasoning": "PMID:31583613 → initial recognition of transporter data void; PMID:31587145 → shows renal success without transporters; PMID:35796504 → formalises transporter-related biliary clearance as a primary uncertainty."
+    },
+    "domain": "Preterm PBPK modelling",
+    "PMID": [
+      "31587145",
+      "31583613",
+      "35796504"
+    ],
+    "cluster": "cluster_238"
+  },
+  {
+    "question": "During derivation of anatomic growth equations for pre-term neonates, why were organ weights expressed as functions of body weight rather than chronological age to preserve physiological covariance within the PBPK framework?",
+    "options": [
+      "A) Body weight maintains inter-organ correlation patterns that would be disrupted by gestational age variability",
+      "B) Chronological age datasets were limited to term infants, preventing pre-term extrapolation",
+      "C) Body weight directly scales intrinsic hepatic clearance independent of enzyme ontogeny",
+      "D) Postnatal age metrics undermine renal filtration estimates influenced by antenatal steroid exposure",
+      "E) Cardiac output measurements are unattainable for chronological age strata in pre-terms",
+      "F) Protein binding maturation cannot be expressed in time-based units"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Covariant scaling of anatomical parameters",
+      "significance": "Maintaining realistic inter-organ relationships is essential for simultaneous prediction of multi-organ clearance determinants in virtual pre-term populations.",
+      "abstract_support": "Part I quantified different organ growth patterns and anchored them to body-weight functions to retain physiological variability and correlation (PMID:31583613). Successful later simulations of six drugs relied on these scaled parameters (PMID:31587145). The systematic review emphasised that preserving systemic plausibility improves model robustness across varied applications (PMID:35796504).",
+      "distractor_analysis": "B) Age data were available but less correlated than weight. C) Intrinsic clearance involves enzyme ontogeny, not simply mass. D) & E) Renal and cardiac parameters are measurable over age strata. F) Protein binding was in fact expressed as age functions in Part I.",
+      "evolutionary_reasoning": "PMID:31583613 → body-weight modelling choice; PMID:31587145 → demonstrates predictive adequacy based on that structure; PMID:35796504 → supports benefit of physiologically coherent scaling."
+    },
+    "domain": "Preterm PBPK modelling",
+    "PMID": [
+      "31583613",
+      "31587145",
+      "35796504"
+    ],
+    "cluster": "cluster_238"
+  },
+  {
+    "question": "Which methodological extension catalogued in recent literature broadened the applicability of pre-term PBPK models beyond six-drug validation by incorporating genetic variability into virtual neonatal cohorts?",
+    "options": [
+      "A) Genotype-specific enzyme activity implementation",
+      "B) Ontogeny of biliary flow rate integration",
+      "C) Addition of a dynamic cerebrospinal fluid compartment",
+      "D) Simulation of lactation-derived enteral exposure pathways",
+      "E) In vitro–in vivo extrapolation for protein therapeutics",
+      "F) Inflammation-mediated modulation of hepatic clearance"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Developmental pharmacogenetics within PBPK simulations",
+      "significance": "Including genotype effects refines personalised dosing strategies, addressing inter-individual variability in vulnerable pre-term patients.",
+      "abstract_support": "Part II covered six probe drugs without genetic stratification (PMID:31587145). Part I provides enzyme ontogeny upon which genotype scalars can be layered (PMID:31583613). The systematic review lists developmental pharmacogenetics as an emerging application area achieved through genotype-specific activity factors (PMID:35796504).",
+      "distractor_analysis": "B) & C) are highlighted but pertain to physiological rather than genetic extensions; D) focuses on exposure via milk; E) and F) fall under protein and disease modules not tied to genetic variability.",
+      "evolutionary_reasoning": "PMID:31583613 → supplies base enzyme ontogeny; PMID:31587145 → demonstrates standard predictions; PMID:35796504 → documents next-step addition of genotype-adapted activity."
+    },
+    "domain": "Preterm PBPK modelling",
+    "PMID": [
+      "31583613",
+      "31587145",
+      "35796504"
+    ],
+    "cluster": "cluster_238"
+  },
+  {
+    "question": "Despite meeting the two-fold prediction criterion for six probe compounds, which combined clearance scenario remains most susceptible to model deviation due to insufficient quantitative definition of its governing pathways during pre-term PBPK model construction?",
+    "options": [
+      "A) Concurrent CYP3A4 metabolism and active tubular secretion",
+      "B) Glomerular filtration–driven elimination",
+      "C) Receptor-mediated endocytosis of protein therapeutics",
+      "D) Gastric pH–dependent degradation of antacids",
+      "E) Pulmonary exhalation of volatile anaesthetics",
+      "F) Neonatal Fc receptor recycling of monoclonal antibodies"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Dual-organ clearance with transporter involvement",
+      "significance": "Drugs relying on blended hepatic metabolism and transporter-mediated renal secretion challenge current models and demand additional system data before first-dose extrapolation.",
+      "abstract_support": "Part I lacked ontogeny data for active renal transporters (PMID:31583613). Part II succeeded with either metabolic or renal filtration pathways but did not tackle dual pathways (PMID:31587145). The systematic review specifies transporter ontogeny gaps (including OATs) and highlights uncertainty for multi-pathway drugs (PMID:35796504).",
+      "distractor_analysis": "B) GFR was parameterised and validated. C)–F) involve mechanisms either outside the six-drug set or addressed by other modules but are not pinpointed as the current weakest link.",
+      "evolutionary_reasoning": "PMID:31583613 → identifies transporter data void; PMID:31587145 → shows accurate prediction when drug avoids this void; PMID:35796504 → stresses vulnerability for compounds engaging both hepatic and transporter-mediated renal pathways."
+    },
+    "domain": "Preterm PBPK modelling",
+    "PMID": [
+      "31583613",
+      "31587145",
+      "35796504"
+    ],
+    "cluster": "cluster_238"
+  }
+]

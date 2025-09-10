@@ -1,0 +1,861 @@
+[
+  {
+    "question": "Which integrated strategy is most strongly supported for generating small-molecule inhibitors that suppress EGFR L858R/T790M/C797S signalling while limiting wild-type engagement?",
+    "options": [
+      "A) Live-cell MaMTH-DS selection of benzoxazole analogues bearing substitutions that exploit allosteric pockets perturbed by C797S",
+      "B) ATP-competitive high-throughput kinase screening of unsubstituted quinazoline cores against purified EGFR domains",
+      "C) Fragment-based tethering of covalent acrylamides to the catalytic lysine of wild-type EGFR followed by whole-cell profiling",
+      "D) Virtual docking of 4-oxoquinoline analogues exclusively to the ATP site of wild-type EGFR followed by potency ranking",
+      "E) Combinatorial synthesis of indole–pyrazoline hybrids with enforced planarity to maximise colchicine-site occupancy",
+      "F) Peptidomimetic antagonists designed to block the EGF–EGFR interface using extracellular domain crystallography"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Mutant-biased EGFR inhibition through live-cell functional screening combined with scaffold pre-validation",
+      "significance": "Addresses resistance mutations (T790M, C797S) by coupling a phenotypic assay capable of distinguishing mutant from wild-type signalling with a scaffold already exhibiting mutant preference.",
+      "abstract_support": "PMID 32094923 describes MaMTH-DS, identifying triple-mutant-selective compounds. PMID 32144093 validates the platform’s mutant specificity. PMID 32004897 reports benzoxazoles 4b/4d displaying higher potency against EGFR L858R than erlotinib, indicating a tractable mutant-biased core.",
+      "distractor_analysis": "B lacks the cell-based discrimination emphasised in 32094923. C proposes targeting a conserved lysine, conflicting with the need for selectivity. D restricts docking to wild-type ATP pocket, missing mutant bias. E concerns microtubule binders (PMID 32086053) unrelated to EGFR. F targets extracellular binding, not intracellular kinase resistance.",
+      "evolutionary_reasoning": "MaMTH-DS (32094923 → 32144093) expands detection beyond ATP-site inhibitors; benzoxazole SAR (32004897) supplies a chemical starting point, together forming a rational path to triple-mutant-focused drug discovery."
+    },
+    "domain": "Kinase drug-resistance strategies",
+    "PMID": [
+      "32094923",
+      "32144093",
+      "32004897"
+    ],
+    "cluster": "cluster_141_40"
+  },
+  {
+    "question": "A medicinal-chemistry programme seeks to merge structural motifs that retain potency in multidrug-resistant cancer lines and optimise colchicine-site occupancy. Which hybridisation choice is most consistent with published SAR on trimethoxy-bearing tubulin inhibitors?",
+    "options": [
+      "A) Conjugating a 3,4,5-trimethoxyphenyl indole ester at C-2 to the styrylquinoline core",
+      "B) Replacing the trimethoxyphenyl of styrylquinolines with a para-fluoro phenyl ring",
+      "C) Introducing a basic dimethylamine onto the indole nitro­gen of 2-alkoxycarbonyl indoles",
+      "D) Rigidifying the quinoline linker by converting the styryl double bond into an ethane",
+      "E) Eliminating the ester functionality from indole analogues while retaining methoxy substitution",
+      "F) Installing a sulfonamide group ortho to the quinoline nitrogen to enhance solubility"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Hybrid designs that combine complementary binding determinants from two colchicine-site chemotypes",
+      "significance": "Offers a route to overcome efflux-mediated resistance while improving pocket coverage.",
+      "abstract_support": "Styrylquinoline 9IV-c (PMID 32179282) and indole 3f/3w (PMID 32086053) both rely on a 3,4,5-trimethoxyphenyl ‘A-ring’. The indole series indicates a small ester at C-2 boosts activity; merging this ester-bearing indole fragment with the styrylquinoline skeleton preserves both critical features. Mutational resistance principles (PMID 31925410) further justify fuller site occupancy.",
+      "distractor_analysis": "B removes the essential trimethoxy motif. C adds polarity that could disrupt the hydrophobic colchicine pocket. D saturation of the styryl double bond reduces planarity needed for binding. E removal of the ester contradicts potency data in 32086053. F sulfonamide placement is unrelated to the binding cavity and unsupported.",
+      "evolutionary_reasoning": "Earlier indole SAR (32086053) highlighted ester contribution → styrylquinoline work (32179282) demonstrated MDR resilience → combining motifs exploits both advances while accommodating resistance landscapes described in 31925410."
+    },
+    "domain": "Antimitotic scaffold optimisation",
+    "PMID": [
+      "32179282",
+      "32086053",
+      "31925410"
+    ],
+    "cluster": "cluster_141_40"
+  },
+  {
+    "question": "When designing dual-target agents aimed at enhancing insulin sensitivity, which pairing of mechanistic actions aligns with reported potencies, selectivities and acceptable pharmacokinetics?",
+    "options": [
+      "A) Micromolar PTP1B inhibition by natural products combined with low-nanomolar GSK-3β blockade by pyridines",
+      "B) Carbonic anhydrase I/II inhibition by pyrazolines coupled with KRAS G12C covalent modification",
+      "C) LSD1 covalent inhibition merged with PI3Kα suppression using thiazole analogues",
+      "D) EGFR triple-mutant inhibition alongside A2B adenosine receptor antagonism",
+      "E) DNA gyrase/topoisomerase IV dual targeting appended to ARO inhibition",
+      "F) Tubulin polymerisation suppression followed by PIK3CA mutant blockade"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Complementary modulation of insulin signalling at receptor and glycogen-synthase levels",
+      "significance": "Simultaneous inhibition of PTP1B and GSK-3 is a rational avenue to potentiate insulin action without excessive off-target risk.",
+      "abstract_support": "Selective micromolar PTP1B inhibitors from natural products (PMID 32199302) provide upstream receptor sensitisation. Low-nanomolar, orally bioavailable GSK-3β pyridines (PMID 31926786) activate glycogen synthase. Clinical pharmacology principles highlighting dose optimisation (PMID 32108367) support combining agents with clear PK data.",
+      "distractor_analysis": "B combines unrelated metabolic enzymes and oncogenic drivers. C links epigenetic modulation with oncogenic lipid kinase without diabetes relevance. D addresses oncology receptor targets. E mixes antibacterial and endocrine mechanisms. F unites cytoskeletal and PI3K pathways, neither directly correcting insulin resistance.",
+      "evolutionary_reasoning": "Natural-product phosphatase selectivity (32199302) overcame historic cross-reactivity issues → potent GSK-3 inhibitors (31926786) solved kinase selectivity and PK, together providing a feasible dual-modality therapeutic concept supported by dosing insights (32108367)."
+    },
+    "domain": "Metabolic polypharmacology",
+    "PMID": [
+      "32199302",
+      "31926786",
+      "32108367"
+    ],
+    "cluster": "cluster_141_40"
+  },
+  {
+    "question": "Which experimental combination would most rigorously test a synergy hypothesis linking epithelial-to-mesenchymal transition blockade with epigenetic reprogramming in melanoma cells?",
+    "options": [
+      "A) Sequential treatment with nitro-triazolo[1,5-a]pyrimidine 4b followed by nanomolar LSD1 inhibitor 3a and assessment of E-cadherin, vimentin and Annexin V",
+      "B) Co-administration of PTP1B natural product inhibitors and dual bacterial topoisomerase II blockers with Bax/Bcl-2 ratio measurement",
+      "C) Simultaneous exposure to KRAS G12C covalent inhibitors and quinazoline multi-kinase agent 34 while tracking glycogen synthase activation",
+      "D) Alternating dosing of carbonic anhydrase pyrazolines and benzofuroquinoline antileukemia agents with tubulin polymerisation assays",
+      "E) Combination of 2-alkoxycarbonyl indoles and robustic acid derivatives in a MaMTH-DS reporter for EGFR signalling",
+      "F) Triple therapy of thiazolidinone antibacterials, A2B antagonists and PI3Kα inhibitors evaluated by topoisomerase I cleavage assays"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Functional intersection of EMT inhibition and chromatin-mediated apoptosis enhancement",
+      "significance": "Testing synergy can reveal whether dual targeting intensifies anti-metastatic and pro-apoptotic outcomes.",
+      "abstract_support": "Nitro-triazolo[1,5-a]pyrimidine 4b up-regulates E-cadherin, down-regulates vimentin and modulates Bax/Bcl-2 (PMID 32199733). LSD1 inhibitors 3a/3c induce expression of LSD1 target genes and inhibit cancer cell growth (PMID 32003940). Resistance-mutation mapping (PMID 31925410) underscores the benefit of multi-pathway intervention against adaptability.",
+      "distractor_analysis": "B lacks EMT relevance and merges unrelated antibacterial mechanisms. C involves oncogenic kinase drivers but omits EMT. D, E, F collide disparate mechanisms with no supportive pharmacological rationale.",
+      "evolutionary_reasoning": "EMT inhibitor data (32199733) → epigenetic inhibitor potency (32003940) → need to forestall adaptive resistance (31925410) motivates combined evaluation with precise EMT and apoptosis readouts."
+    },
+    "domain": "Combination oncology",
+    "PMID": [
+      "32199733",
+      "32003940",
+      "31925410"
+    ],
+    "cluster": "cluster_141_40"
+  },
+  {
+    "question": "A lead-optimisation effort aims to replicate the oral bioavailability achieved for quinazoline 34 by applying analogous modifications to purine-based PI3Kα inhibitors. Which structural focus is most substantiated by comparative property data?",
+    "options": [
+      "A) Adjusting the 6- and 7-substituents to tune polar surface area and microsomal stability",
+      "B) Incorporating electrophilic warheads to covalently bind C797 of EGFR",
+      "C) Saturating aromatic rings to increase planarity and logP",
+      "D) Introducing large sulfonate groups to elevate cLogP above 6",
+      "E) Removing heteroatoms to decrease hydrogen-bond capacity independently of polarity",
+      "F) Adding tri-methoxyphenyls that raise molecular weight beyond 600 Da"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Peripheral ring substitution to balance physicochemical properties and metabolic stability",
+      "significance": "Optimising oral exposure often requires fine-tuning solvent accessibility and microsomal clearance without eroding potency.",
+      "abstract_support": "Quinazoline 34 achieved F% 54 by modifying 6-/7-positions, improving physicochemical parameters and rat liver microsomal stability (PMID 32171993). PI3Kα purine/thiazole analogues demonstrated selective potency but lacked detailed PK, indicating room for similar modifications (PMID 32193031). Pharmacokinetic modelling insights (PMID 32108367) emphasise aligning physicochemical and metabolic profiles.",
+      "distractor_analysis": "B targets EGFR not PI3Kα. C contradicts descriptor definitions; saturation decreases, not increases planarity. D and F worsen oral bioavailability through excessive polarity or size. E indiscriminate heteroatom removal could impair binding affinity.",
+      "evolutionary_reasoning": "Quinazoline SAR evolution (32171993) informs subsequent application to PI3Kα scaffold (32193031), guided by PK considerations (32108367)."
+    },
+    "domain": "ADME-driven scaffold tuning",
+    "PMID": [
+      "32171993",
+      "32193031",
+      "32108367"
+    ],
+    "cluster": "cluster_141_40"
+  },
+  {
+    "question": "Which comparative insight best explains how selectivity challenges were addressed differently for PTP1B phosphatase inhibitors and GSK-3β kinase inhibitors?",
+    "options": [
+      "A) Natural-product structural uniqueness created phosphatase selectivity, whereas hinge-binding optimisation yielded kinase selectivity",
+      "B) Covalent modification of catalytic cysteine produced both phosphatase and kinase selectivity",
+      "C) Large polar substituents decreased off-target binding in phosphatase inhibitors but increased kinase promiscuity",
+      "D) Allosteric site targeting was central to kinase selectivity and irrelevant to phosphatase selectivity",
+      "E) Use of positively charged amines enhanced selectivity for both enzymes by improving membrane exclusion",
+      "F) Macrocycle formation was critical for phosphatase but not kinase selectivity"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Distinct molecular strategies tailored to divergent active-site topologies",
+      "significance": "Demonstrates the necessity of scaffold-specific solutions when aiming for high selectivity in drug design.",
+      "abstract_support": "Selective PTP1B inhibitors arose from structurally unique natural products that avoided TCPTP cross-reactivity (PMID 32199302). GSK-3β pyridines achieved selectivity via hinge-binding interactions revealed in X-ray structure (PMID 31926786). Kinase inhibitor resistance mapping (PMID 31925410) further underscores importance of hinge optimisation.",
+      "distractor_analysis": "B not reported; covalent strategies were not employed. C contradicts SAR data. D hinge, not allosteric, interactions key for GSK-3β in 31926786. E positive charge strategy absent. F macrocycles not discussed.",
+      "evolutionary_reasoning": "Recognition of PTP1B’s shallow active site prompted novel scaffolds (32199302) → kinase hinge interactions provided a different route to selectivity (31926786) → resistance studies emphasised precise residue engagement (31925410)."
+    },
+    "domain": "Selectivity engineering",
+    "PMID": [
+      "32199302",
+      "31926786",
+      "31925410"
+    ],
+    "cluster": "cluster_141_40"
+  },
+  {
+    "question": "Which observation most accurately contrasts approaches used to identify novel topoisomerase inhibitors in antibacterial and anticancer contexts?",
+    "options": [
+      "A) Dual bacterial DNA gyrase/topoisomerase IV inhibitors were advanced through optimized NBTI scaffolds, whereas anticancer Top1 inhibitors leveraged indole-pyrazoline hybrids with minimal DNA binding",
+      "B) Both antibacterial and anticancer programmes relied exclusively on covalent inhibition of the target enzymes",
+      "C) Anticancer efforts prioritised dual-target inhibition, while antibacterial discovery focused on single-target specificity",
+      "D) NBTI optimisation exploited eukaryotic cell assays, whereas indole-pyrazoline design used bacterial growth inhibition screens",
+      "E) Robustic acid derivatives inhibited bacterial gyrase via colchicine pocket binding",
+      "F) Benzofuroquinoline antileukemia agents and NBTIs share the same quinazoline core leading to cross-reactivity"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Target-class divergence dictates scaffold choice and SAR priorities",
+      "significance": "Highlights how pathogen vs. tumor biology shapes inhibitor design and evaluation.",
+      "abstract_support": "Six optimised compounds showed dual activity on bacterial gyrase and topoisomerase IV with potent antibacterial profiles (PMID 32074119). Indole-pyrazoline hybrids acted as strong human Top1 inhibitors without significant DNA intercalation (PMID 31901379). Complementary anticancer Top1 inhibitor development from robustic acid derivatives used cell-cycle arrest mechanisms (PMID 31943759).",
+      "distractor_analysis": "B no covalent mechanism indicated. C antibacterial were dual, anticancer single. D assay systems reversed. E robustic acid targets human Top1, not bacterial gyrase. F quinazoline core absent in these scaffolds.",
+      "evolutionary_reasoning": "Initial antibacterial NBTI concept (32074119) targeted dual bacterial enzymes → anticancer research (31901379, 31943759) evolved distinct heterocycles to engage eukaryotic Top1 while avoiding DNA binding."
+    },
+    "domain": "Topoisomerase drug discovery",
+    "PMID": [
+      "32074119",
+      "31901379",
+      "31943759"
+    ],
+    "cluster": "cluster_141_40"
+  },
+  {
+    "question": "Which motif is repeatedly exploited across distinct antimitotic chemotypes to engage the colchicine site and resist P-gp mediated efflux?",
+    "options": [
+      "A) 3,4,5-Trimethoxyphenyl ring linked through a non-planar spacer",
+      "B) Ortho-sulfonyl aniline appended to a quinazoline core",
+      "C) Para-chloro phenyl fused into a benzoxazole ring",
+      "D) Bis-benzimidazole connected via alkyl sulfone bridge",
+      "E) N-nitro triazolo-pyrimidinyl methyl substituent on indole",
+      "F) Macrocyclic tetrahydro isoquinoline scaffold with polybasic side chain"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Conserved aromatic pharmacophore driving colchicine-site binding across multiple chemical classes",
+      "significance": "Indicates a validated structural solution for maintaining potency against resistant cancer cells.",
+      "abstract_support": "Styrylquinolines with N-trimethoxyphenyl (PMID 32179282) and 2-alkoxycarbonyl-3-anilino indoles bearing 3,4,5-trimethoxy (PMID 32086053) both target the colchicine pocket. Resistance mapping (PMID 31925410) supports reliance on conserved pharmacophoric interactions to mitigate mutational escape.",
+      "distractor_analysis": "B, C, D, E, F not recurrently reported or lack colchicine site evidence.",
+      "evolutionary_reasoning": "Historical success of CA-4’s trimethoxy motif informed design of styrylquinoline (32179282) → indole series (32086053) retained motif, substantiating cross-chemotype value → resistance studies (31925410) rationalise continued exploitation."
+    },
+    "domain": "Antimitotic pharmacophores",
+    "PMID": [
+      "32179282",
+      "32086053",
+      "31925410"
+    ],
+    "cluster": "cluster_141_40"
+  },
+  {
+    "question": "Which choice best summarises a methodological evolution from in vitro biochemical to live-cell screening that enabled discovery of inhibitors pursuing non-ATP competitive mechanisms?",
+    "options": [
+      "A) Transition from kinase domain enzymatic assays to MaMTH-DS live-cell platform for EGFR mutant protein interactions",
+      "B) Shift from microsomal stability testing to carbonic anhydrase isozymes inhibition",
+      "C) Replacement of dual gyrase assays with Top1 relaxation assays",
+      "D) Adoption of DFT HOMO-LUMO calculations in place of enzymatic IC50 determination",
+      "E) Movement from metabolic clearance modelling to antimalarial PK-PD simulations",
+      "F) Conversion of molecular docking to fragment-based tethering"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Assay innovation to capture allosteric or PPI-mediated inhibition within living cells",
+      "significance": "Expands the tractable chemical space beyond ATP-site binders, crucial against resistance mutations.",
+      "abstract_support": "Traditional kinase assays lacked detection of non-ATP inhibitors; MaMTH-DS (PMID 32094923, validated in 32144093) enabled identification of mutant-specific compounds not found by biochemical screening. Benzoxazole evidence (PMID 32004897) emphasises need for mutant bias.",
+      "distractor_analysis": "B irrelevant to screening mechanism. C still in vitro biochemical. D computational vs experimental. E PK-PD modelling not screening. F unrelated pathway.",
+      "evolutionary_reasoning": "Biochemical limitation prompted move to MaMTH-DS (32094923) → validation (32144093) → complements small-molecule SAR showing mutant selectivity challenges (32004897)."
+    },
+    "domain": "Screening technologies",
+    "PMID": [
+      "32094923",
+      "32144093",
+      "32004897"
+    ],
+    "cluster": "cluster_141_40"
+  },
+  {
+    "question": "In optimising antileukemia benzofuro[3,2-c]quinolines, which synthetic advantage differentiates the route from multi-step metal-catalysed methods applied to other heterocycles?",
+    "options": [
+      "A) Metal-free sequential chlorination/demethylation–cyclisation completed under mild conditions",
+      "B) High-temperature palladium-coupled Suzuki reactions to install aryl groups",
+      "C) Ruthenium-catalysed ring-closing metathesis forming macrocycles",
+      "D) Nickel-mediated reductive cross-coupling to generate C-N bonds",
+      "E) Copper-assisted Chan–Lam O-arylation producing phenolic ethers",
+      "F) Iridium-catalysed C-H borylation followed by oxidative coupling"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Synthetic efficiency via metal-free cascade enabling rapid library generation",
+      "significance": "Facilitates scale-up and avoids transition-metal contamination issues in clinical candidates.",
+      "abstract_support": "Benzofuroquinolines were synthesised through metal-free chlorination/demethylation and intramolecular cyclisation under mild conditions (PMID 31947824). Comparison to metal-dependent strategies in other studies such as multi-kinase quinazolines requiring modifications at the 6/7 positions (PMID 32171993) and purine PI3Kα analogues using Autodock-guided synthesis (PMID 32193031) shows the differentiated advantage.",
+      "distractor_analysis": "B–F are typical metal-catalysed steps not reported for benzofuroquinoline synthesis.",
+      "evolutionary_reasoning": "Metal-free approach (31947824) offers streamlined access → contrasts with metal-catalysed elaborations in other heterocycle programmes (32171993, 32193031)."
+    },
+    "domain": "Synthetic route design",
+    "PMID": [
+      "31947824",
+      "32171993",
+      "32193031"
+    ],
+    "cluster": "cluster_141_40"
+  },
+  {
+    "question": "When analysing resistance development frequencies, which statement correctly contrasts novel NBTI antibacterials with traditional fluoroquinolones?",
+    "options": [
+      "A) Spontaneous resistance to NBTIs occurred at comparable frequencies but mapped to gyrA/B loci outside the QRDR, whereas fluoroquinolone resistance typically localises within the QRDR",
+      "B) NBTIs showed lower spontaneous resistance frequencies than fluoroquinolones and mutations clustered in the QRDR",
+      "C) Both drug classes shared identical resistance loci within topo IV parC gene",
+      "D) NBTI resistance involved efflux pump up-regulation exclusively, unlike fluoroquinolones",
+      "E) Fluoroquinolone resistance mutations predominantly affect DNA gyrase B, while NBTI resistance targets topoisomerase I",
+      "F) NBTIs evade resistance entirely by covalently binding their targets"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Mechanistic divergence in resistance hotspots reinforces distinct binding modes",
+      "significance": "Understanding mutation spectra guides sequential therapy and scaffold redesign.",
+      "abstract_support": "NBTIs selected resistance at similar frequencies to quinolones but had single point mutations in gyrA or gyrB outside the QRDR (PMID 32074119). Fluoroquinolone resistance classically hits QRDR (established knowledge and implied in same abstract). Mutation landscape mapping in kinases (PMID 31925410) parallels concept of residue-specific resistance.",
+      "distractor_analysis": "B contradicts frequency data. C incorrect location. D efflux not exclusive. E topo I not involved. F covalent binding not reported.",
+      "evolutionary_reasoning": "Novel binding pocket for NBTIs (32074119) → contrasts with traditional QRDR sites → mirrors kinase resistance residue mapping (31925410)."
+    },
+    "domain": "Antibacterial resistance mechanisms",
+    "PMID": [
+      "32074119",
+      "31925410",
+      "32031068"
+    ],
+    "cluster": "cluster_141_40"
+  },
+  {
+    "question": "Which pharmacodynamic principle underpins the use of pharmacometric modelling in defining optimal dosing regimens for multidrug-resistant Plasmodium falciparum therapies?",
+    "options": [
+      "A) Characterising PK-PD relationships to adjust exposure against resistant strains",
+      "B) Sole reliance on minimum inhibitory concentration without modelling",
+      "C) Predicting tubulin polymerisation rates in protozoa",
+      "D) Modelling ATP-competitive kinase inhibition in human hepatocytes",
+      "E) Estimating mutation frequencies in gyrA genes of bacteria",
+      "F) Forecasting LDL cholesterol reduction via PTP1B inhibition"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Quantitative linking of drug concentration profiles to antimalarial activity",
+      "significance": "Enables informed dose optimisation to combat resistance.",
+      "abstract_support": "Clinical pharmacology overview emphasises PK-PD modelling to optimise dosing of existing and new antimalarials against MDR strains (PMID 32108367). Concepts of PK alignment also cited in quinazoline bioavailability optimisation (PMID 32171993) and GSK-3 inhibitor PK (PMID 31926786).",
+      "distractor_analysis": "B ignores modelling need. C unrelated mechanism. D human kinase inhibition irrelevant to parasite. E bacterial mutations not antimalarial. F LDL reduction outside scope.",
+      "evolutionary_reasoning": "Pharmacometric evolution (32108367) → informs oral drug property optimisation (32171993) → reinforced by PK-driven kinase inhibitor design (31926786)."
+    },
+    "domain": "Clinical pharmacology",
+    "PMID": [
+      "32108367",
+      "32171993",
+      "31926786"
+    ],
+    "cluster": "cluster_141_40"
+  },
+  {
+    "question": "Which set of structural characteristics is common to both bis-benzimidazole anticancer agents and triazoloquinoxaline A2B antagonists, potentially contributing to DNA-interacting capacity and receptor affinity respectively?",
+    "options": [
+      "A) Two heteroaromatic nitrogens capable of π-stacking with nucleobases or receptor residues",
+      "B) Covalent acrylamide warheads targeting cysteine residues",
+      "C) Large aliphatic chains increasing membrane fluidity",
+      "D) Macrocyclic lactone rings enforcing conformational rigidity",
+      "E) Trimethoxy phenyl groups dedicated to colchicine site binding",
+      "F) Sulfonate esters enhancing aqueous solubility"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Heteroaromatic nitrogen placement facilitating π-stacking and hydrogen bonding",
+      "significance": "Shared electronic features may underlie activity despite differing primary targets.",
+      "abstract_support": "Bis-benzimidazoles feature dual benzimidazole moieties rich in nitrogens (PMID 31986463). Triazoloquinoxalines incorporate nitrogen-dense fused rings conferring receptor affinity (PMID 32166485). DNA-binding/π-stacking principles also referenced in Top1 inhibitors (PMID 31943759).",
+      "distractor_analysis": "B covalent warheads absent. C, D not reported. E motif specific to tubulin inhibitors. F sulfonate esters not discussed.",
+      "evolutionary_reasoning": "Nitrogen-rich aromatic systems (31986463) → analogously exploited for receptor antagonism (32166485) → π-stacking relevance confirmed in DNA-interacting scaffolds (31943759)."
+    },
+    "domain": "Heteroaromatic pharmacophores",
+    "PMID": [
+      "31986463",
+      "32166485",
+      "31943759"
+    ],
+    "cluster": "cluster_141_40"
+  },
+  {
+    "question": "An anticancer development project targets LSD1 with tranylcypromine analogues. Which ADME characteristic reported for series 3 provides a competitive advantage over earlier TCP-derived inhibitors?",
+    "options": [
+      "A) High intrinsic metabolic stability in both mouse and human microsomes",
+      "B) Extensive formation of reactive metabolites activating glutathione pathways",
+      "C) Requirement for intravenous administration due to poor oral absorption",
+      "D) Fast clearance rates necessitating continuous infusion",
+      "E) Dependence on covalent binding to EGFR C797S",
+      "F) Selective inhibition of carbonic anhydrase isozymes"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Improved metabolic stability enhancing drug-likeness of irreversible LSD1 inhibitors",
+      "significance": "High stability prolongs exposure, allowing lower doses and better efficacy.",
+      "abstract_support": "Series 3 compounds 3a, 3d, 3g showed high metabolic stability in mouse and human intrinsic clearance assays (PMID 32003940). Quinazoline optimisation (PMID 32171993) also leveraged microsomal stability improvements; clinical PK lessons from antimalarial modelling (PMID 32108367) underscore its value.",
+      "distractor_analysis": "B reactivity not observed. C, D contradicted by stability data. E, F unrelated targets.",
+      "evolutionary_reasoning": "Early TCP inhibitors limited by metabolism → series 3 (32003940) introduces hindered benzamide residues → metabolic stability leap mirrors strategies in multi-kinase optimization (32171993)."
+    },
+    "domain": "Epigenetic inhibitor ADME",
+    "PMID": [
+      "32003940",
+      "32171993",
+      "32108367"
+    ],
+    "cluster": "cluster_141_40"
+  },
+  {
+    "question": "Which design consideration differentiates pyridine-based GSK-3 inhibitors from purine-based PI3Kα inhibitors in achieving selectivity over closely related isoforms?",
+    "options": [
+      "A) Exploiting a water-mediated hinge interaction unique to GSK-3β",
+      "B) Covalent bond formation with a conserved lysine residue common to all PI3K isoforms",
+      "C) Removal of heteroatoms to blunt hydrogen bonding within PI3K active sites",
+      "D) Targeting an allosteric pocket shared across PI3Kβ/γ/δ but absent in PI3Kα",
+      "E) Relying on macrocycle rigidity to differentiate kinase families",
+      "F) Enhancing basicity to preferentially accumulate in acidic lysosomes"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Selective exploitation of unique hinge-region interactions within kinase ATP pockets",
+      "significance": "Fine-tuning hydrogen-bonding pattern secures isoform discrimination crucial for safety.",
+      "abstract_support": "GSK-3β pyridines achieved remarkable selectivity via X-ray-defined hinge interactions including water-mediated contacts (PMID 31926786). PI3Kα inhibitors (PMID 32193031) relied on scaffold design but did not form such unique water-bridged hinge bonds, instead showing good but not absolute selectivity. Resistance residue mapping (PMID 31925410) underscores the hinge’s role.",
+      "distractor_analysis": "B covalent strategy not used. C selectivity would decrease. D allosteric pocket absent in PI3K data. E macrocycles not mentioned. F basicity unrelated.",
+      "evolutionary_reasoning": "Detailed structural insights (31926786) → contrasted with computationally guided PI3Kα design (32193031) → hinge importance reinforced by resistance framework (31925410)."
+    },
+    "domain": "Kinase selectivity determinants",
+    "PMID": [
+      "31926786",
+      "32193031",
+      "31925410"
+    ],
+    "cluster": "cluster_141_40"
+  },
+  {
+    "question": "Which factor most plausibly explains why styrylquinoline compound 9IV-c remains potent in mitoxantrone-resistant breast cancer cells?",
+    "options": [
+      "A) Three-dimensional scaffold reduces recognition by P-gp efflux pumps while maintaining colchicine-site affinity",
+      "B) High cationic charge enhances nuclear accumulation overriding transporter effects",
+      "C) Covalent microtubule binding prevents repair mechanisms",
+      "D) Dual inhibition of Top1 and Top2 eliminating compensatory pathways",
+      "E) Suppression of PI3Kα signalling circumventing resistance",
+      "F) Inhibition of adenosine A2B receptor reducing MDR gene expression"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Structural attributes mitigating efflux-mediated drug resistance",
+      "significance": "Designing P-gp-evading antimitotics retains efficacy in MDR phenotypes.",
+      "abstract_support": "9IV-c shows sub-µM potency in mitoxantrone-resistant MCF-7/MX cells (PMID 32179282). Indole series evidence (PMID 32086053) supports non-planar scaffolds aiding efflux evasion. Resistance mapping principles (PMID 31925410) stress structural features affecting transporter recognition.",
+      "distractor_analysis": "B cationic charge not reported. C covalent binding absent. D compound is tubulin inhibitor, not topo. E PI3Kα signalling unlinked. F A2B receptor not involved.",
+      "evolutionary_reasoning": "Observation of retained potency in MDR cells (32179282) → structural comparison with indole motifs (32086053) → reinforcement by resistance principles (31925410)."
+    },
+    "domain": "MDR circumvention",
+    "PMID": [
+      "32179282",
+      "32086053",
+      "31925410"
+    ],
+    "cluster": "cluster_141_40"
+  },
+  {
+    "question": "Which rationale best supports integrating benzoxazole-based EGFR inhibitors with quinazoline multi-kinase agent 34 in a combination therapy for solid tumours?",
+    "options": [
+      "A) Distinct binding modes may collectively inhibit wild-type, single- and triple-mutant EGFR along with other oncogenic kinases",
+      "B) Both compounds covalently modify the same cysteine in EGFR leading to redundancy",
+      "C) Identical metabolic pathways ensure predictable drug–drug interactions reducing clearance",
+      "D) Overlapping off-target profile increases risk of cardiotoxicity",
+      "E) Mutual competition for A2B receptor binding enhances potency",
+      "F) Shared reliance on carbonic anhydrase inhibition creates synergistic cytosolic acidification"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Complementary spectrum of kinase inhibition to overcome heterogeneous mutations",
+      "significance": "Multi-layer blockade can forestall resistance development in tumours exhibiting kinase diversity.",
+      "abstract_support": "Benzoxazoles 4b/4d show potency against EGFR L858R mutant (PMID 32004897). Quinazoline 34 is a multi-kinase inhibitor with oral bioavailability (PMID 32171993). MaMTH-DS data (PMID 32094923) highlights need for mutant-specific inhibitors; combination widens coverage.",
+      "distractor_analysis": "B covalent mechanism not stated. C metabolic overlap unverified. D cardiotoxicity speculative. E A2B binding irrelevant. F CA inhibition not mechanism.",
+      "evolutionary_reasoning": "Single-mutation selectivity (32004897) → broad kinase activity (32171993) → resistance insights encourage combination (32094923)."
+    },
+    "domain": "Targeted therapy combinations",
+    "PMID": [
+      "32004897",
+      "32171993",
+      "32094923"
+    ],
+    "cluster": "cluster_141_40"
+  },
+  {
+    "question": "Which pharmacological characteristic differentiates carbonic anhydrase inhibitory pyrazoline derivatives from hydroxyl-rich NBTIs in terms of hCA isoform selectivity and antibacterial breadth?",
+    "options": [
+      "A) Nanomolar competitive inhibition of hCA I/II without antibacterial activity versus dual gyrase/topo IV inhibition enabling broad-spectrum antibacterial potency",
+      "B) Irreversible binding to hCA II with potent Gram-negative killing versus reversible binding to gyrase",
+      "C) General lack of heteroaromatic nitrogen contributing to poor solubility in both cases",
+      "D) Targeting mitochondrial CA VA leading to antimalarial effects versus no CA activity",
+      "E) Shared inhibition of bacterial class B CAs accounting for efficacy",
+      "F) Dependence on macrocyclic ring closure for activity in both families"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Target class dictates therapeutic area and spectrum",
+      "significance": "Selectivity profiles drive indication choices and off-target considerations.",
+      "abstract_support": "Pyrazolines showed Ki 6–205 nM against hCA I/II but no antibacterial data (PMID 31922298). NBTIs displayed dual gyrase/topo IV inhibition with potent antibacterial activity including resistant strains (PMID 32074119). Overview of antimalarials (PMID 32031068) contextualises CA targeting vs infectious applicability.",
+      "distractor_analysis": "B irreversible CA binding not noted. C heteroatom statement incorrect. D mitochondrial CA not involved. E bacterial CA inhibition not reported. F macrocycles absent.",
+      "evolutionary_reasoning": "Human enzyme focus (31922298) → contrasted with bacterial target duality (32074119) → infectious disease landscape (32031068) shows divergence."
+    },
+    "domain": "Enzyme target selectivity",
+    "PMID": [
+      "31922298",
+      "32074119",
+      "32031068"
+    ],
+    "cluster": "cluster_141_40"
+  },
+  {
+    "question": "Which combination of physicochemical traits aligns with the lipinski-compliant bis-benzimidazole derivatives selected as lead compounds in the NCI 60-cell line screen?",
+    "options": [
+      "A) Acceptable drug-score with oral activity forecast, adherence to Lipinski rule and presence of primary amines or chalcone-linked aldehydes",
+      "B) High logP > 6, multiple sulfonate groups and macrocyclic skeleton",
+      "C) Large molecular weight > 800 Da and covalent warheads for kinase targeting",
+      "D) Predominantly aliphatic structure lacking heteroatoms and ring systems",
+      "E) Cationic quaternary ammonium centres improving BBB penetration",
+      "F) Extensive halogenation increasing metabolic liability"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Balancing physicochemical properties for oral anticancer leads",
+      "significance": "Ensures favourable ADMET while retaining cytotoxic potency.",
+      "abstract_support": "Bis-benzimidazole derivatives 4i and 4iii exhibited highest drug scores, obeyed Lipinski rules, had primary amine and aromatic aldehyde features (PMID 31986463). Quinazoline optimization (PMID 32171993) underscores Lipinski compliance importance; metabolic modelling (PMID 32108367) affirms property selection.",
+      "distractor_analysis": "B–F contradict Lipinski compliance or structural data.",
+      "evolutionary_reasoning": "In-silico property prediction (31986463) → parallels optimisation in quinazoline series (32171993) → aligns with ADME principles (32108367)."
+    },
+    "domain": "Medicinal chemistry properties",
+    "PMID": [
+      "31986463",
+      "32171993",
+      "32108367"
+    ],
+    "cluster": "cluster_141_40"
+  },
+  {
+    "question": "Which study sequence best illustrates the transition from preclinical promise to tempered clinical reality regarding remdesivir’s impact on mortality?",
+    "options": [
+      "A) In vitro suppression of SARS-CoV-2 replication → animal efficacy in MERS-CoV → WHO Solidarity trial suggesting limited mortality benefit",
+      "B) Compassionate use data suggesting benefit → meta-analysis showing no mortality reduction → identification of synergy with NS5A inhibitors",
+      "C) Fatty acyl modification improving half-life → ProTide optimization raising lung concentrations → Solidarity trial indicating reduced ICU admissions",
+      "D) PBMC triphosphate exposure analyses → inhalation proposal → meta-analysis reporting moderate mortality decline",
+      "E) Mouse GS-441524 efficacy → lipid prodrug oral bioavailability → CDC advisory noting limited remdesivir use",
+      "F) Synergy screening with velpatasvir → target-trial emulation hospital data → FDA reconsideration of remdesivir status"
+    ],
+    "answer": "B",
+    "explanation": {
+      "core_concept": "Trajectory from hopeful signals to nuanced evidence",
+      "significance": "Understanding this arc underscores the need for continuous evaluation of therapeutic claims.",
+      "abstract_support": "Compassionate use and early trials spurred optimism (PMID:32458279, 34412564). Meta-analysis reported no mortality effect (PMID:34048669). Synergy discovery (PMID:36323770) sought to address this gap.",
+      "distractor_analysis": "A Solidarity showed limited benefit. C and D overstate clinical outcomes. E and F not evidenced.",
+      "evolutionary_reasoning": "Positive early signals (32458279) were moderated by pooled RCT data (34048669), prompting combination strategies (36323770)."
+    },
+    "domain": "Evidence evolution",
+    "PMID": [
+      "32458279",
+      "34412564",
+      "34048669",
+      "36323770"
+    ],
+    "cluster": "cluster_141_41"
+  },
+  {
+    "question": "Which redesign strategy is most consistent with reducing the host-cell toxicity of idelalisib while keeping the drug’s high antiplasmodial activity demonstrated in chloroquine-resistant Plasmodium strains?",
+    "options": [
+      "A) Introduction of a rigid 3,4,5-trimethoxyphenyl ring onto the purine core to deepen binding within the PI3Kδ adenine pocket",
+      "B) Complete removal of the difluorophenyl domain and replacement with a polar benzenesulphonamide to favour aqueous solubility",
+      "C) Substitution of the adenine-mimicking heteroaryl with a less basic bicyclic isostere and conversion of the solvent-exposed morpholine into a plasma-cleavable ester",
+      "D) Fusion of an indolyl-chalcone tail to the morpholine nitrogen to engage the zinc ion of human carbonic anhydrase II",
+      "E) Addition of a primary sulphonamide directly on the purine scaffold to create a dual PI3Kδ/CA XIII inhibitor",
+      "F) Conversion of the difluorophenyl ring to a pyrazolophthalazine in order to intercalate parasite DNA"
+    ],
+    "answer": "C",
+    "explanation": {
+      "core_concept": "Kinase-off-target de-tuning without compromising membrane-driven antiplasmodial uptake",
+      "significance": "Reduces clinically observed hepatotoxicity while leveraging idelalisib’s physicochemical profile that impairs Plasmodium viability.",
+      "abstract_support": "PI3Kδ modelling identified the Lys779 H-bond and adenine pocket as toxicity-linked (PMID:33657663) → malaria study showed potent parasite clearance but host toxicity (PMID:33485067) → quinoline review underlines success of heteroaryl isosteres in lowering kinase promiscuity (PMID:33618829).",
+      "distractor_analysis": "A deepens PI3Kδ binding, worsening off-target risk; B removes the hydrophobic group essential for parasite penetration; D & E redirect the molecule toward CA targets unrelated to Plasmodium killing; F DNA intercalation is not supported for idelalisib.",
+      "evolutionary_reasoning": "Later PI3Kδ SAR (33657663) guides attenuation of kinase affinity; antimalarial data (33485067) justify conserving lipophilicity; quinoline scaffold experience (33618829) advocates heteroaryl isosteric replacement."
+    },
+    "domain": "Medicinal chemistry optimisation",
+    "PMID": [
+      "33657663",
+      "33485067",
+      "33618829"
+    ],
+    "cluster": "cluster_141_46"
+  },
+  {
+    "question": "A medicinal chemist aims to transform a modest micro-molar benz-fused heterocyclic tubulin inhibitor into a nanomolar agent without sacrificing metabolic stability. Which hybridisation tactic best addresses this goal?",
+    "options": [
+      "A) Appending a 3,4,5-trimethoxyphenyl moiety to the benz-fused core while inserting a quinoline nitrogen for Cys241 hydrogen bonding",
+      "B) Exchanging the benz-fused scaffold for a primary sulfonamide oxadiazole to reach carbonic anhydrase XIII",
+      "C) Removing all methoxy substituents and shortening the linker to promote Aurora A inhibition",
+      "D) Grafting an indolyl-chalcone tail designed for zinc chelation at FLT3’s ATP site",
+      "E) Introducing a morpholino purine head-group from idelalisib for PI3Kδ selectivity",
+      "F) Replacing the fused heterocycle with a triazolothiadiazine intended for selective COX-2 inhibition"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Potency escalation at the colchicine binding site through pharmacophore merging",
+      "significance": "Combines the stability of a rigid benz-fused backbone (PMID:33638903) with high-affinity features of potent quinoline colchicine site ligands (PMID:33588683).",
+      "abstract_support": "Micro-molar benz-fused inhibitor lacks trimethoxy A-ring (PMID:33638903) → quinoline derivatives reach 10 nM potency via trimethoxy and ring N H-bond (PMID:33588683) → quinoline review highlights heteroatom insertion improving pharmacokinetics (PMID:33618829).",
+      "distractor_analysis": "B redirects to carbonic anhydrase, not tubulin; C contradicts methoxy importance; D FLT3 relevance is unrelated; E & F target different enzymes without validated tubulin activity.",
+      "evolutionary_reasoning": "Later quinoline SAR refines earlier benz-scaffold potency gap, guiding hybrid assembly for dual benefits."
+    },
+    "domain": "Antimitotic drug design",
+    "PMID": [
+      "33638903",
+      "33588683",
+      "33618829"
+    ],
+    "cluster": "cluster_141_46"
+  },
+  {
+    "question": "When intentionally switching a potent hCA II inhibitor to favour hCA XIII selectivity, which tail modification is most plausible based on current isoform-specific SAR?",
+    "options": [
+      "A) Replacing the indolyl-chalcone fragment with a compact 1,3,4-oxadiazole-aryl system",
+      "B) Adding a bulky trimethoxyphenyl ring to deepen binding in the colchicine pocket",
+      "C) Coupling a morpholino purine designed for PI3Kδ engagement to the primary sulfonamide",
+      "D) Extending the molecule with a pyrazoline ring to access VEGFR-2’s ATP cleft",
+      "E) Appending a primary amide group to form hydrogen bonds with PD-L1 dimer interface",
+      "F) Introducing a triazolophthalazine intercalator to block Topo II catalysis"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Tail-directed isoform selectivity in carbonic anhydrase inhibition",
+      "significance": "Guides rational exploitation of the variable outer rim of hCA enzymes, shifting selectivity away from physiologically dominant hCA II.",
+      "abstract_support": "Indolyl-chalcone sulfonamides excel at hCA II (PMID:33530019) → oxadiazole hybrids favour hCA XIII (PMID:33609663) → review on CAIs defines ‘tail approach’ for isoform tuning (PMID:33615947).",
+      "distractor_analysis": "B relates to tubulin not CA; C morpholino purine lacks CA activity; D, E, F target unrelated proteins.",
+      "evolutionary_reasoning": "Early recognition of hCA II bias (33530019) prompted oxadiazole tail exploration (33609663) within the tail approach framework (33615947)."
+    },
+    "domain": "Enzyme isoform selectivity",
+    "PMID": [
+      "33530019",
+      "33609663",
+      "33615947"
+    ],
+    "cluster": "cluster_141_46"
+  },
+  {
+    "question": "A fully oral combination regimen is sought for tumours harbouring NTRK fusions and exhibiting adaptive PD-L1 up-regulation. Which pairing best exploits complementary mechanisms documented in recent small-molecule studies?",
+    "options": [
+      "A) TAS-119 with the PD-L1 dimer-locking compound APBC",
+      "B) CLK1 inhibitor 9e with a primary sulfonamide carbonic anhydrase blocker",
+      "C) Idelalisib with a triazolophthalazine Topo II poison",
+      "D) Quinoline-based colchicine-site inhibitor with an oxadiazole hCA XIII antagonist",
+      "E) FLT3-targeting flavonoid 40 coupled to a VEGFR-2 hydrazone inhibitor",
+      "F) KARI inhibitor NSC116565 administered with a COX-2 selective triazolothiadiazine"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Converging oncogenic signalling blockade and immune checkpoint inhibition",
+      "significance": "Offers an all-small-molecule alternative to antibody-based immunotherapy while neutralising TRK-driven proliferation.",
+      "abstract_support": "TAS-119 selectively blocks Aurora A and TRKs, shrinking TRK-fusion tumours (PMID:33409897) → APBC interrupts PD-1/PD-L1 binding via PD-L1 dimer locking (PMID:33529880) → MYC degradation by TAS-119 can lessen but not eliminate PD-L1, rationalising dual blockade (PMID:33409897, cross-talk in MYC–PD-L1 literature referenced within).",
+      "distractor_analysis": "B lacks immune component; C & D do not target PD-L1; E & F lack validated synergy with immune checkpoint pathways.",
+      "evolutionary_reasoning": "Aurora/TRK inhibition (33409897) precedes small-molecule checkpoint progress (33529880), enabling combined strategy."
+    },
+    "domain": "Targeted therapy & immuno-oncology",
+    "PMID": [
+      "33409897",
+      "33529880",
+      "33409897"
+    ],
+    "cluster": "cluster_141_46"
+  },
+  {
+    "question": "Which experimental observation most directly supports utilising a quinoline nitrogen atom to enhance binding to the colchicine pocket of tubulin?",
+    "options": [
+      "A) Sub-nanomolar IC50 values of quinoline derivatives 21 and 32 that surpass colchicine",
+      "B) Time-dependent inhibition of Mycobacterium KARI by NSC116565",
+      "C) Induction of autophagy via CLK1 suppression with compound 9e",
+      "D) Severe host toxicity of idelalisib in Vero cells despite parasite clearance",
+      "E) High selectivity of TAS-119 for Aurora A over Aurora B",
+      "F) Oxadiazole-sulfonamide fluorescence emission upon binding hCA XIII"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Heteroatom engagement within tubulin colchicine site",
+      "significance": "Validates heteroaryl incorporation as a precision strategy for antimitotic potency.",
+      "abstract_support": "Quinoline compounds 21 & 32 achieve ~10 nM inhibition, exceeding colchicine, attributed to quinoline N H-bonding (PMID:33588683) → benz-fused heterocycles lacking this N remain micro-molar (PMID:33638903) → quinoline scaffold analysis underscores the role of ring nitrogen in protein affinity (PMID:33618829).",
+      "distractor_analysis": "B, C, D, E, F relate to other targets, not colchicine pocket affinity.",
+      "evolutionary_reasoning": "Earlier modest tubulin agents spurred nitrogen-bearing quinoline optimisation (33588683) guided by scaffold knowledge (33618829)."
+    },
+    "domain": "Structural SAR for tubulin",
+    "PMID": [
+      "33588683",
+      "33638903",
+      "33618829"
+    ],
+    "cluster": "cluster_141_46"
+  },
+  {
+    "question": "Which methodological progression best illustrates the movement from general structure-activity mapping to residue-level energetic decomposition in kinase inhibitor optimisation?",
+    "options": [
+      "A) 3D-QSAR of idelalisib analogues → MD-derived binding-free energy highlighting Met752 and Lys779 interactions in PI3Kδ",
+      "B) In vitro tubulin polymerisation assay → cell cycle flow cytometry → annexin-V staining of apoptosis",
+      "C) COX-2 docking of triazolothiadiazines → TEM ultrastructural analysis in A549 cells → in vivo xenograft testing",
+      "D) HPLC purity determination → fluorescence binding assay for hCA I → tail approach SAR for isoform selectivity",
+      "E) MTT cytotoxicity screening of flavonoids → RT-PCR quantification of Bax/Bcl-2 → Western blot for cleaved caspase-3",
+      "F) Standard checkerboard antimalarial assay → murine survival analysis → protein microarray target profiling"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Hierarchical computational refinement in kinase drug design",
+      "significance": "Demonstrates how coarse QSAR insights are sharpened by atomistic MD to guide precise chemical edits.",
+      "abstract_support": "CoMFA and pharmacophore models created initial PI3Kδ SAR (PMID:33657663) → subsequent MD and MM/GBSA quantified residue contributions, identifying Met752 & Lys779 as selectivity determinants (same PMID) → hepatotoxicity issues in idelalisib repurposing study show clinical relevance (PMID:33485067).",
+      "distractor_analysis": "B–F involve other experimental cascades lacking the computational progression focus.",
+      "evolutionary_reasoning": "Initial QSAR provides broad map, MD energy decomposition pinpoints adjustables, exemplifying modern optimisation trajectory."
+    },
+    "domain": "Computational methodology",
+    "PMID": [
+      "33657663",
+      "33485067",
+      "33657663"
+    ],
+    "cluster": "cluster_141_46"
+  },
+  {
+    "question": "A developer intends to create a dual-action antimalarial/antitubercular agent by combining privileged scaffolds. Which pairing aligns with existing mechanistic evidence?",
+    "options": [
+      "A) Incorporating the pyrimidinedione KARI inhibitor NSC116565 onto a quinoline core known for antimalarial potency",
+      "B) Fusing a primary sulfonamide oxadiazole with a CLK1 inhibitory imidazopyridine",
+      "C) Linking an indolyl-chalcone hCA II binder to the morpholine ring of idelalisib",
+      "D) Combining a triazolophthalazine Topo II poison with TAS-119’s Aurora A warhead",
+      "E) Attaching a VEGFR-2-targeting hydrazone to a flavonoid FLT3 inhibitor",
+      "F) Merging a 1,2,4-triazole synthetic intermediate directly with an oxadiazole CA tail"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Hybridisation of orthogonal enzyme inhibitors to address co-endemic pathogens",
+      "significance": "Targets branched-chain amino acid biosynthesis in Mycobacterium (KARI) and known quinoline-sensitive pathways in Plasmodium.",
+      "abstract_support": "NSC116565 time-dependently inhibits Mt-KARI and shows μM MIC against M. tuberculosis (PMID:33215746) → quinoline derivatives remain stalwarts in antimalarial drug discovery (PMID:33349215; review & 33618829) → combination concept supported by repurposing urgency (PMID:33485067).",
+      "distractor_analysis": "B lacks antitubercular evidence; C merges unrelated CA and PI3Kδ functions; D, E, F do not address both pathogens mechanistically.",
+      "evolutionary_reasoning": "New KARI inhibitor (33215746) complements historical quinoline antimalarials (33349215), offering a rational dual-target approach."
+    },
+    "domain": "Antiparasitic hybrid design",
+    "PMID": [
+      "33215746",
+      "33349215",
+      "33618829"
+    ],
+    "cluster": "cluster_141_46"
+  },
+  {
+    "question": "Which cell-cycle outcome differentiates flavonoid FLT3 inhibitors from quinoline-based colchicine-site agents despite both inducing apoptosis?",
+    "options": [
+      "A) FLT3 inhibitors arrest at G0/G1, whereas quinoline tubulin agents halt at G2/M",
+      "B) FLT3 inhibitors provoke S-phase arrest, whereas quinoline agents block cytokinesis",
+      "C) Both compound classes synchronise cells at metaphase",
+      "D) Quinoline agents extend mitotic slippage leading to endoreduplication; flavonoids cause sub-G1 depletion",
+      "E) Flavonoids trigger mitophagy without affecting cell cycle; quinolines lengthen G1",
+      "F) Quinoline agents primarily activate p53‐independent apoptosis, flavonoids p53-dependent pathways"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Distinct points of cell-cycle interference by kinase vs microtubule inhibitors",
+      "significance": "Guides combination scheduling to avoid redundant cell-cycle blockade.",
+      "abstract_support": "Flavonoid 40 induces G0/G1 arrest in AML lines (PMID:33393294) → quinoline tubulin inhibitors (compound 25) arrest at G2/M (PMID:33588683) → benz-fused heterocycles mirror G2/M arrest confirming tubulin mechanism (PMID:33638903).",
+      "distractor_analysis": "B, C, D, E, F are unsupported by cited abstracts.",
+      "evolutionary_reasoning": "Microtubule disruption naturally triggers spindle checkpoint (G2/M), whereas FLT3 signalling controls G1-S transition, explaining divergent blocks."
+    },
+    "domain": "Cell-cycle pharmacology",
+    "PMID": [
+      "33393294",
+      "33588683",
+      "33638903"
+    ],
+    "cluster": "cluster_141_46"
+  },
+  {
+    "question": "Which evidence sequence best exemplifies the tail-approach concept transitioning from theory to validated isoform-selective carbonic anhydrase inhibition?",
+    "options": [
+      "A) Mechanistic review of CAIs → design of benzenesulphonamide-oxadiazoles selective for hCA XIII → fluorescence studies confirming binding",
+      "B) Discovery of CLK1 autophagy inducer → modelling of PI3Kδ inhibitors → fluorimetric assay of CA II",
+      "C) Identification of VEGFR-2 hydrazone inhibitors → annexin V apoptosis assay → murine PD-L1 blockade",
+      "D) Quinoline EGFR inhibitor synthesis → computational MD → triazole scaffold review",
+      "E) Mycobacterium KARI inhibition → proteomic identification of parasite targets → anti-inflammatory quinoline review",
+      "F) TAS-119 Aurora data → oxadiazole CA labelling → Topo II poisoning by triazolophthalazines"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "From conceptual tail design to isoform-specific chemical proof",
+      "significance": "Illustrates practical application of rational peripheral modification in metalloenzyme targeting.",
+      "abstract_support": "Comprehensive CA inhibitor mechanisms detail tail approach (PMID:33615947) → oxadiazole hybrids 6a-s show sub-20 nM potency toward hCA XIII (PMID:33609663) → intrinsic fluorescence validated interaction (same PMID).",
+      "distractor_analysis": "B–F lack logical CA tail progression or involve unrelated pathways.",
+      "evolutionary_reasoning": "Review provides theoretical framework; subsequent oxadiazole data supply empirical corroboration."
+    },
+    "domain": "Enzyme inhibitor strategy",
+    "PMID": [
+      "33615947",
+      "33609663",
+      "33609663"
+    ],
+    "cluster": "cluster_141_46"
+  },
+  {
+    "question": "Given the contrasting toxicological outcomes, which property most plausibly explains why epirubicin was unsuitable for antimalarial repurposing whereas moxifloxacin showed promise?",
+    "options": [
+      "A) ROS generation by epirubicin producing host-cell damage versus topoisomerase-independent action of moxifloxacin",
+      "B) Superior inhibition of carbonic anhydrase XIII by moxifloxacin compared with epirubicin",
+      "C) Epirubicin’s failure to intercalate DNA of Plasmodium falciparum",
+      "D) Lack of interaction between moxifloxacin and human FLT3 kinase",
+      "E) Epirubicin’s inability to cross the food vacuole membrane",
+      "F) Enhanced Aurora A selectivity profile of moxifloxacin"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Differential reactive oxygen species liabilities in drug repurposing",
+      "significance": "Highlights the challenge of balancing antiparasitic activity with host safety when repurposing ROS-generating anticancer agents.",
+      "abstract_support": "Epirubicin identified as ROS inducer leading to host toxicity (PMID:33485067) → moxifloxacin antibiotic achieved high parasite suppression with acceptable safety (same PMID) → antimalarial review emphasises need for safer multi-target agents (PMID:33349215).",
+      "distractor_analysis": "B, C, D, E, F not supported by abstracts; CA XIII, DNA intercalation, FLT3, Aurora A not discussed for these drugs.",
+      "evolutionary_reasoning": "Initial ROS-generating anticancer candidates flagged toxicity, steering focus toward antibiotics like moxifloxacin with distinct mechanisms."
+    },
+    "domain": "Drug repurposing toxicology",
+    "PMID": [
+      "33485067",
+      "33349215",
+      "33485067"
+    ],
+    "cluster": "cluster_141_46"
+  },
+  {
+    "question": "Which structural motif common to both the VEGFR-2 hydrazone inhibitors and the piperazine-chalcone hybrids chiefly mediates kinase hinge-region binding?",
+    "options": [
+      "A) The pyrazolidinedione carbonyl array forming bidentate hydrogen bonds",
+      "B) The primary sulfonamide zinc-binder engaging Zn2+ at the catalytic site",
+      "C) The conjugated hydrazone carbonyl-nitrogen sequence acting as an H-bond acceptor–donor pair",
+      "D) The difluorophenyl ring participating in π-cation stacking with Lys779",
+      "E) The quinoline nitrogen lone pair chelating Mg2+",
+      "F) The 1,2,4-triazole N-N bond serving as a Michael acceptor"
+    ],
+    "answer": "C",
+    "explanation": {
+      "core_concept": "Hydrazone pharmacophore roles in kinase ATP binding",
+      "significance": "Provides a transferable design element for VEGFR-2 and related kinases.",
+      "abstract_support": "Hydrazone-coupled sulfonamides 7a–c show sub-μM VEGFR-2 inhibition (PMID:33515863) → piperazine-chalcone hybrids Vd/Ve exhibit similar micromolar VEGFR-2 potency (PMID:33349069) → both series rely on hydrazone C=N and adjacent carbonyl as hinge interactors described in docking.",
+      "distractor_analysis": "A pertains to different ring; B relevant to CA inhibitors; D Lys779 is PI3Kδ; E Mg2+ chelation not noted; F triazole Michael acceptor not in hydrazone or chalcone.",
+      "evolutionary_reasoning": "Earlier hydrazone sulfonamides (33515863) informed subsequent chalcone-based hybrids (33349069) on maintaining hinge-binding hydrazone geometry."
+    },
+    "domain": "Kinase hinge pharmacophore",
+    "PMID": [
+      "33515863",
+      "33349069",
+      "33515863"
+    ],
+    "cluster": "cluster_141_46"
+  },
+  {
+    "question": "Which reasoning best justifies using CLK1 inhibition to induce autophagy rather than employing microtubule destabilisers in neurodegenerative diseases associated with protein aggregates?",
+    "options": [
+      "A) CLK1 inhibitors elevate autophagic flux without initiating G2/M arrest that could compromise neuronal viability",
+      "B) Microtubule destabilisers fail to penetrate the blood–brain barrier whereas CLK1 inhibitors are hydrophilic",
+      "C) Tubulin agents selectively up-regulate PD-L1 expression in neurons, promoting immune toxicity",
+      "D) CLK1 inhibitors act by zinc chelation, preventing oxidative stress",
+      "E) Microtubule agents require metabolic activation by FLT3, absent in neurons",
+      "F) CLK1 inhibitors directly intercalate mitochondrial DNA, boosting energy production"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Choosing autophagy modulation over mitotic interference in post-mitotic tissues",
+      "significance": "Avoids cell-cycle-dependent toxicity while enhancing aggregate clearance.",
+      "abstract_support": "Compound 9e inhibits CLK1 and induces autophagy (PMID:33662541) → benz-fused and quinoline tubulin inhibitors trigger G2/M arrest (PMID:33638903, 33588683) unsuitable for neurons → quinoline review notes cell-cycle arrest as primary antitumour mechanism (PMID:33618829).",
+      "distractor_analysis": "B, C, D, E, F not evidenced by abstracts.",
+      "evolutionary_reasoning": "Understanding mechanisms of microtubule agents informs preference for CLK1 autophagy route in non-dividing cells."
+    },
+    "domain": "Therapeutic mechanism selection",
+    "PMID": [
+      "33662541",
+      "33638903",
+      "33588683"
+    ],
+    "cluster": "cluster_141_46"
+  },
+  {
+    "question": "Which development path represents the most coherent progression toward overcoming EGFR T790M/C797S resistance using quinoline chemistry?",
+    "options": [
+      "A) Tailored quinoline scaffold reviews → five-step Suzuki synthesis of substituted quinolines → confirmation of sub-nanomolar inhibition of triple mutant EGFR",
+      "B) Discovery of triazole synthesis routes → benzofused heterocycle tubulin testing → EGFR phosphorylation assays",
+      "C) Identification of carbonic anhydrase oxadiazoles → Aurora A/TRK dual inhibition → EGFR binding analysis",
+      "D) CLK1 inhibitor screening → PD-L1 blockade → EGFR modelling",
+      "E) FLT3 flavonoid SAR → Quinoline–morpholine conjugation → EGFR hydrazone binding",
+      "F) Antimalarial quinoline repurposing → proteomic Plasmodium target mapping → EGFR cell line panel"
+    ],
+    "answer": "A",
+    "explanation": {
+      "core_concept": "Stepwise quinoline optimisation addressing kinase resistance mutations",
+      "significance": "Demonstrates how scaffold-centred medicinal chemistry yields potent inhibitors against clinically relevant mutants.",
+      "abstract_support": "Tailored quinoline medicinal perspective (PMID:32900354) → five-step modified Suzuki route produced substituted quinolines (PMID:33476869) → compound 5j achieved 0.004 µM IC50 against HCC827 (L858R/T790M/C797S) (same PMID).",
+      "distractor_analysis": "B–F lack linear EGFR-focused quinoline trajectory.",
+      "evolutionary_reasoning": "Conceptual review (32900354) informed synthetic strategy (33476869) culminating in potent mutant EGFR inhibition."
+    },
+    "domain": "Kinase resistance targeting",
+    "PMID": [
+      "32900354",
+      "33476869",
+      "33476869"
+    ],
+    "cluster": "cluster_141_46"
+  }
+]
